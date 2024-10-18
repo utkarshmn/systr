@@ -1144,7 +1144,7 @@ class TradingRule:
     def monthly_pnl(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
                             filter_assets: List[str] = [], filter_ac: List[str] = [],
                             start_date: str = '', end_date: str = '',
-                            save: bool = False) -> pd.DataFrame:
+                            save: bool = False, name: str = None) -> pd.DataFrame:
         import pandas as pd
         import numpy as np
         from datetime import datetime
@@ -1328,8 +1328,9 @@ class TradingRule:
             result_df.loc[len(result_df)] = [current_time] + [np.nan] * (len(result_df.columns)-1)            
             # Relabel any index less than 1000 to ""
             result_df.index = result_df.index.map(lambda x: "" if x < 1800 else x)
-
-            save_path = os.path.join(save_dir, f'MonthlyPnL_{folder_name}_{current_time}.csv')
+            if name is None:
+                name = f'MonthlyPnL_{folder_name}_{current_time}.csv'
+            save_path = os.path.join(save_dir, name)
             result_df.to_csv(save_path, index=True)
             self.logger.info(f"Monthly PnLs saved to '{save_path}'")
             self._generate_readme(folder)
