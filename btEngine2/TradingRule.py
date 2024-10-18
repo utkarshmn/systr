@@ -587,6 +587,7 @@ class TradingRule:
                 df_pnl, df_summary = self.backtest_asset_full(asset, save=save)
                 pnldf_dict[asset] = df_pnl
                 trade_summary_dict[asset] = df_summary
+
                 self.logger.info(f"Completed backtesting for asset '{asset}'")
             except Exception as e:
                 self.logger.error(f"Error backtesting asset '{asset}': {e}")
@@ -622,7 +623,7 @@ class TradingRule:
             '''
             full_trades_list = self._full_tradeslist()
             self.tradeslist = full_trades_list
-            full_trades_list.to_csv(os.path.join(folder, f'{self.folder_name}_tradeslist.csv'), index=True)
+            full_trades_list.to_csv(os.path.join(folder, f'TradesList_{self.folder_name}.csv'), index=True)
             self._generate_readme(folder)
 
         self.logger.info("Completed backtest on all assets.")
@@ -1020,7 +1021,7 @@ class TradingRule:
     def calculate_statistics(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
                             filter_assets: List[str] = [], filter_ac: List[str] = [],
                             start_date: str = '', end_date: str = '',
-                            by_actual_trade: bool = True) -> pd.DataFrame:
+                            by_actual_trade: bool = True, save: bool = False) -> pd.DataFrame:
         import pandas as pd
         from datetime import datetime
 
@@ -1093,13 +1094,251 @@ class TradingRule:
 
         # Set the index to the column names
         stats_df.set_index('Column', inplace=True)
+        result_df = stats_df.copy()
+
+        if save:
+            # Use function name and hashed parameters for folder naming
+            folder_name = self.folder_name
+
+            # Create the folder under 'BackTests'
+            folder = os.path.join(self.backtests_folder, folder_name)
+            save_dir = folder
+            os.makedirs(save_dir, exist_ok=True)
+            
+            # Add 2 empty rows and then a row with the input settings
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+
+            settings_row = {
+                'byac': byac,
+                'byassets': byassets,
+                'totalsys': totalsys,
+                'filter_assets': filter_assets,
+                'filter_ac': filter_ac,
+                'start_date': start_date,
+                'end_date': end_date
+            }
+            settings_names = ['byac', 'byassets', 'totalsys', 'filter_assets', 'filter_ac', 'start_date', 'end_date']
+            settings_values = [settings_row[name] for name in settings_names]
+            result_df.loc[len(result_df)] = ['Settings: '] + settings_names + [np.nan] * (len(result_df.columns)-len(settings_names)-1)
+            result_df.loc[len(result_df)] = ['Settings: '] + settings_values + [np.nan] * (len(result_df.columns)-len(settings_values)-1)
+
+
+            # Save the DataFrame as CSV
+            current_time = datetime.now().strftime('%d%m%Y_%H%M')
+            result_df.loc[len(result_df)] = [current_time] + [np.nan] * (len(result_df.columns)-1)            
+
+            # Relabel any index less than 1000 to ""
+            result_df.index = result_df.index.map(lambda x: "" if type(x) is int else x)
+            
+            save_path = os.path.join(save_dir, f'StratMetrics_{folder_name}_{current_time}.csv')
+            result_df.T.to_csv(save_path, index=True)
+            self.logger.info(f"Strategy stats saved to '{save_path}'")
+            self._generate_readme(folder)
+        self.logger.info("Strategy stats calculation complete.")
+        # Return the final DataFrame
 
         return stats_df
 
+    def monthly_pnl(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
+                            filter_assets: List[str] = [], filter_ac: List[str] = [],
+                            start_date: str = '', end_date: str = '',
+                            save: bool = False) -> pd.DataFrame:
+        import pandas as pd
+        import numpy as np
+        from datetime import datetime
 
+        # Handle date parsing and error checking
+        try:
+            if start_date:
+                start_date_parsed = datetime.strptime(start_date, '%d%m%Y')
+            else:
+                start_date_parsed = None
+            if end_date:
+                end_date_parsed = datetime.strptime(end_date, '%d%m%Y')
+            else:
+                end_date_parsed = None
+        except ValueError as e:
+            self.logger.error(f"Invalid date format: {e}")
+            return pd.DataFrame()
+
+        # Load daily PnL data using diffs=True
+        if byac:
+            if filter_ac:
+                asset_classes = self.market_data.get_asset_classes()
+                filter_assets = []
+                for ac in filter_ac:
+                    assets_in_ac = asset_classes.get(ac, [])
+                    filter_assets.extend(assets_in_ac)
+            pnl_df = self.cum_pnl_byac(diffs=True, filter_assets=filter_assets)
+        elif byassets:
+            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+        else:
+            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+            pnl_df = pnl_df[['Total']]
+
+        if pnl_df.empty:
+            self.logger.error("No data available to calculate statistics.")
+            return pd.DataFrame()
+
+        # Apply date filters
+        if start_date_parsed:
+            pnl_df = pnl_df[pnl_df.index >= start_date_parsed]
+        if end_date_parsed:
+            pnl_df = pnl_df[pnl_df.index <= end_date_parsed]
+
+        if pnl_df.empty:
+            self.logger.error("No data available after applying date filters.")
+            return pd.DataFrame()
+
+        # Store pnl_df for use in trade statistics
+        self.pnl_df = pnl_df
+
+        # Ensure 'Total' column exists
+        if 'Total' not in pnl_df.columns:
+            self.logger.error("'Total' column not found in PnL DataFrame.")
+            return pd.DataFrame()
+
+        # Start of the modified code
+
+        # Step 1: Prepare the DataFrame for grouping
+        pnl_df = pnl_df.copy()
+        pnl_df['Year'] = pnl_df.index.year
+        pnl_df['Month'] = pnl_df.index.month
+
+        # Step 2: Group by Year and Month and sum the PnL
+        monthly_pnl_grouped = pnl_df.groupby(['Year', 'Month'])['Total'].sum()
+
+        # Step 3: Pivot the table to have Years as indices and Months as columns
+        monthly_pnl_pivot = monthly_pnl_grouped.unstack(level='Month')
+
+        # Ensure months from 1 to 12 are present as columns
+        all_months = range(1, 13)
+        monthly_pnl_pivot = monthly_pnl_pivot.reindex(columns=all_months, fill_value=0)
+
+        # Step 4: Initialize a list to hold statistics
+        stats_list = []
+
+        # Step 5: Calculate statistics for each year
+        for year in monthly_pnl_pivot.index:
+            # Filter daily PnL data for the year
+            daily_pnl_year = pnl_df[pnl_df['Year'] == year]['Total']
+            total_days = len(daily_pnl_year)
+            if total_days == 0:
+                continue
+
+            # Annualization factor (assume 252 trading days)
+            annual_factor = np.sqrt(252)
+
+            # Annual PnL
+            annual_pnl = daily_pnl_year.sum()
+
+            # Daily mean and std deviation
+            daily_mean = daily_pnl_year.mean()
+            daily_std = daily_pnl_year.std()
+
+            # Handle case when daily_std is zero
+            if daily_std == 0:
+                sharpe_ratio = np.nan
+            else:
+                sharpe_ratio = (daily_mean / daily_std) * annual_factor
+
+            # Annual realized volatility
+            annual_vol = daily_std * np.sqrt(252)
+
+            # Hit rate
+            positive_days = (daily_pnl_year > 0).sum()
+            non_zero_days = (daily_pnl_year != 0).sum()
+            hit_rate = positive_days / non_zero_days if non_zero_days > 0 else np.nan
+            
+
+
+            # Profit factor
+            total_positive_pnl = daily_pnl_year[daily_pnl_year > 0].sum()
+            total_negative_pnl = daily_pnl_year[daily_pnl_year < 0].sum()
+            if total_negative_pnl == 0:
+                profit_factor = np.nan
+            else:
+                profit_factor = total_positive_pnl / -total_negative_pnl
+
+            # Worst drawdown
+            cumulative_pnl = daily_pnl_year.cumsum()
+            running_max = cumulative_pnl.cummax()
+            drawdown = cumulative_pnl - running_max
+            worst_drawdown = drawdown.min()
+
+            # Store the statistics in a dictionary
+            stats = {
+                'Year': year,
+                'Annual_PnL': annual_pnl,
+                'Sharpe_Ratio': sharpe_ratio,
+                'Annual_Vol': annual_vol,
+                'Hit_Rate': hit_rate,
+                'Profit_Factor': profit_factor,
+                'Worst_Drawdown': worst_drawdown
+            }
+
+            stats_list.append(stats)
+
+        # Step 6: Create a DataFrame from the stats list
+        stats_df = pd.DataFrame(stats_list)
+        stats_df.set_index('Year', inplace=True)
+
+        # Step 7: Merge the statistics DataFrame with the monthly PnL pivot table
+        result_df = monthly_pnl_pivot.merge(stats_df, left_index=True, right_index=True, how='left')
+
+        # Optional: Sort columns (Months from 1 to 12, followed by statistics)
+        month_cols = list(range(1, 13))
+        stats_cols = ['Annual_PnL', 'Sharpe_Ratio', 'Annual_Vol', 'Hit_Rate', 'Profit_Factor', 'Worst_Drawdown']
+        result_df = result_df[month_cols + stats_cols]
+        output_df = result_df.copy()
+
+        if save:
+            # Use function name and hashed parameters for folder naming
+            folder_name = self.folder_name
+
+            # Create the folder under 'BackTests'
+            folder = os.path.join(self.backtests_folder, folder_name)
+            save_dir = folder
+            os.makedirs(save_dir, exist_ok=True)
+            
+            # Add 2 empty rows and then a row with the input settings
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+            result_df.loc[len(result_df)] = [np.nan] * len(result_df.columns)
+
+            settings_row = {
+                'byac': byac,
+                'byassets': byassets,
+                'totalsys': totalsys,
+                'filter_assets': filter_assets,
+                'filter_ac': filter_ac,
+                'start_date': start_date,
+                'end_date': end_date
+            }
+            settings_names = ['byac', 'byassets', 'totalsys', 'filter_assets', 'filter_ac', 'start_date', 'end_date']
+            settings_values = [settings_row[name] for name in settings_names]
+            result_df.loc[len(result_df)] = ['Settings: '] + settings_names + [np.nan] * (len(result_df.columns)-len(settings_names)-1)
+            result_df.loc[len(result_df)] = ['Settings: '] + settings_values + [np.nan] * (len(result_df.columns)-len(settings_values)-1)
+
+
+            # Save the DataFrame as CSV
+            current_time = datetime.now().strftime('%d%m%Y_%H%M')
+            result_df.loc[len(result_df)] = [current_time] + [np.nan] * (len(result_df.columns)-1)            
+            # Relabel any index less than 1000 to ""
+            result_df.index = result_df.index.map(lambda x: "" if x < 1800 else x)
+
+            save_path = os.path.join(save_dir, f'MonthlyPnL_{folder_name}_{current_time}.csv')
+            result_df.to_csv(save_path, index=True)
+            self.logger.info(f"Monthly PnLs saved to '{save_path}'")
+            self._generate_readme(folder)
+        self.logger.info("Monthly PnL calculation complete.")
+        # Return the final DataFrame
+
+        return output_df
 
     #Stats Helper Functions
-
 
     def _calculate_column_statistics(self, daily_pnl: pd.Series, column_name: str, by_actual_trade: bool) -> Dict[str, Any]:
         """
@@ -1515,17 +1754,7 @@ class TradingRule:
         """
         # Demean the PnL time series
         pnl_demeaned = pnl_series - pnl_series.mean()
-        '''
-        # Create a DataFrame with pnl_demeaned and pnl_series        
-        pnl_df = pd.DataFrame({
-            'PnL_Demeaned': pnl_demeaned,
-            'PnL_Series': pnl_series
-        })
 
-        random_uuid = uuid.uuid4()
-        
-        pnl_df.to_csv(f'pnl_df_{random_uuid}.csv')
-        '''
         # Calculate percentiles
         p1 = np.percentile(pnl_demeaned, 1)
         p30 = np.percentile(pnl_demeaned, 30)
@@ -1553,6 +1782,7 @@ class TradingRule:
         return left_tail, right_tail
 
     # Other Helper Functions
+
     def _generate_readme(self, folder: str):
         """
         Generates a README.txt file in the specified folder containing trading rule information.

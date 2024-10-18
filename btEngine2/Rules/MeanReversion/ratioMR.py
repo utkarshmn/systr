@@ -10,8 +10,8 @@ def ratioMR_rsi_long(
     df: pl.DataFrame,
     pairs: List[Tuple[str, str]] = [],
     N: Tuple[int, int] = (5, 5),
-    rsi_period: int = 2,
-    rsi_threshold: float = 10.0,
+    rsi_period: Tuple[int,int] = (2, 2),
+    rsi_threshold: Tuple[float,float] = (10.0, 10.0),
     lmt_order: bool = False,
     lmt_day: int = 1,
     lmt_day_only: bool = True,
@@ -72,7 +72,14 @@ def ratioMR_rsi_long(
             if isinstance(trend_filter, tuple):
                 if isinstance(trend_filter[0], int):
                     trend_filter = trend_filter[0]
+            if isinstance(rsi_period, tuple):
+                rsi_period = rsi_period[0]
+            if isinstance(rsi_threshold, tuple):
+                rsi_threshold = rsi_threshold[0]
+
+            
             break
+
         else:
             if isinstance(N, tuple):
                 N = N[1]
@@ -81,6 +88,10 @@ def ratioMR_rsi_long(
             if isinstance(trend_filter, tuple):
                 if isinstance(trend_filter[1], int):
                     trend_filter = trend_filter[1]
+            if isinstance(rsi_period, tuple):
+                rsi_period = rsi_period[1]
+            if isinstance(rsi_threshold, tuple):
+                rsi_threshold = rsi_threshold[1]
 
     if comp_name is None:
         # Main asset not in any pair; return default signals
