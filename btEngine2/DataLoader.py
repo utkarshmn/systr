@@ -6,6 +6,11 @@ import pandas as pd
 import polars as pl
 from xbbg import blp
 import logging
+from tqdm import tqdm 
+
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
+
 
 class DataLoader:
     def __init__(
@@ -13,7 +18,7 @@ class DataLoader:
         ticker_csv_path: str,
         base_directory: str,
         loadonly: Optional[List[str]] = None,
-        sleep_time: int = 2,
+        sleep_time: int = 0.5,
         log_level: int = logging.INFO,
         max_retries: int = 10,
         loadCarry: bool = False  # New parameter to enable carry calculation
@@ -41,6 +46,9 @@ class DataLoader:
         self.helper_files_folder = self.setup_helper_files_folder()
         self.fut_val_pt_path = os.path.join(self.helper_files_folder, 'fut_val_pt.parquet')
         self.fx_hist_path = os.path.join(self.helper_files_folder, 'fxHist.parquet')
+
+
+        self.bloomberg_lock = Lock()
 
     def setup_logging(self, log_level: int) -> logging.Logger:
         """
@@ -86,7 +94,8 @@ class DataLoader:
             self.logger.error(f"Error reading ticker CSV file: {e}")
             raise e
 
-    def load_data(self, ticker: str) -> Optional[pd.DataFrame]:
+    def load_data(self, ticker: str, to_load = ['PX_OPEN', 'PX_HIGH', 'PX_LOW', 'PX_LAST', 'VOLUME'],
+                  renames = ['Open', 'High', 'Low', 'Close', 'Volume'], start_date ='1980-01-01') -> Optional[pd.DataFrame]:
         """
         Fetches historical data for a given ticker using XBBG with retry mechanism.
 
@@ -99,8 +108,8 @@ class DataLoader:
                 # Fetch data for open, high, low, close, and volume
                 data = blp.bdh(
                     ticker, 
-                    ['PX_OPEN', 'PX_HIGH', 'PX_LOW', 'PX_LAST', 'VOLUME'], 
-                    start_date='1980-01-01'
+                    to_load, 
+                    start_date=start_date
                 )
                 if data.empty:
                     # Log a warning and raise an error to trigger a retry
@@ -114,15 +123,8 @@ class DataLoader:
                 # Reset index to have 'Date' as a column
                 data.reset_index(inplace=True)
                 
-                # Rename columns to match expected format
-                data.rename(columns={
-                    'index': 'Date',
-                    'PX_OPEN': 'Open',
-                    'PX_HIGH': 'High',
-                    'PX_LOW': 'Low',
-                    'PX_LAST': 'Close',
-                    'VOLUME': 'Volume'
-                }, inplace=True)
+                renames = ['Date'] + renames
+                data.columns = renames
                 
                 # Ensure 'Date' is in datetime format and sort by Date
                 data['Date'] = pd.to_datetime(data['Date'])
@@ -410,6 +412,7 @@ class DataLoader:
             self.logger.info(f"Calculating Carry for {curr} using carry contract {carry_ctrct}")
             try:
                 # Fetch LAST_TRADEABLE_DT for 'curr' and 'carry_ctrct'
+                # Assumption here is that current time difference in contract expiries applied throughout history.
                 curr_exp_series = blp.bdp(tickers=curr, flds='LAST_TRADEABLE_DT')
                 carry_exp_series = blp.bdp(tickers=carry_ctrct, flds='LAST_TRADEABLE_DT')
                 curr_exp_series.columns = [x.upper() for x in curr_exp_series.columns]
@@ -485,7 +488,6 @@ class DataLoader:
         # Pause to avoid overloading the Bloomberg server
         time.sleep(self.sleep_time)
 
-        
     def bbgloader(self):
         """
         Executes the data loading process for all tickers, including futures values and FX history.
@@ -518,8 +520,10 @@ class DataLoader:
         else:
             self.logger.warning("Futures value per point DataFrame is empty. Skipping saving.")
         
-        # Step 4: Process each ticker in the ticker list
-        for index, row in self.df.iterrows():
-            self.process_ticker_fut(row, current_time)
+        # Step 4: Process each ticker in the ticker list with progress bar
+        with tqdm(total=len(self.df), desc="Processing tickers", unit="ticker") as pbar:
+            for index, row in self.df.iterrows():
+                self.process_ticker_fut(row, current_time)
+                pbar.update(1)  # Update progress bar after processing each ticker
         
         self.logger.info("All data updated successfully.")

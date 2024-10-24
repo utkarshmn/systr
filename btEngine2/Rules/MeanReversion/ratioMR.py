@@ -19,6 +19,7 @@ def ratioMR_rsi_long(
     lmt_epsilon: float = 0.1,
     atr_period: int = 14,
     atr_type: str = 'atr',
+    ratio_cum_rsi: Tuple[int, int, float] = None,
     trend_filter: Tuple[int, int] = None,
     oversold_rsi: Tuple[float, float] = None,
     oversold_cond: float = 10.0,
@@ -174,6 +175,12 @@ def ratioMR_rsi_long(
         concat_df['Ratio'] = concat_df['Main_Close'] / concat_df['Comp_Close']
     
     concat_df['RSI_Ratio'] = compute_rsi(concat_df['Ratio'], period=rsi_period)
+    
+    if ratio_cum_rsi is not None and type(ratio_cum_rsi) == tuple:
+        crsi_p, cumulative_days, threshold = ratio_cum_rsi
+        concat_df['crsi_ratio'] = compute_rsi(concat_df['Ratio'], period=crsi_p)
+        concat_df['RSI_Ratio_Avg'] = concat_df['crsi_ratio'].rolling(window=cumulative_days).mean()
+    
 
     merged_df = pd.concat([main_pd, concat_df], axis=1)
 
@@ -216,6 +223,13 @@ def ratioMR_rsi_long(
         cols_to_drop.append('Oversold_RSI')
 
 
+    if ratio_cum_rsi is not None and type(ratio_cum_rsi) == tuple:
+        merged_df['crsi_Cond'] = merged_df['RSI_Ratio_Avg'] < threshold
+    
+    else:
+        merged_df['crsi_Cond'] = True
+        cols_to_drop.append('crsi_Cond')
+
     # Compute yesterday's High for the main asset
     merged_df['Prev_High'] = merged_df['High'].shift(1)
     merged_df['Prev_High_Cond'] = merged_df['Close'] < merged_df['Prev_High']
@@ -238,7 +252,8 @@ def ratioMR_rsi_long(
         (merged_df['Trend_Filter']) &
         (merged_df['Oversold_Cond']) &
         (merged_df['Oversold_RSI']) &
-        (merged_df['Corr_Cond'])
+        (merged_df['Corr_Cond']) &
+        (merged_df['crsi_Cond'])
     )
 
     merged_df.drop(columns=cols_to_drop, inplace=True)
@@ -355,6 +370,7 @@ def ratioMR_rsi_short(
     lmt_epsilon: float = 0.1,
     atr_period: int = 14,
     atr_type: str = 'atr',
+    ratio_cum_rsi: Tuple[int, int, float] = None,
     trend_filter: Tuple[int, int] = None,
     overbought_rsi: Tuple[float, float] = None,
     overbought_cond: float = 10.0,
@@ -500,6 +516,13 @@ def ratioMR_rsi_short(
     
     concat_df['RSI_Ratio'] = compute_rsi(concat_df['Ratio'], period=rsi_period)
 
+    if ratio_cum_rsi is not None and type(ratio_cum_rsi) == tuple:
+        crsi_p, cumulative_days, threshold = ratio_cum_rsi
+        concat_df['crsi_ratio'] = compute_rsi(concat_df['Ratio'], period=crsi_p)
+        concat_df['RSI_Ratio_Avg'] = concat_df['crsi_ratio'].rolling(window=cumulative_days).mean()
+    
+
+
     merged_df = pd.concat([main_pd, concat_df], axis=1)
 
     cols_to_drop = ['Main_Close']
@@ -541,6 +564,13 @@ def ratioMR_rsi_short(
         cols_to_drop.append('Overbought_RSI')
 
 
+    if ratio_cum_rsi is not None and type(ratio_cum_rsi) == tuple:
+        merged_df['crsi_Cond'] = merged_df['RSI_Ratio_Avg'] > threshold
+    
+    else:
+        merged_df['crsi_Cond'] = True
+        cols_to_drop.append('crsi_Cond')
+
     # Compute yesterday's High for the main asset
     merged_df['Prev_High'] = merged_df['High'].shift(1)
     merged_df['Prev_High_Cond'] = merged_df['Close'] < merged_df['Prev_High']
@@ -563,7 +593,8 @@ def ratioMR_rsi_short(
         (merged_df['Trend_Filter']) &
         (merged_df['Overbought_Cond']) &
         (merged_df['Overbought_RSI']) &
-        (merged_df['Corr_Cond'])
+        (merged_df['Corr_Cond']) &
+        (merged_df['crsi_Cond'])
     )
 
     merged_df.drop(columns=cols_to_drop, inplace=True)

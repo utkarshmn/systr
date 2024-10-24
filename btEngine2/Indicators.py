@@ -14,6 +14,7 @@ def compute_rsi(series: pl.Series, period: int = 14) -> pl.Series:
         return calculate_rsi_pd(series, period)
     
     delta = series.diff()
+    
     gain = pl.when(delta > 0).then(delta).otherwise(0)
     loss = pl.when(delta < 0).then(-delta).otherwise(0)
 
@@ -124,4 +125,59 @@ def compute_effective_atr_pd(df, X, atr_type='atr'):
     
     df.rename(columns={'Eff_ATR': 'ATR'}, inplace=True)
     
+    return df
+
+
+def compute_rsi_df(df: pl.DataFrame, period: int, column_name: str = 'Close') -> pl.DataFrame:
+    """
+    Computes the RSI (Relative Strength Index) for the given period.
+    """
+
+    if type(df) == pd.DataFrame:
+        return compute_rsi_df_pd(df, period, column_name)
+    df = df.with_columns([
+        (pl.col(column_name) - pl.col(column_name).shift(1)).alias('Price_Change')
+    ])
+
+    df = df.with_columns([
+        pl.when(pl.col('Price_Change') > 0).then(pl.col('Price_Change')).otherwise(0).alias('Gain'),
+        pl.when(pl.col('Price_Change') < 0).then(-pl.col('Price_Change')).otherwise(0).alias('Loss')
+    ])
+
+    df = df.with_columns([
+        pl.col('Gain').rolling_mean(window_size=period).alias('Avg_Gain'),
+        pl.col('Loss').rolling_mean(window_size=period).alias('Avg_Loss')
+    ])
+
+    df = df.with_columns([
+        pl.when(pl.col('Avg_Loss') == 0)
+        .then(100)
+        .otherwise(100 - (100 / (1 + (pl.col('Avg_Gain') / pl.col('Avg_Loss')))))
+        .alias(f'RSI_{period}')
+    ])
+    return df
+
+
+def compute_rsi_df_pd(df: pd.DataFrame, period: int, column_name: str = 'Close') -> pd.DataFrame:
+    """
+    Computes the RSI (Relative Strength Index) for the given period.
+
+    :param df: Pandas DataFrame containing the price data.
+    :param period: RSI calculation period.
+    :param column_name: Column name for price (default: 'Close').
+    :return: DataFrame with RSI added as a new column.
+    """
+    delta = df[column_name].diff()
+
+    gain = delta.where(delta > 0, 0)
+    loss = -delta.where(delta < 0, 0)
+
+    avg_gain = gain.rolling(window=period, min_periods=period).mean()
+    avg_loss = loss.rolling(window=period, min_periods=period).mean()
+
+    rs = avg_gain / avg_loss
+    rsi = 100 - (100 / (1 + rs))
+
+    df[f'RSI_{period}'] = rsi
+
     return df

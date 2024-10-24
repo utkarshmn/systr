@@ -322,6 +322,31 @@ class TradingRule:
             self.logger.error("Position sizing parameter 'VolLookBack' must be provided.")
             raise ValueError("Position sizing parameter 'VolLookBack' must be provided.")
 
+        # Check if 'VolLookBack' is a tuple for blended volatility
+        blended_vol = isinstance(lookback_period, tuple)
+
+        if blended_vol:
+            if len(lookback_period) != 3:
+                self.logger.error("When 'VolLookBack' is a tuple, it must have exactly three elements: (lb_fast, lb_slow, lb_ratio).")
+                raise ValueError("When 'VolLookBack' is a tuple, it must have exactly three elements: (lb_fast, lb_slow, lb_ratio).")
+         
+            lb_fast, lb_slow, lb_ratio = lookback_period
+            
+            if not (0 <= lb_ratio <= 1):
+                self.logger.error("'lb_ratio' must be between 0 and 1.")
+                raise ValueError("'lb_ratio' must be between 0 and 1.")
+
+            self.logger.info(f"Blended volatility: lb_fast={lb_fast}, lb_slow={lb_slow}, lb_ratio={lb_ratio}")
+        else:
+            lb_fast = lookback_period
+            lb_slow = None
+            lb_ratio = 1.0
+            self.logger.info(f"Single volatility: lb_fast={lb_fast}")
+
+        # Get the method to calc vol.
+        vol_method = self.position_sizing_params.get('VolMethod', 'std')
+
+
         self.logger.debug(f"AssetVol target for '{asset}': {asset_vol_target}, VolLookBack period: {lookback_period}")
 
         # Step 1: Create the 'UsedPrice' column after converting to pandas
@@ -352,7 +377,22 @@ class TradingRule:
         df['USD_PnL_1lot_clean'] = df['Close'].diff() * df['Tick_Value_USD']
 
         # Step 4: Calculate the rolling standard deviation of the USD PnL
-        df['RollingStdDev'] = df['USD_PnL_1lot_clean'].rolling(window=lookback_period).std()
+        if blended_vol:
+            if vol_method == 'std':
+                df['RollingStdDev'] = df['USD_PnL_1lot_clean'].rolling(window=lb_fast).std() * lb_ratio + df['USD_PnL_1lot_clean'].rolling(window=lb_slow).std() * (1 - lb_ratio)
+            elif vol_method == 'ewm':
+                df['RollingStdDev'] = df['USD_PnL_1lot_clean'].ewm(span=lb_fast).std() * lb_ratio + df['USD_PnL_1lot_clean'].ewm(span=lb_slow).std() * (1 - lb_ratio)
+            else:
+                self.logger.error('vol_method must be either "std" or "ewm"')
+                raise ValueError('vol_method must be either "std" or "ewm"')
+        else:
+            if vol_method=='std':
+                df['RollingStdDev'] = df['USD_PnL_1lot_clean'].rolling(window=lb_fast).std()
+            elif vol_method=='ewm':
+                df['RollingStdDev'] = df['USD_PnL_1lot_clean'].ewm(span=lb_fast).std()
+            else:
+                self.logger.error('vol_method must be either "std" or "ewm"')
+                raise ValueError('vol_method must be either "std" or "ewm"')
 
         del df['USD_PnL_1lot_clean']
 
@@ -360,7 +400,7 @@ class TradingRule:
         df['AnnualizedVol_1lot'] = df['RollingStdDev'] * np.sqrt(252)
 
         # Step 6: Calculate the number of units needed to target the desired AssetVol
-        df['Lots_Target_Vol'] = asset_vol_target / df['AnnualizedVol_1lot']
+        df['Lots_Target_Vol'] = np.where(df['AnnualizedVol_1lot'] == 0, 0, asset_vol_target / df['AnnualizedVol_1lot'])
 
         # Step 7: Round the number of units to the nearest integer
         df['Lots_Target_Vol'] = df['Lots_Target_Vol'].round()
@@ -415,6 +455,8 @@ class TradingRule:
         df['Strategy_Equity_USD'] = df['Strategy_PnL_USD'].cumsum()
         df['USD_Notional'] = df['USD_Notional'] * df['InTrade']
         df['Num_Lots'] = df['Lots_Target_Vol'] * df['InTrade']
+        df['Num_Lots'] = df['Num_Lots'].round()
+        
         del (df['Lots_Target_Vol'])
         # Generate compact Trade_ID for each trade
         df['Trade_ID'] = ""  # Initialize Trade_ID column with NaN
@@ -1272,11 +1314,11 @@ class TradingRule:
             stats = {
                 'Year': year,
                 'Annual_PnL': annual_pnl,
-                'Sharpe_Ratio': sharpe_ratio,
                 'Annual_Vol': annual_vol,
+                'Worst_Drawdown': worst_drawdown,
+                'Sharpe_Ratio': sharpe_ratio,
                 'Hit_Rate': hit_rate,
                 'Profit_Factor': profit_factor,
-                'Worst_Drawdown': worst_drawdown
             }
 
             stats_list.append(stats)
