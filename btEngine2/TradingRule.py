@@ -442,6 +442,9 @@ class TradingRule:
         # Step 1: Apply the trading rule to the asset
         try:
             df = self.apply_rule_to_asset(asset)
+            
+            # Drop any nans before the first 'Close' in the dataframe
+            df = df.dropna(subset=['Close'])
             self.logger.debug(f"Applied trading rule to asset '{asset}'")
         except Exception as e:
             self.logger.error(f"Error applying trading rule to asset '{asset}': {e}")
@@ -1068,8 +1071,7 @@ class TradingRule:
                             filter_assets: List[str] = [], filter_ac: List[str] = [],
                             start_date: str = '', end_date: str = '',
                             by_actual_trade: bool = True, save: bool = False) -> pd.DataFrame:
-        import pandas as pd
-        from datetime import datetime
+
 
         # Handle date parsing and error checking
         try:
@@ -1112,6 +1114,14 @@ class TradingRule:
             pnl_df = pnl_df[pnl_df.index >= start_date_parsed]
         if end_date_parsed:
             pnl_df = pnl_df[pnl_df.index <= end_date_parsed]
+
+        # Find the first valid value in 'Total' column
+        first_valid_index = pnl_df['Total'].ne(0).idxmax()
+        #first_valid_index = pnl_df['Total'].first_valid_index()
+
+        # Drop rows before the first valid value
+        if first_valid_index is not None:
+            pnl_df = pnl_df.loc[first_valid_index:]
 
         if pnl_df.empty:
             self.logger.error("No data available after applying date filters.")
