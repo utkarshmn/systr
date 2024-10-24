@@ -193,7 +193,7 @@ def sbo_short_pb(
                         df_list[next_day_index]['Signal'] = -1  # Sell signal
                         df_list[next_day_index]['TradeEntry'] = lmt_price  # Record the entry price
                         df_list[next_day_index]['InTrade'] = 0  # Mark as in trade
-                        df_list[next_day_index]['Holding_Period'] = 1  # Start holding period
+                        df_list[next_day_index]['Holding_Period'] = 0  # Start holding period
                         position_open = True
                         entry_index = next_day_index
                         order_filled = True

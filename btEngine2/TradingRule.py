@@ -12,6 +12,9 @@ import uuid
 import plotly.graph_objects as go  
 import plotly.io as pio
 import hashlib
+from datetime import datetime
+
+
 
 from typing import Dict, Any, Optional, List, Tuple, Callable
 
@@ -467,7 +470,7 @@ class TradingRule:
 
             for idx in df.index:
                 signal = df.at[idx, 'Signal']
-                if signal == 1:
+                if signal != 0 and current_trade_id is None:
                     # Start of a new trade
                     trade_id = generate_trade_id_compact(self.trading_rule_function.__name__, self.trading_params, asset, trade_number)
                     df.at[idx, 'Trade_ID'] = trade_id
@@ -475,7 +478,7 @@ class TradingRule:
                 elif signal == 0 and current_trade_id is not None:
                     # Continuing the trade
                     df.at[idx, 'Trade_ID'] = current_trade_id
-                elif signal == -1 and current_trade_id is not None:
+                elif signal != 0 and current_trade_id is not None:
                     # End of the trade
                     df.at[idx, 'Trade_ID'] = current_trade_id
                     current_trade_id = None
@@ -536,7 +539,7 @@ class TradingRule:
         df.set_index('Date', inplace=True)
         # Initialize a list to store trade summary rows
         trade_summary = []
-
+        assetclass = self.market_data.get_ac(asset)
         # Group by Trade_ID and create summary for each trade
         grouped = df.groupby('Trade_ID')
 
@@ -544,16 +547,17 @@ class TradingRule:
             if trade_id:  # Exclude any rows where 'Trade_ID' might be missing
                 first_row = group.iloc[0]
                 last_row = group.iloc[-1]
-
-                # Extract the summary information
+                first_valid_trade_entry = group['TradeEntry'].dropna().iloc[0] if not group['TradeEntry'].dropna().empty else np.nan
+                last_valid_trade_exit = group['TradeExit'].dropna().iloc[-1] if not group['TradeExit'].dropna().empty else np.nan
                 
                 summary = {
                     'Trade_ID': trade_id,
+                    'AssetClass': assetclass,
                     'Asset': first_row['Name'],
                     'FirstDate': group.index[0],
                     'LastDate': group.index[-1],
-                    'TradeEntry': first_row['TradeEntry'],
-                    'TradeExit': last_row['TradeExit'],
+                    'TradeEntry': first_valid_trade_entry,
+                    'TradeExit': last_valid_trade_exit,
                     'USD_Notional': first_row['USD_Notional'],
                     'Num_Lots': first_row['Num_Lots'],
                     'Total PnL': group['PositionPnL_USD'].sum()
@@ -1089,11 +1093,14 @@ class TradingRule:
                 for ac in filter_ac:
                     assets_in_ac = asset_classes.get(ac, [])
                     filter_assets.extend(assets_in_ac)
-            pnl_df = self.cum_pnl_byac(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byac(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
         elif byassets:
-            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
         else:
-            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
             pnl_df = pnl_df[['Total']]
 
         if pnl_df.empty:
@@ -1183,7 +1190,259 @@ class TradingRule:
 
         return stats_df
 
-    def monthly_pnl(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
+    def perf_table(
+        self,
+        byac: bool = False,
+        byassets: bool = True,
+        filter_assets: List[str] = [],
+        filter_ac: List[str] = [],
+        start_date: str = '',
+        end_date: str = '',
+        metric: str = 'pnl',
+        period: str = 'y',  # New parameter
+        save: bool = False,
+        table_detail: str = 'full'
+    ) -> pd.DataFrame:
+        """
+        Calculate performance metrics based on the specified detail level and period.
+
+        :param byac: Aggregate PnL by Asset Class.
+        :param byassets: Aggregate PnL by Assets.
+        :param filter_assets: List of assets to include.
+        :param filter_ac: List of asset classes to include.
+        :param start_date: Start date in '%d%m%Y' format.
+        :param end_date: End date in '%d%m%Y' format.
+        :param metric: Performance metric to calculate ('pnl', 'sharpe', 'hr', 'maxdd', 'skew').
+        :param period: Time period granularity ('m' for month, 'q' for quarter, 'y' for year).
+        :param save: Whether to save the statistics to a CSV file.
+        :param table_detail: Detail level of the output table ('full', 'assets', 'ac').
+        :return: DataFrame with performance metrics.
+        """
+
+        metric = metric.lower()
+        period = period.lower()
+        table_detail = table_detail.lower()
+
+        # Validate parameters
+        if table_detail not in ['full', 'assets', 'ac']:
+            self.logger.error("Parameter 'table_detail' must be one of ['full', 'assets', 'ac'].")
+            raise ValueError("Parameter 'table_detail' must be one of ['full', 'assets', 'ac'].")
+
+        if metric not in ['pnl', 'sharpe', 'hr', 'maxdd', 'skew']:
+            self.logger.error("Parameter 'metric' must be one of ['pnl', 'sharpe', 'hr', 'maxdd', 'skew'].")
+            raise ValueError("Parameter 'metric' must be one of ['pnl', 'sharpe', 'hr', 'maxdd', 'skew'].")
+
+        if period not in ['m', 'q', 'y']:
+            self.logger.error("Parameter 'period' must be one of ['m', 'q', 'y'].")
+            raise ValueError("Parameter 'period' must be one of ['m', 'q', 'y'].")
+
+        # Handle date parsing and error checking
+        try:
+            if start_date:
+                start_date_parsed = datetime.strptime(start_date, '%d%m%Y')
+            else:
+                start_date_parsed = None
+            if end_date:
+                end_date_parsed = datetime.strptime(end_date, '%d%m%Y')
+            else:
+                end_date_parsed = None
+        except ValueError as e:
+            self.logger.error(f"Invalid date format: {e}")
+            return pd.DataFrame()
+
+        # Load daily PnL data using diffs=True
+        if byac:
+            if filter_ac:
+                asset_classes = self.market_data.get_asset_classes()
+                filter_assets = []
+                for ac in filter_ac:
+                    assets_in_ac = asset_classes.get(ac, [])
+                    filter_assets.extend(assets_in_ac)
+            pnl_df = self.cum_pnl_byac(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
+        elif byassets:
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
+        else:
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
+            pnl_df = pnl_df[['Total']]
+
+        if pnl_df.empty:
+            self.logger.error("No data available to calculate statistics.")
+            return pd.DataFrame()
+
+        # Apply date filters
+        if start_date_parsed:
+            pnl_df = pnl_df[pnl_df.index >= start_date_parsed]
+        if end_date_parsed:
+            pnl_df = pnl_df[pnl_df.index <= end_date_parsed]
+
+        if pnl_df.empty:
+            self.logger.error("No data available after applying date filters.")
+            return pd.DataFrame()
+
+        # Store pnl_df for use in trade statistics
+        self.pnl_df = pnl_df
+
+        # Prepare the data for aggregation
+        pnl_df.index = pd.to_datetime(pnl_df.index)
+        pnl_long = pnl_df.reset_index().melt(id_vars='Date', var_name='Asset', value_name='PnL')
+
+        # Extract Period based on the 'period' parameter
+        if period == 'y':
+            pnl_long['Period'] = pnl_long['Date'].dt.year.astype(str)
+        elif period == 'q':
+            pnl_long['Year'] = pnl_long['Date'].dt.year.astype(str)
+            pnl_long['Quarter'] = pnl_long['Date'].dt.quarter.astype(str)
+            pnl_long['Period'] = pnl_long['Year'] + ' Q' + pnl_long['Quarter']
+        elif period == 'm':
+            pnl_long['Year'] = pnl_long['Date'].dt.year.astype(str)
+            pnl_long['Month'] = pnl_long['Date'].dt.month.astype(str).str.zfill(2)
+            pnl_long['Period'] = pnl_long['Year'] + '-' + pnl_long['Month']
+
+
+        # Map assets to asset classes if needed
+        if table_detail in ['full', 'ac']:
+            asset_classes = self.market_data.get_asset_classes()
+            asset_to_ac = {}
+            for ac, assets in asset_classes.items():
+                for asset in assets:
+                    asset_to_ac[asset] = ac
+            pnl_long['AssetClass'] = pnl_long['Asset'].map(asset_to_ac)
+            pnl_long['AssetClass'] = pnl_long['AssetClass'].fillna('Unknown')
+
+        # Define group keys based on table_detail
+        if table_detail == 'full':
+            if not byassets:
+                self.logger.error("Parameter 'table_detail=full' requires byassets=True.")
+                raise ValueError("Parameter 'table_detail=full' requires byassets=True.")
+            group_keys = ['AssetClass', 'Asset', 'Period']
+        elif table_detail == 'assets':
+            if not byassets:
+                self.logger.error("Parameter 'table_detail=assets' requires byassets=True.")
+                raise ValueError("Parameter 'table_detail=assets' requires byassets=True.")
+            group_keys = ['Asset', 'Period']
+        elif table_detail == 'ac':
+            if not byac:
+                self.logger.error("Parameter 'table_detail=ac' requires byac=True.")
+                raise ValueError("Parameter 'table_detail=ac' requires byac=True.")
+            group_keys = ['AssetClass', 'Period']
+
+        # Aggregate the data based on the metric
+        def aggregate_metric(df, metric_column):
+            if metric == 'pnl':
+                # Sum of PnL
+                result = df.groupby(group_keys)[metric_column].sum().reset_index(name='Metric')
+            elif metric == 'sharpe':
+                # Sharpe ratio
+                def sharpe(x):
+                    mean = x.mean()
+                    std = x.std()
+                    if std == 0 or np.isnan(std):
+                        return np.nan
+                    return (mean / std) * np.sqrt(252)
+                result = df.groupby(group_keys)[metric_column].apply(sharpe).reset_index(name='Metric')
+            elif metric == 'hr':
+                # Hit rate
+                def hit_rate(x):
+                    return (x > 0).sum() / (x != 0).sum() if len(x!=0) > 0 else np.nan
+                
+                result = df.groupby(group_keys)[metric_column].apply(hit_rate).reset_index(name='Metric')
+            elif metric == 'maxdd':
+                # Max drawdown
+                def max_drawdown(x):
+                    cumulative = x.cumsum()
+                    max_cum = np.maximum.accumulate(cumulative)
+                    drawdown = cumulative - max_cum
+                    return drawdown.min()
+                result = df.groupby(group_keys)[metric_column].apply(max_drawdown).reset_index(name='Metric')
+            elif metric == 'skew':
+                # Skewness
+                result = df.groupby(group_keys)[metric_column].apply(lambda x: skew(x)).reset_index(name='Metric')
+            else:
+                raise ValueError(f"Unsupported metric: {metric}")
+            return result
+
+        # Perform aggregation
+        grouped = aggregate_metric(pnl_long, 'PnL')
+
+        # Pivot the table to have Periods as columns
+        if table_detail == 'full':
+            index_cols = ['AssetClass', 'Asset']
+        elif table_detail == 'assets':
+            index_cols = ['Asset']
+        elif table_detail == 'ac':
+            index_cols = ['AssetClass']
+
+        pivot_table = grouped.pivot_table(index=index_cols, columns='Period', values='Metric', aggfunc='first')
+
+        # Optional: Sort the index and columns
+        pivot_table = pivot_table.sort_index()
+        pivot_table = pivot_table.sort_index(axis=1, ascending=False)
+
+        result_df = pivot_table
+
+        if metric=='pnl':
+            result_df['Total'] = result_df.sum(axis=1)
+        else:
+            result_df['Total'] = result_df.mean(axis=1)
+        
+
+        # Optional: Save the DataFrame as CSV
+        if save:
+            # Use function name and hashed parameters for folder naming
+            folder_name = self.folder_name
+
+            # Create the folder under 'BackTests'
+            folder = os.path.join(self.backtests_folder, folder_name)
+            save_dir = folder
+            os.makedirs(save_dir, exist_ok=True)
+
+            # Add 2 empty rows and then a row with the input settings
+            result_df = result_df.copy()
+            for _ in range(3):
+                empty_row = pd.Series([np.nan] * len(result_df.columns), index=result_df.columns, name='')
+                result_df = pd.concat([result_df, empty_row])
+
+            settings_row = {
+                'byac': byac,
+                'byassets': byassets,
+                'filter_assets': filter_assets,
+                'filter_ac': filter_ac,
+                'start_date': start_date,
+                'end_date': end_date,
+                'metric': metric,
+                'period': period,
+                'table_detail': table_detail
+            }
+            settings_names = list(settings_row.keys())
+            settings_values = list(settings_row.values())
+            settings_series = pd.Series(['Settings: '] + settings_names + [np.nan] * (len(result_df.columns) - len(settings_names) - 1),
+                                        index=result_df.columns, name='')
+            result_df = pd.concat([result_df, settings_series], ignore_index=False)
+
+            settings_values_series = pd.Series(['Settings: '] + settings_values + [np.nan] * (len(result_df.columns) - len(settings_values) - 1),
+                                            index=result_df.columns, name='')
+            result_df = pd.concat([result_df, settings_values_series], ignore_index=False)
+
+            # Save the DataFrame as CSV
+            current_time = datetime.now().strftime('%d%m%Y_%H%M')
+            timestamp_series = pd.Series([current_time] + [np.nan] * (len(result_df.columns) - 1),
+                                        index=result_df.columns, name='')
+            result_df = pd.concat([result_df, timestamp_series], ignore_index=False)
+
+            # Save path
+            save_path = os.path.join(save_dir, f'PerfTable_{metric}_{folder_name}_{current_time}.csv')
+            result_df.T.to_csv(save_path, index=True)
+            self.logger.info(f"Performance {metric} saved to '{save_path}'")
+            self._generate_readme(folder)
+
+        self.logger.info(f"Performance {metric} calculation complete.")
+
+        return result_df
+
+    def strat_monthly_pnl(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
                             filter_assets: List[str] = [], filter_ac: List[str] = [],
                             start_date: str = '', end_date: str = '',
                             save: bool = False, name: str = None) -> pd.DataFrame:

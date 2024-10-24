@@ -530,6 +530,12 @@ class MarketData:
 
         return new_market_data    
 
+    def get_ac(self, asst):
+        for asset_class, tickers in self.asset_classes.items():
+            if asst in tickers:
+                return asset_class
+        raise ValueError(f"Asset '{asst}' not found in any asset class.")
+
     def gen_custom_assets(
         self,
         input_csv: str,

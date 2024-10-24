@@ -1,0 +1,36 @@
+2024-10-24 10:53:44,882 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Initialized TradingRule for function 'ratioMR_rsi_long' with params hash '1f4a3c6359'
+2024-10-24 10:53:44,882 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Using scalar AssetVol: 5000000 for all assets.
+2024-10-24 10:53:44,883 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Starting backtest on all assets.
+2024-10-24 10:53:44,883 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtesting asset 'NQ1 Index'
+2024-10-24 10:53:44,884 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtesting asset 'NQ1 Index'
+2024-10-24 10:53:45,007 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Single volatility: lb_fast=30
+2024-10-24 10:53:45,139 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtest data for asset 'NQ1 Index' saved to 'BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\backtest_results\NQ1 Index_backtest.parquet'
+2024-10-24 10:53:45,141 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - README.txt created at BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\README.txt
+2024-10-24 10:53:45,141 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-24 10:53:45,256 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtest data for asset 'NQ1 Index' saved to 'BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\backtest_results_detail\NQ1 Index_backtest_trades.parquet'
+2024-10-24 10:53:45,257 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - README.txt created at BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\README.txt
+2024-10-24 10:53:45,257 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-24 10:53:45,258 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-24 10:53:45,259 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtesting asset 'US1 Comdty'
+2024-10-24 10:53:45,259 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtesting asset 'US1 Comdty'
+2024-10-24 10:53:45,410 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Single volatility: lb_fast=30
+2024-10-24 10:53:45,509 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtest data for asset 'US1 Comdty' saved to 'BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\backtest_results\US1 Comdty_backtest.parquet'
+2024-10-24 10:53:45,510 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - README.txt created at BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\README.txt
+2024-10-24 10:53:45,511 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-24 10:53:45,627 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Backtest data for asset 'US1 Comdty' saved to 'BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\backtest_results_detail\US1 Comdty_backtest_trades.parquet'
+2024-10-24 10:53:45,628 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - README.txt created at BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\README.txt
+2024-10-24 10:53:45,629 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-24 10:53:45,629 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-24 10:53:45,652 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - README.txt created at BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\README.txt
+2024-10-24 10:53:45,653 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Completed backtest on all assets.
+2024-10-24 10:53:45,654 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Loading backtest results from saved parquet files.
+2024-10-24 10:53:45,681 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Generated cumulative PnL DataFrame by assets.
+2024-10-24 10:53:46,181 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Figure saved as 'BackTests\ratioRSI_resrch\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty\ratioMR_rsi_long_1f4a3c6359_20027675a5_TestMR_US1 Comdty_equity_curve_24102024-105346.html'
+2024-10-24 10:53:46,182 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Loading backtest results from saved parquet files.
+2024-10-24 10:53:46,202 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Generated cumulative PnL DataFrame by assets.
+2024-10-24 10:53:46,204 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Calculating trade statistics using actual trades.
+2024-10-24 10:53:46,388 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Calculating trade statistics using actual trades.
+2024-10-24 10:53:46,564 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Calculating trade statistics using actual trades.
+2024-10-24 10:53:46,741 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Strategy stats calculation complete.
+2024-10-24 10:53:50,256 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Loading backtest results from saved parquet files.
+2024-10-24 10:53:50,341 - TradingRule_ratioMR_rsi_long_1f4a3c6359 - INFO - Generated cumulative PnL DataFrame by assets.
