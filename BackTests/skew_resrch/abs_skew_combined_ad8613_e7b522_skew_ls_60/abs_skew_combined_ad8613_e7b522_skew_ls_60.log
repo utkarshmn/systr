@@ -1,0 +1,4 @@
+2024-10-25 13:39:58,168 - TradingRule_abs_skew_combined_ad8613 - ERROR - Backtest results directory 'BackTests/skew_resrch/abs_skew_combined_ad8613_e7b522_skew_ls_60/backtest_results' not found.
+2024-10-25 13:40:56,834 - TradingRule_abs_skew_combined_ad8613 - ERROR - Backtest results directory 'BackTests/skew_resrch/abs_skew_combined_ad8613_e7b522_skew_ls_60/backtest_results' not found.
+2024-10-25 13:41:15,386 - TradingRule_abs_skew_combined_ad8613 - ERROR - Trades results directory 'BackTests/skew_resrch/abs_skew_combined_ad8613_e7b522_skew_ls_60/backtest_results_detail' not found.
+2024-10-25 13:42:04,632 - TradingRule_abs_skew_combined_ad8613 - ERROR - Asset 'WN1 Comdty' not found in the MarketData object.

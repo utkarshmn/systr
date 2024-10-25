@@ -20,7 +20,7 @@ from typing import Dict, Any, Optional, List, Tuple, Callable
 
 from scipy.stats import skew, norm
 
-def hash_params_compact(params: Dict[str, Any]) -> str:
+def hash_params_compact(params: Dict[str, Any], n=6) -> str:
     """
     Create a compact hash from a dictionary of parameters for unique identification.
     
@@ -28,7 +28,7 @@ def hash_params_compact(params: Dict[str, Any]) -> str:
     :return: A short string representing the hashed parameters (first 8 characters of the hash).
     """
     param_str = str(sorted(params.items()))
-    return hashlib.sha256(param_str.encode()).hexdigest()[:10]
+    return hashlib.sha256(param_str.encode()).hexdigest()[:n]
 
 def generate_trade_id_compact(trading_rule_name: str, trading_params: Dict[str, Any], asset: str, trade_number: int) -> str:
     """
@@ -40,7 +40,7 @@ def generate_trade_id_compact(trading_rule_name: str, trading_params: Dict[str, 
     :param trade_number: The trade number for this asset.
     :return: A compact unique trade ID string.
     """
-    rule_hash = hash_params_compact(trading_params)
+    rule_hash = hash_params_compact(trading_params, n=4)
     asset_short = asset.replace(" ", "")[:6]  # Shorten asset name to first 6 characters
     return f"{rule_hash}_{asset_short}_{trade_number}"
 
@@ -82,9 +82,11 @@ class TradingRule:
             self.market_data = market_data.get_assets_data(self.incl_assets)
         elif excl_ac != []:
             self.incl_assets = []
-            for ac in incl_ac:
-                self.incl_assets = self.incl_assets + market_data.get_asset_classes()[ac]
-            self.incl_assets = [x for x in self.incl_assets if x not in excl_assets]
+            excl_assets = []
+            for ac in excl_ac:
+                to_rm = market_data.get_asset_classes()[ac]
+                excl_assets = excl_assets + to_rm
+            self.incl_assets = [x for x in self.market_data.data.keys() if x not in excl_assets]
             self.market_data = market_data.get_assets_data(self.incl_assets)
         else:
             self.market_data = market_data
@@ -764,7 +766,7 @@ class TradingRule:
         return result_df
 
     def cum_pnl_byac(self, diffs: bool = False, filter_assets: List[str] = [],
-                     excl_assets: List[str] = [], forcebt = False):
+                     excl_assets: List[str] = [], force_bt = False):
         """
         Returns a pandas DataFrame with Date index and columns as asset class names, containing
         the cumulative PnL time series of each asset class. Adds a 'Total' column that is the
@@ -776,7 +778,7 @@ class TradingRule:
         :return: Pandas DataFrame with Date index and asset class columns.
         """
 
-        if forcebt:
+        if force_bt:
             self.backtest_all_assets(save=True)
         
         # Determine the list of assets to check
@@ -851,7 +853,7 @@ class TradingRule:
         return ac_pnl_df
 
     def cum_pnl_byassets(self, diffs: bool = False, filter_assets: List[str] = [],
-                         excl_assets: List[str] = [], forcebt=False):
+                         excl_assets: List[str] = [], force_bt=False):
         """
         Returns a pandas DataFrame with Date index and columns as asset names, containing
         the cumulative PnL time series of each asset. Adds a 'Total' column that is the
@@ -863,7 +865,7 @@ class TradingRule:
         :return: Pandas DataFrame with Date index and asset columns.
         """
 
-        if forcebt:
+        if force_bt:
             self.backtest_all_assets(save=True)
         
         # Determine the list of assets to check
@@ -911,9 +913,9 @@ class TradingRule:
     def plot_equity(self, byac: bool = False, byassets: bool = False, totalsys: bool = True,
                     filter_assets: List[str] = [], filter_ac: List[str] = [],
                     excl_ac: List[str] = [], excl_assets: List[str] = [],
-                    start_date: str = '', end_date: str = '',
+                    start_date: str = '', end_date: str = '', force_bt = False,
                     save_fig: bool = False, file_format: str = 'html',
-                    naming = 'descr'):
+                    naming = 'descr', calc_metric = 'sr'):
         """
         Plots the Strategy_Equity_USD using Plotly and optionally saves the figure.
 
@@ -928,11 +930,8 @@ class TradingRule:
         :param file_format: The format to save the figure ('html' or 'png').
         :return: The DataFrame containing the equity data.
         """
-        import pandas as pd
-        import plotly.graph_objects as go
-        from datetime import datetime
-        import os
-
+        if force_bt:
+            self.backtest_all_assets(save=True)
         # Handle date parsing and error checking
         try:
             if start_date:
@@ -990,6 +989,8 @@ class TradingRule:
         if start_date:
                pnl_df.iloc[0] = pnl_df.iloc[0].fillna(0)
                pnl_df = pnl_df - pnl_df.iloc[0]
+
+
         # Create Plotly figure
         fig = go.Figure()
 
@@ -1013,6 +1014,7 @@ class TradingRule:
             else:
                 plt_tit = self.strat_descr
         
+
         # Update layout
         fig.update_layout(
             title=f'{plt_tit} Equity Curves',
@@ -1370,6 +1372,10 @@ class TradingRule:
             elif metric == 'skew':
                 # Skewness
                 result = df.groupby(group_keys)[metric_column].apply(lambda x: skew(x)).reset_index(name='Metric')
+            elif metric =='vol':
+                def vol(x):
+                    return x.std() * np.sqrt(252)
+                result = df.groupby(group_keys)[metric_column].apply(vol).reset_index(name='Metric')
             else:
                 raise ValueError(f"Unsupported metric: {metric}")
             return result
@@ -2010,6 +2016,39 @@ class TradingRule:
             '75p Trade': percentile_75,
             'Pareto Number (%)': pareto_num,
         }
+    
+
+    def _calculate_turnover(self, asset, start_date='', end_date='') -> float:
+        """
+        Calculate turnover for the trading rule based on position changes in 'Num_Lots'.
+        """
+        # Calculate daily position changes in Num_Lots
+
+        df = self._get_btdf(asset, start_date, end_date)
+
+        daily_changes = df['Num_Lots'].diff().abs()
+        
+        # Compute the average position (ignoring NaNs where there's no prior position)
+        average_position = df['Num_Lots'].shift(1).abs().mean()
+
+        if self.cont_rule:
+            # For continuous signals, calculate daily turnover
+            daily_turnover_proportion = daily_changes / average_position
+            average_daily_turnover = daily_turnover_proportion.mean()
+            annualized_turnover = average_daily_turnover * 252
+
+        else:
+            # For discrete signals, only calculate turnover on trading days (when there's a change in Num_Lots)
+            trade_days = daily_changes[daily_changes > 0]  # Filter to actual trade events
+            turnover_events = trade_days / average_position
+            average_turnover_event = turnover_events.mean()
+
+            # Estimate annual trade frequency based on observed trade days
+            trade_frequency = len(trade_days) / len(df)
+            annual_trade_days = 252 * trade_frequency
+            annualized_turnover = average_turnover_event * annual_trade_days
+
+        return annualized_turnover
 
     def _calculate_pnl_skew_and_tails(self, daily_pnl: pd.Series) -> Dict[str, Any]:
         """
@@ -2364,3 +2403,45 @@ class TradingRule:
         if diffs:
             result_df = result_df.diff().ffill().dropna()
         return result_df
+
+    def _get_btdf(self, asset: str, start_date='', end_date='', save=False) -> pd.DataFrame:
+        """
+        Get the backtest DataFrame for a specific asset. If the parquet file exists, load it.
+        Otherwise, run the backtest and return the DataFrame.
+
+        :param asset: The name of the asset.
+        :return: A pandas DataFrame with the backtest results.
+        """
+        file_path = self._get_parquet_file_path(asset)
+
+        if self._parquet_file_exists(asset):
+            self.logger.info(f"Loading backtest results for asset '{asset}' from '{file_path}'")
+            df_pl = pl.read_parquet(file_path)
+            df = df_pl.to_pandas()
+
+
+        else:
+            self.logger.info(f"Backtest results for asset '{asset}' not found. Running backtest.")
+            df = self.backtest_asset(asset, save=save)
+        
+        # Handle date parsing and error checking
+        try:
+            if start_date:
+                start_date_parsed = datetime.strptime(start_date, '%d%m%Y')
+            else:
+                start_date_parsed = None
+            if end_date:
+                end_date_parsed = datetime.strptime(end_date, '%d%m%Y')
+            else:
+                end_date_parsed = None
+        except ValueError as e:
+            self.logger.error(f"Invalid date format: {e}")
+            return pd.DataFrame()
+
+        # Apply date filters
+        if start_date_parsed:
+            df = df[df['Date'] >= start_date_parsed]
+        if end_date_parsed:
+            df = df[df['Date'] <= end_date_parsed]
+
+        return df
