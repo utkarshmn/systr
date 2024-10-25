@@ -1,2 +1,0 @@
-2024-10-25 16:18:17,821 - TradingRule_abs_skew_long_ac659f - ERROR - Error applying trading rule function 'abs_skew_long' to asset 'WN1 Comdty': '>' not supported between instances of 'float' and 'tuple'
-2024-10-25 16:18:17,822 - TradingRule_abs_skew_long_ac659f - ERROR - Error applying trading rule to asset 'WN1 Comdty': '>' not supported between instances of 'float' and 'tuple'

@@ -1,1 +1,0 @@
-2024-10-25 15:57:57,138 - TradingRule_abs_skew_long_792ccd - ERROR - Parameter 'metric' must be one of ['pnl', 'sharpe', 'hr', 'maxdd', 'skew'].

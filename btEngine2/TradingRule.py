@@ -1,7 +1,6 @@
 import os
 import logging
 import polars as pl
-import pickle
 import glob
 import pandas as pd
 import numpy as np
@@ -14,6 +13,10 @@ import plotly.io as pio
 import hashlib
 from datetime import datetime
 
+import re
+import importlib
+import ast
+import pkgutil
 
 
 from typing import Dict, Any, Optional, List, Tuple, Callable
@@ -2149,15 +2152,14 @@ class TradingRule:
         """
         readme_path = os.path.join(folder, 'README.txt')
 
-
-            # Use function name and hashed parameters for folder naming
-        function_name = self.trading_rule_function.__name__
-        readme_content = f'{self.name_lbl} Backtest \n'
+        # Prepare the content for the README file
+        readme_content = f'*** {self.name_lbl} Backtest ***\n'
         if self.strat_descr is not None:
             readme_content += f'{self.strat_descr}\n\n'
 
-        # Prepare the content for the README file
-        readme_content += f"\nTrading Rule Function: {function_name}\n\n"
+        # Include Trading Rule Function
+        function_name = self.trading_rule_function.__name__
+        readme_content += f"Trading Rule Function: {function_name}\n\n"
 
         # Include Trading Rule Parameters
         readme_content += "Trading Rule Parameters:\n"
@@ -2168,7 +2170,6 @@ class TradingRule:
         readme_content += "\nPosition Sizing Parameters:\n"
         for key, value in self.position_sizing_params.items():
             readme_content += f"  {key}: {value}\n"
-        
 
         # Include Market Data Assets and Start Dates
         readme_content += "\nMarket Data Assets and Start Dates:\n"
@@ -2177,7 +2178,8 @@ class TradingRule:
             end_date = df['Date'].max()
             vol_tgt = self.asset_vol_dict.get(asset, None)
             readme_content += f"  {asset} ({vol_tgt}): {start_date} - {end_date}\n"
-        # Write the README file 
+
+        # Write the README file
         with open(readme_path, 'w') as readme_file:
             readme_file.write(readme_content)
 
@@ -2342,7 +2344,7 @@ class TradingRule:
         return trades_df
 
     def _load_backtest_results(self, diffs: bool = False, filter_assets: List[str] = [],
-                               excl_assets: List[str] = []):
+                               excl_assets: List[str] = [], get_col: str = 'Strategy_Equity_USD') -> pd.DataFrame:
         """
         Helper method to load backtest results from parquet files in the backtest_results folder.
 
@@ -2375,7 +2377,7 @@ class TradingRule:
         df_list = []
 
         # Determine which column to load
-        column_name = 'Strategy_PnL_USD' if diffs else 'Strategy_Equity_USD'
+        column_name = get_col
 
         # Process each parquet file
         for file_path in parquet_files:
@@ -2452,3 +2454,167 @@ class TradingRule:
             df = df[df['Date'] <= end_date_parsed]
 
         return df
+
+
+    # To load tradingrule from readmes:
+
+
+    @classmethod
+    def from_readme(cls, readme_path: str, market_data, **kwargs):
+        """
+        Initializes a TradingRule instance by reading parameters from a README file.
+
+        :param readme_path: Path to the README file.
+        :param market_data: The MarketData instance.
+        :param kwargs: Additional arguments to pass to the constructor.
+        :return: An instance of TradingRule.
+        """
+        if not os.path.exists(readme_path):
+            raise FileNotFoundError(f"README file not found: {readme_path}")
+
+        # Read the README file
+        with open(readme_path, 'r') as f:
+            content = f.read()
+
+        # Extract the Trading Rule Function Name
+        function_name_match = re.search(r"Trading Rule Function:\s*(\w+)", content)
+        if not function_name_match:
+            raise ValueError("Trading Rule Function name not found in README file.")
+        function_name = function_name_match.group(1)
+
+        # Extract Strategy Description (if available)
+        strat_descr_match = re.search(r"^\*\*\*\s*(.*?)\s*Backtest\s*\*\*\*\n(.*?)\n\nTrading Rule Function:", content, re.DOTALL)
+        if strat_descr_match:
+            name_lbl = strat_descr_match.group(1).strip()
+            strat_descr = strat_descr_match.group(2).strip()
+        else:
+            # Fallback if the pattern doesn't match
+            name_lbl = None
+            strat_descr_match = re.search(r"^(.*?)\n\nTrading Rule Function:", content, re.DOTALL)
+            strat_descr = strat_descr_match.group(1).strip() if strat_descr_match else None
+
+        # Extract Trading Rule Parameters
+        trading_params = {}
+        trading_params_match = re.search(r"Trading Rule Parameters:\n(.*?)\n\n", content, re.DOTALL)
+        if trading_params_match:
+            trading_params_str = trading_params_match.group(1)
+            trading_params = cls._parse_params(trading_params_str)
+        else:
+            raise ValueError("Trading Rule Parameters not found in README file.")
+
+        # Extract Position Sizing Parameters
+        position_sizing_params = {}
+        sizing_params_match = re.search(r"Position Sizing Parameters:\n(.*?)\n\n", content, re.DOTALL)
+        if sizing_params_match:
+            sizing_params_str = sizing_params_match.group(1)
+            position_sizing_params = cls._parse_params(sizing_params_str)
+        else:
+            raise ValueError("Position Sizing Parameters not found in README file.")
+
+        # Map function name to actual function
+        trading_rule_function = cls._get_trading_rule_function(function_name)
+        if trading_rule_function is None:
+            raise ValueError(f"Trading rule function '{function_name}' not found.")
+
+        # Determine the folder_name and backtests_folder from the readme_path
+        backtests_folder = os.path.abspath(os.path.join(readme_path, os.pardir))
+        folder_name = os.path.basename(backtests_folder)
+
+        # Assign attributes from the README file and its directory
+        kwargs['bt_folder'] = os.path.dirname(backtests_folder)  # Parent directory of folder_name
+        kwargs['name_label'] = name_lbl
+        kwargs['assign_id'] = True  # Since we're assigning name_label
+        kwargs['strat_descr'] = strat_descr
+
+        # Initialize the TradingRule instance
+        instance = cls(
+            market_data=market_data,
+            trading_rule_function=trading_rule_function,
+            trading_params=trading_params,
+            position_sizing_params=position_sizing_params,
+            **kwargs
+        )
+
+        # Override folder_name and backtests_folder to match the existing backtest
+        instance.folder_name = folder_name
+        instance.backtests_folder = os.path.dirname(backtests_folder)  # Parent directory of folder_name
+
+        # Set name_lbl and strat_descr
+        instance.name_lbl = name_lbl
+        instance.strat_descr = strat_descr
+
+        return instance
+
+    @staticmethod
+    def _parse_params(params_str: str) -> Dict[str, Any]:
+        """
+        Parses parameter strings from the README file into a dictionary.
+
+        :param params_str: Multi-line string containing parameters.
+        :return: Dictionary of parameters.
+        """
+        params = {}
+        for line in params_str.strip().split('\n'):
+            match = re.match(r"\s*(\w+):\s*(.+)", line)
+            if match:
+                key = match.group(1)
+                value_str = match.group(2)
+                # Attempt to safely evaluate the value string
+                try:
+                    value = ast.literal_eval(value_str)
+                except (ValueError, SyntaxError):
+                    value = value_str.strip()
+                params[key] = value
+        return params
+
+    @staticmethod
+    def _get_trading_rule_function(function_name: str) -> Callable:
+        """
+        Searches for the trading rule function in all modules under btEngine2.Rules.
+
+        :param function_name: Name of the trading rule function.
+        :return: The trading rule function callable, or None if not found.
+        """
+        # Base package name
+        base_package = 'btEngine2.Rules'
+
+        # List to keep track of modules where we've searched
+        searched_modules = set()
+
+        # Function to recursively search modules
+        def recursive_search(package_name):
+            nonlocal function_name
+
+            # Get the package
+            try:
+                package = importlib.import_module(package_name)
+            except ImportError as e:
+                return None
+
+            # Iterate over all modules in the package
+            for _, modname, ispkg in pkgutil.iter_modules(package.__path__, package.__name__ + '.'):
+                if modname in searched_modules:
+                    continue
+                searched_modules.add(modname)
+
+                try:
+                    module = importlib.import_module(modname)
+                except ImportError:
+                    continue
+
+                # Check if the function exists in the module
+                if hasattr(module, function_name):
+                    return getattr(module, function_name)
+
+                # If it's a package, recurse into it
+                if ispkg:
+                    result = recursive_search(modname)
+                    if result:
+                        return result
+
+            return None
+
+        # Start the search from the base package
+        trading_rule_function = recursive_search(base_package)
+
+        return trading_rule_function

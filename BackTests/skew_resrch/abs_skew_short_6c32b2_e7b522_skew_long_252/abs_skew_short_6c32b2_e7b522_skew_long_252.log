@@ -1,0 +1,357 @@
+2024-10-26 00:20:27,427 - TradingRule_abs_skew_short_6c32b2 - INFO - Initialized TradingRule for function 'abs_skew_short' with params hash '6c32b2'
+2024-10-26 00:20:27,429 - TradingRule_abs_skew_short_6c32b2 - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-26 00:20:55,482 - TradingRule_abs_skew_short_6c32b2 - INFO - Starting backtest on all assets.
+2024-10-26 00:20:55,483 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'RTY1 Index'
+2024-10-26 00:20:55,484 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'RTY1 Index'
+2024-10-26 00:20:55,930 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:20:55,958 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/RTY1 Index_backtest.parquet'
+2024-10-26 00:20:55,960 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:55,960 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-26 00:20:56,004 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/RTY1 Index_backtest_trades.parquet'
+2024-10-26 00:20:56,005 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:56,005 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-26 00:20:56,006 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-26 00:20:56,006 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'NQ1 Index'
+2024-10-26 00:20:56,006 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'NQ1 Index'
+2024-10-26 00:20:57,120 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:20:57,225 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/NQ1 Index_backtest.parquet'
+2024-10-26 00:20:57,227 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:57,227 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-26 00:20:57,301 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/NQ1 Index_backtest_trades.parquet'
+2024-10-26 00:20:57,302 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:57,303 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-26 00:20:57,303 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-26 00:20:57,304 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'DM1 Index'
+2024-10-26 00:20:57,304 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'DM1 Index'
+2024-10-26 00:20:58,335 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:20:58,401 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/DM1 Index_backtest.parquet'
+2024-10-26 00:20:58,402 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:58,403 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-26 00:20:58,472 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/DM1 Index_backtest_trades.parquet'
+2024-10-26 00:20:58,473 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:58,473 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-26 00:20:58,474 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-26 00:20:58,474 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ES1 Index'
+2024-10-26 00:20:58,474 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ES1 Index'
+2024-10-26 00:20:59,658 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:20:59,759 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/ES1 Index_backtest.parquet'
+2024-10-26 00:20:59,760 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:59,761 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-26 00:20:59,827 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/ES1 Index_backtest_trades.parquet'
+2024-10-26 00:20:59,828 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:20:59,828 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-26 00:20:59,829 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-26 00:20:59,829 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'TY1 Comdty'
+2024-10-26 00:20:59,830 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'TY1 Comdty'
+2024-10-26 00:21:01,690 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:01,857 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/TY1 Comdty_backtest.parquet'
+2024-10-26 00:21:01,859 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:01,860 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-26 00:21:02,110 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/TY1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:02,111 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:02,112 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-26 00:21:02,113 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-26 00:21:02,113 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'WN1 Comdty'
+2024-10-26 00:21:02,113 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'WN1 Comdty'
+2024-10-26 00:21:02,745 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:02,777 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/WN1 Comdty_backtest.parquet'
+2024-10-26 00:21:02,778 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:02,779 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-26 00:21:02,803 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/WN1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:02,804 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:02,804 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-26 00:21:02,804 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-26 00:21:02,804 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CN1 Comdty'
+2024-10-26 00:21:02,805 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CN1 Comdty'
+2024-10-26 00:21:04,380 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:04,530 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/CN1 Comdty_backtest.parquet'
+2024-10-26 00:21:04,531 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:04,531 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-26 00:21:04,644 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/CN1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:04,645 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:04,645 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-26 00:21:04,646 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-26 00:21:04,646 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'US1 Comdty'
+2024-10-26 00:21:04,646 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'US1 Comdty'
+2024-10-26 00:21:06,559 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:06,717 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/US1 Comdty_backtest.parquet'
+2024-10-26 00:21:06,718 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:06,719 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-26 00:21:06,888 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/US1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:06,889 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:06,889 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-26 00:21:06,890 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-26 00:21:06,891 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'TU1 Comdty'
+2024-10-26 00:21:06,891 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'TU1 Comdty'
+2024-10-26 00:21:08,490 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:08,591 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/TU1 Comdty_backtest.parquet'
+2024-10-26 00:21:08,592 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:08,593 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-26 00:21:08,891 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/TU1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:08,892 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:08,892 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-26 00:21:08,893 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-26 00:21:08,894 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'FV1 Comdty'
+2024-10-26 00:21:08,894 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'FV1 Comdty'
+2024-10-26 00:21:10,481 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:10,582 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/FV1 Comdty_backtest.parquet'
+2024-10-26 00:21:10,583 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:10,583 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-26 00:21:10,732 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/FV1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:10,733 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:10,734 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-26 00:21:10,734 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-26 00:21:10,735 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'XB1 Index'
+2024-10-26 00:21:10,735 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'XB1 Index'
+2024-10-26 00:21:11,649 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:11,689 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/XB1 Index_backtest.parquet'
+2024-10-26 00:21:11,690 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:11,691 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-26 00:21:11,751 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/XB1 Index_backtest_trades.parquet'
+2024-10-26 00:21:11,752 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:11,753 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-26 00:21:11,753 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-26 00:21:11,754 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'KM1 Index'
+2024-10-26 00:21:11,754 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'KM1 Index'
+2024-10-26 00:21:13,024 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:13,131 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/KM1 Index_backtest.parquet'
+2024-10-26 00:21:13,132 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:13,132 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-26 00:21:13,209 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/KM1 Index_backtest_trades.parquet'
+2024-10-26 00:21:13,210 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:13,210 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-26 00:21:13,211 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-26 00:21:13,211 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'XU1 Index'
+2024-10-26 00:21:13,211 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'XU1 Index'
+2024-10-26 00:21:14,028 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:14,099 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/XU1 Index_backtest.parquet'
+2024-10-26 00:21:14,101 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:14,101 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-26 00:21:14,297 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/XU1 Index_backtest_trades.parquet'
+2024-10-26 00:21:14,298 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:14,299 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-26 00:21:14,300 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-26 00:21:14,300 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'HC1 Index'
+2024-10-26 00:21:14,300 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'HC1 Index'
+2024-10-26 00:21:15,181 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:15,244 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/HC1 Index_backtest.parquet'
+2024-10-26 00:21:15,245 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:15,246 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-26 00:21:15,506 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/HC1 Index_backtest_trades.parquet'
+2024-10-26 00:21:15,507 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:15,507 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-26 00:21:15,508 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-26 00:21:15,508 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ZVL1 Index'
+2024-10-26 00:21:15,508 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ZVL1 Index'
+2024-10-26 00:21:15,977 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:16,002 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/ZVL1 Index_backtest.parquet'
+2024-10-26 00:21:16,003 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:16,004 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-26 00:21:16,017 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/ZVL1 Index_backtest_trades.parquet'
+2024-10-26 00:21:16,018 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:16,018 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-26 00:21:16,019 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-26 00:21:16,019 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'QZ1 Index'
+2024-10-26 00:21:16,020 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'QZ1 Index'
+2024-10-26 00:21:17,125 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:17,217 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/QZ1 Index_backtest.parquet'
+2024-10-26 00:21:17,218 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:17,219 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-26 00:21:17,346 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/QZ1 Index_backtest_trades.parquet'
+2024-10-26 00:21:17,347 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:17,348 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-26 00:21:17,348 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-26 00:21:17,349 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'MES1 Index'
+2024-10-26 00:21:17,349 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'MES1 Index'
+2024-10-26 00:21:17,975 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:18,010 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/MES1 Index_backtest.parquet'
+2024-10-26 00:21:18,011 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:18,011 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-26 00:21:18,067 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/MES1 Index_backtest_trades.parquet'
+2024-10-26 00:21:18,068 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:18,069 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-26 00:21:18,069 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-26 00:21:18,070 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'JB1 Comdty'
+2024-10-26 00:21:18,070 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'JB1 Comdty'
+2024-10-26 00:21:19,727 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:19,861 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/JB1 Comdty_backtest.parquet'
+2024-10-26 00:21:19,862 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:19,862 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-26 00:21:19,980 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/JB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:19,980 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:19,981 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-26 00:21:19,981 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-26 00:21:19,982 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ST1 Index'
+2024-10-26 00:21:19,982 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'ST1 Index'
+2024-10-26 00:21:20,840 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:20,887 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/ST1 Index_backtest.parquet'
+2024-10-26 00:21:20,887 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:20,888 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-26 00:21:20,998 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/ST1 Index_backtest_trades.parquet'
+2024-10-26 00:21:20,999 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:21,000 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-26 00:21:21,000 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-26 00:21:21,001 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'VG1 Index'
+2024-10-26 00:21:21,001 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'VG1 Index'
+2024-10-26 00:21:22,147 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:22,221 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/VG1 Index_backtest.parquet'
+2024-10-26 00:21:22,222 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:22,222 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-26 00:21:22,388 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/VG1 Index_backtest_trades.parquet'
+2024-10-26 00:21:22,389 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:22,389 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-26 00:21:22,390 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-26 00:21:22,390 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CF1 Index'
+2024-10-26 00:21:22,390 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CF1 Index'
+2024-10-26 00:21:23,971 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:24,066 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/CF1 Index_backtest.parquet'
+2024-10-26 00:21:24,067 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:24,068 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-26 00:21:24,313 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/CF1 Index_backtest_trades.parquet'
+2024-10-26 00:21:24,314 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:24,315 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-26 00:21:24,315 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-26 00:21:24,316 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'GX1 Index'
+2024-10-26 00:21:24,316 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'GX1 Index'
+2024-10-26 00:21:25,810 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:25,884 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/GX1 Index_backtest.parquet'
+2024-10-26 00:21:25,885 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:25,886 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-26 00:21:25,951 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/GX1 Index_backtest_trades.parquet'
+2024-10-26 00:21:25,952 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:25,953 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-26 00:21:25,953 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-26 00:21:25,953 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CA1 Index'
+2024-10-26 00:21:25,954 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'CA1 Index'
+2024-10-26 00:21:26,965 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:27,049 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/CA1 Index_backtest.parquet'
+2024-10-26 00:21:27,050 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:27,051 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-26 00:21:27,240 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/CA1 Index_backtest_trades.parquet'
+2024-10-26 00:21:27,241 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:27,241 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-26 00:21:27,242 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-26 00:21:27,242 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'QC1 Index'
+2024-10-26 00:21:27,242 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'QC1 Index'
+2024-10-26 00:21:28,043 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:28,089 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/QC1 Index_backtest.parquet'
+2024-10-26 00:21:28,090 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:28,090 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-26 00:21:28,160 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/QC1 Index_backtest_trades.parquet'
+2024-10-26 00:21:28,161 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:28,161 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-26 00:21:28,162 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-26 00:21:28,162 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'SM1 Index'
+2024-10-26 00:21:28,163 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'SM1 Index'
+2024-10-26 00:21:29,461 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:29,526 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/SM1 Index_backtest.parquet'
+2024-10-26 00:21:29,527 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:29,528 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-26 00:21:29,691 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/SM1 Index_backtest_trades.parquet'
+2024-10-26 00:21:29,692 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:29,693 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-26 00:21:29,693 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-26 00:21:29,694 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'IB1 Index'
+2024-10-26 00:21:29,694 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'IB1 Index'
+2024-10-26 00:21:31,040 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:31,163 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/IB1 Index_backtest.parquet'
+2024-10-26 00:21:31,164 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:31,164 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-26 00:21:31,449 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/IB1 Index_backtest_trades.parquet'
+2024-10-26 00:21:31,450 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:31,450 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-26 00:21:31,451 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-26 00:21:31,451 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'Z 1 Index'
+2024-10-26 00:21:31,452 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'Z 1 Index'
+2024-10-26 00:21:32,998 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:33,113 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/Z 1 Index_backtest.parquet'
+2024-10-26 00:21:33,114 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:33,114 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-26 00:21:33,229 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/Z 1 Index_backtest_trades.parquet'
+2024-10-26 00:21:33,230 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:33,230 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-26 00:21:33,231 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-26 00:21:33,231 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'UB1 Comdty'
+2024-10-26 00:21:33,231 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'UB1 Comdty'
+2024-10-26 00:21:34,380 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:34,459 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/UB1 Comdty_backtest.parquet'
+2024-10-26 00:21:34,460 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:34,461 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-26 00:21:34,580 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/UB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:34,581 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:34,581 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-26 00:21:34,582 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-26 00:21:34,582 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'OE1 Comdty'
+2024-10-26 00:21:34,583 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'OE1 Comdty'
+2024-10-26 00:21:36,121 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:36,317 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/OE1 Comdty_backtest.parquet'
+2024-10-26 00:21:36,319 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:36,319 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-26 00:21:36,510 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/OE1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:36,511 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:36,511 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-26 00:21:36,512 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-26 00:21:36,512 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'G 1 Comdty'
+2024-10-26 00:21:36,513 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'G 1 Comdty'
+2024-10-26 00:21:38,329 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:38,431 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/G 1 Comdty_backtest.parquet'
+2024-10-26 00:21:38,432 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:38,432 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-26 00:21:38,683 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/G 1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:38,684 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:38,684 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-26 00:21:38,685 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-26 00:21:38,685 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'BTS1 Comdty'
+2024-10-26 00:21:38,686 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'BTS1 Comdty'
+2024-10-26 00:21:39,325 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:39,389 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/BTS1 Comdty_backtest.parquet'
+2024-10-26 00:21:39,390 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:39,390 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-26 00:21:39,482 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/BTS1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:39,483 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:39,483 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-26 00:21:39,484 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-26 00:21:39,484 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'IK1 Comdty'
+2024-10-26 00:21:39,484 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'IK1 Comdty'
+2024-10-26 00:21:40,103 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:40,171 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/IK1 Comdty_backtest.parquet'
+2024-10-26 00:21:40,172 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:40,172 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-26 00:21:40,288 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/IK1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:40,289 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:40,289 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-26 00:21:40,290 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-26 00:21:40,290 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'DU1 Comdty'
+2024-10-26 00:21:40,290 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'DU1 Comdty'
+2024-10-26 00:21:41,436 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:41,509 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/DU1 Comdty_backtest.parquet'
+2024-10-26 00:21:41,510 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:41,511 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-26 00:21:41,655 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/DU1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:41,655 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:41,656 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-26 00:21:41,656 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-26 00:21:41,657 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'RX1 Comdty'
+2024-10-26 00:21:41,657 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'RX1 Comdty'
+2024-10-26 00:21:43,063 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:43,153 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/RX1 Comdty_backtest.parquet'
+2024-10-26 00:21:43,154 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:43,154 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-26 00:21:43,353 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/RX1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:43,354 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:43,354 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-26 00:21:43,355 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-26 00:21:43,355 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'OAT1 Comdty'
+2024-10-26 00:21:43,355 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtesting asset 'OAT1 Comdty'
+2024-10-26 00:21:43,860 - TradingRule_abs_skew_short_6c32b2 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:21:43,895 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results/OAT1 Comdty_backtest.parquet'
+2024-10-26 00:21:43,896 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:43,896 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-26 00:21:43,970 - TradingRule_abs_skew_short_6c32b2 - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/backtest_results_detail/OAT1 Comdty_backtest_trades.parquet'
+2024-10-26 00:21:43,971 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:43,971 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-26 00:21:43,972 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-26 00:21:44,544 - TradingRule_abs_skew_short_6c32b2 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/skew_resrch/abs_skew_short_6c32b2_e7b522_skew_long_252/README.txt
+2024-10-26 00:21:44,545 - TradingRule_abs_skew_short_6c32b2 - INFO - Completed backtest on all assets.
+2024-10-26 00:21:44,552 - TradingRule_abs_skew_short_6c32b2 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:21:44,797 - TradingRule_abs_skew_short_6c32b2 - INFO - Generated cumulative PnL DataFrame by asset class.

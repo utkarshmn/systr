@@ -1,0 +1,838 @@
+2024-10-26 00:12:42,237 - TradingRule_sbo_long_e7f950 - INFO - Initialized TradingRule for function 'sbo_long' with params hash 'e7f950'
+2024-10-26 00:12:42,266 - TradingRule_sbo_long_e7f950 - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-26 00:12:42,280 - TradingRule_sbo_long_e7f950 - INFO - Backtest data missing for assets: ['BTC1 Curncy', 'DCR1 Curncy', 'DBE3 Index', 'DED3 Index', 'MND3 Index', 'ASD3 Index', 'RTY1 Index', 'NQ1 Index', 'DM1 Index', 'ES1 Index', 'DX1 Curncy', 'JY1 Curncy', 'SDE1 Curncy', 'NV1 Curncy', 'AD1 Curncy', 'EC1 Curncy', 'SF1 Curncy', 'BP1 Curncy', 'NO1 Curncy', 'CD1 Curncy', 'SE1 Curncy', 'TY1 Comdty', 'WN1 Comdty', 'CN1 Comdty', 'US1 Comdty', 'TU1 Comdty', 'FV1 Comdty', 'RR1 Comdty', 'BO1 Comdty', 'KC1 Comdty', 'CA1 Comdty', 'QW1 Comdty', 'S 1 Comdty', 'QC1 Comdty', 'RS1 Comdty', 'C 1 Comdty', 'W 1 Comdty', 'FC1 Comdty', 'SM1 Comdty', 'SB1 Comdty', 'YW1 Comdty', 'LA1 Comdty', 'LN1 Comdty', 'SCO1 Comdty', 'HG1 Comdty', 'LP1 Comdty', 'IR6 Comdty', 'SFR8 Comdty', 'SFI6 Comdty', 'SSY4 Comdty', 'ER6 Comdty', 'XB1 Index', 'KM1 Index', 'XU1 Index', 'HC1 Index', 'ZVL1 Index', 'QZ1 Index', 'MES1 Index', 'MO1 Comdty', 'HO1 Comdty', 'CO1 Comdty', 'TZT2 Comdty', 'XB1 Comdty', 'QS1 Comdty', 'NG1 Comdty', 'CL1 Comdty', 'UX2 Index', 'FVS2 Index', 'TP1 Index', 'NK1 Index', 'XP1 Index', 'JB1 Comdty', 'PL1 Comdty', 'SI1 Comdty', 'GC1 Comdty', 'A11 Curncy', 'HR1 Curncy', 'PE1 Curncy', 'RA1 Curncy', 'XID1 Curncy', 'PLE1 Curncy', 'EZ1 Curncy', 'XUC1 Curncy', 'XTD1 Curncy', 'KO1 Curncy', 'ST1 Index', 'VG1 Index', 'CF1 Index', 'GX1 Index', 'CA1 Index', 'QC1 Index', 'SM1 Index', 'IB1 Index', 'Z 1 Index', 'UB1 Comdty', 'OE1 Comdty', 'G 1 Comdty', 'BTS1 Comdty', 'IK1 Comdty', 'DU1 Comdty', 'RX1 Comdty', 'OAT1 Comdty']. Running backtest_asset_full.
+2024-10-26 00:12:42,281 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'BTC1 Curncy'
+2024-10-26 00:12:42,294 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,330 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BTC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/BTC1 Curncy_backtest.parquet'
+2024-10-26 00:12:42,331 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,332 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BTC1 Curncy'
+2024-10-26 00:12:42,362 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BTC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/BTC1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:42,363 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,364 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BTC1 Curncy'
+2024-10-26 00:12:42,364 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DCR1 Curncy'
+2024-10-26 00:12:42,369 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,391 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DCR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DCR1 Curncy_backtest.parquet'
+2024-10-26 00:12:42,393 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,393 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DCR1 Curncy'
+2024-10-26 00:12:42,411 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DCR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DCR1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:42,412 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,413 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DCR1 Curncy'
+2024-10-26 00:12:42,413 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DBE3 Index'
+2024-10-26 00:12:42,424 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,462 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DBE3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DBE3 Index_backtest.parquet'
+2024-10-26 00:12:42,464 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,464 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DBE3 Index'
+2024-10-26 00:12:42,499 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DBE3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DBE3 Index_backtest_trades.parquet'
+2024-10-26 00:12:42,501 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,501 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DBE3 Index'
+2024-10-26 00:12:42,502 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DED3 Index'
+2024-10-26 00:12:42,515 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,564 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DED3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DED3 Index_backtest.parquet'
+2024-10-26 00:12:42,566 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,566 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DED3 Index'
+2024-10-26 00:12:42,629 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DED3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DED3 Index_backtest_trades.parquet'
+2024-10-26 00:12:42,630 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,631 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DED3 Index'
+2024-10-26 00:12:42,631 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'MND3 Index'
+2024-10-26 00:12:42,643 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,695 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MND3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/MND3 Index_backtest.parquet'
+2024-10-26 00:12:42,696 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,696 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MND3 Index'
+2024-10-26 00:12:42,767 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MND3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/MND3 Index_backtest_trades.parquet'
+2024-10-26 00:12:42,768 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,769 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MND3 Index'
+2024-10-26 00:12:42,769 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'ASD3 Index'
+2024-10-26 00:12:42,777 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,811 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ASD3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/ASD3 Index_backtest.parquet'
+2024-10-26 00:12:42,812 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,812 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ASD3 Index'
+2024-10-26 00:12:42,852 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ASD3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/ASD3 Index_backtest_trades.parquet'
+2024-10-26 00:12:42,854 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,854 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ASD3 Index'
+2024-10-26 00:12:42,855 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'RTY1 Index'
+2024-10-26 00:12:42,861 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:42,890 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/RTY1 Index_backtest.parquet'
+2024-10-26 00:12:42,891 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,891 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-26 00:12:42,919 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/RTY1 Index_backtest_trades.parquet'
+2024-10-26 00:12:42,920 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:42,921 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-26 00:12:42,922 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'NQ1 Index'
+2024-10-26 00:12:42,944 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,018 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/NQ1 Index_backtest.parquet'
+2024-10-26 00:12:43,020 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,020 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-26 00:12:43,105 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/NQ1 Index_backtest_trades.parquet'
+2024-10-26 00:12:43,106 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,107 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-26 00:12:43,107 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DM1 Index'
+2024-10-26 00:12:43,126 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,184 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DM1 Index_backtest.parquet'
+2024-10-26 00:12:43,186 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,186 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-26 00:12:43,254 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DM1 Index_backtest_trades.parquet'
+2024-10-26 00:12:43,255 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,255 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-26 00:12:43,256 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'ES1 Index'
+2024-10-26 00:12:43,276 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,343 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/ES1 Index_backtest.parquet'
+2024-10-26 00:12:43,345 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,345 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-26 00:12:43,459 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/ES1 Index_backtest_trades.parquet'
+2024-10-26 00:12:43,460 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,460 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-26 00:12:43,461 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DX1 Curncy'
+2024-10-26 00:12:43,526 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,614 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DX1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DX1 Curncy_backtest.parquet'
+2024-10-26 00:12:43,616 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,616 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DX1 Curncy'
+2024-10-26 00:12:43,729 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DX1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DX1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:43,730 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,731 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DX1 Curncy'
+2024-10-26 00:12:43,732 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'JY1 Curncy'
+2024-10-26 00:12:43,760 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,848 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'JY1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/JY1 Curncy_backtest.parquet'
+2024-10-26 00:12:43,849 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,850 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'JY1 Curncy'
+2024-10-26 00:12:43,958 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'JY1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/JY1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:43,959 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,959 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'JY1 Curncy'
+2024-10-26 00:12:43,960 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SDE1 Curncy'
+2024-10-26 00:12:43,965 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:43,992 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SDE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SDE1 Curncy_backtest.parquet'
+2024-10-26 00:12:43,993 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:43,993 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SDE1 Curncy'
+2024-10-26 00:12:44,020 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SDE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SDE1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:44,022 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,022 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SDE1 Curncy'
+2024-10-26 00:12:44,022 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'NV1 Curncy'
+2024-10-26 00:12:44,043 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:44,112 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NV1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/NV1 Curncy_backtest.parquet'
+2024-10-26 00:12:44,113 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,113 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NV1 Curncy'
+2024-10-26 00:12:44,204 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NV1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/NV1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:44,205 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,206 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NV1 Curncy'
+2024-10-26 00:12:44,206 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'AD1 Curncy'
+2024-10-26 00:12:44,275 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:44,373 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'AD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/AD1 Curncy_backtest.parquet'
+2024-10-26 00:12:44,374 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,375 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'AD1 Curncy'
+2024-10-26 00:12:44,498 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'AD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/AD1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:44,500 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,500 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'AD1 Curncy'
+2024-10-26 00:12:44,501 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'EC1 Curncy'
+2024-10-26 00:12:44,521 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:44,589 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'EC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/EC1 Curncy_backtest.parquet'
+2024-10-26 00:12:44,590 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,590 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'EC1 Curncy'
+2024-10-26 00:12:44,673 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'EC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/EC1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:44,674 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,675 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'EC1 Curncy'
+2024-10-26 00:12:44,676 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SF1 Curncy'
+2024-10-26 00:12:44,704 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:44,795 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SF1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SF1 Curncy_backtest.parquet'
+2024-10-26 00:12:44,796 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,796 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SF1 Curncy'
+2024-10-26 00:12:44,910 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SF1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SF1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:44,911 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:44,911 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SF1 Curncy'
+2024-10-26 00:12:44,912 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'BP1 Curncy'
+2024-10-26 00:12:44,941 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:45,029 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BP1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/BP1 Curncy_backtest.parquet'
+2024-10-26 00:12:45,031 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,031 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BP1 Curncy'
+2024-10-26 00:12:45,150 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BP1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/BP1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:45,151 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,152 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BP1 Curncy'
+2024-10-26 00:12:45,153 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'NO1 Curncy'
+2024-10-26 00:12:45,169 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:45,229 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/NO1 Curncy_backtest.parquet'
+2024-10-26 00:12:45,230 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,230 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NO1 Curncy'
+2024-10-26 00:12:45,303 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/NO1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:45,304 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,304 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NO1 Curncy'
+2024-10-26 00:12:45,305 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CD1 Curncy'
+2024-10-26 00:12:45,333 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:45,423 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CD1 Curncy_backtest.parquet'
+2024-10-26 00:12:45,424 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,425 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CD1 Curncy'
+2024-10-26 00:12:45,540 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CD1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:45,541 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,541 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CD1 Curncy'
+2024-10-26 00:12:45,542 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SE1 Curncy'
+2024-10-26 00:12:45,559 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:45,617 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SE1 Curncy_backtest.parquet'
+2024-10-26 00:12:45,618 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,618 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SE1 Curncy'
+2024-10-26 00:12:45,688 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SE1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:45,689 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,690 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SE1 Curncy'
+2024-10-26 00:12:45,690 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'TY1 Comdty'
+2024-10-26 00:12:45,723 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:45,821 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/TY1 Comdty_backtest.parquet'
+2024-10-26 00:12:45,822 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,822 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-26 00:12:45,963 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/TY1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:45,964 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:45,965 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-26 00:12:45,966 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'WN1 Comdty'
+2024-10-26 00:12:45,977 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:46,020 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/WN1 Comdty_backtest.parquet'
+2024-10-26 00:12:46,021 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,022 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-26 00:12:46,069 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/WN1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:46,071 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,071 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-26 00:12:46,072 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CN1 Comdty'
+2024-10-26 00:12:46,097 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:46,184 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CN1 Comdty_backtest.parquet'
+2024-10-26 00:12:46,185 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,186 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-26 00:12:46,342 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CN1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:46,344 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,344 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-26 00:12:46,345 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'US1 Comdty'
+2024-10-26 00:12:46,377 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:46,479 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/US1 Comdty_backtest.parquet'
+2024-10-26 00:12:46,480 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,480 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-26 00:12:46,619 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/US1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:46,621 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,621 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-26 00:12:46,622 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'TU1 Comdty'
+2024-10-26 00:12:46,647 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:46,728 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/TU1 Comdty_backtest.parquet'
+2024-10-26 00:12:46,729 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,729 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-26 00:12:46,841 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/TU1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:46,843 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,843 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-26 00:12:46,844 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'FV1 Comdty'
+2024-10-26 00:12:46,871 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:46,988 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/FV1 Comdty_backtest.parquet'
+2024-10-26 00:12:46,989 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:46,989 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-26 00:12:47,106 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/FV1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:47,107 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,108 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-26 00:12:47,109 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'RR1 Comdty'
+2024-10-26 00:12:47,135 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:47,216 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RR1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/RR1 Comdty_backtest.parquet'
+2024-10-26 00:12:47,218 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,218 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RR1 Comdty'
+2024-10-26 00:12:47,321 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RR1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/RR1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:47,322 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,322 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RR1 Comdty'
+2024-10-26 00:12:47,324 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'BO1 Comdty'
+2024-10-26 00:12:47,357 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:47,457 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/BO1 Comdty_backtest.parquet'
+2024-10-26 00:12:47,459 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,459 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BO1 Comdty'
+2024-10-26 00:12:47,595 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/BO1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:47,597 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,597 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BO1 Comdty'
+2024-10-26 00:12:47,598 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'KC1 Comdty'
+2024-10-26 00:12:47,631 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:47,731 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/KC1 Comdty_backtest.parquet'
+2024-10-26 00:12:47,732 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,733 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KC1 Comdty'
+2024-10-26 00:12:47,868 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/KC1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:47,869 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,870 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KC1 Comdty'
+2024-10-26 00:12:47,871 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CA1 Comdty'
+2024-10-26 00:12:47,890 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:47,959 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CA1 Comdty_backtest.parquet'
+2024-10-26 00:12:47,960 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:47,960 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CA1 Comdty'
+2024-10-26 00:12:48,056 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CA1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:48,057 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,057 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CA1 Comdty'
+2024-10-26 00:12:48,059 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'QW1 Comdty'
+2024-10-26 00:12:48,082 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:48,168 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/QW1 Comdty_backtest.parquet'
+2024-10-26 00:12:48,169 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,170 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QW1 Comdty'
+2024-10-26 00:12:48,293 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/QW1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:48,294 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,294 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QW1 Comdty'
+2024-10-26 00:12:48,295 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'S 1 Comdty'
+2024-10-26 00:12:48,328 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:48,426 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'S 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/S 1 Comdty_backtest.parquet'
+2024-10-26 00:12:48,427 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,428 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'S 1 Comdty'
+2024-10-26 00:12:48,559 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'S 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/S 1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:48,561 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,561 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'S 1 Comdty'
+2024-10-26 00:12:48,562 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'QC1 Comdty'
+2024-10-26 00:12:48,588 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:48,675 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/QC1 Comdty_backtest.parquet'
+2024-10-26 00:12:48,676 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,677 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QC1 Comdty'
+2024-10-26 00:12:48,793 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/QC1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:48,794 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,794 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QC1 Comdty'
+2024-10-26 00:12:48,795 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'RS1 Comdty'
+2024-10-26 00:12:48,825 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:48,921 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/RS1 Comdty_backtest.parquet'
+2024-10-26 00:12:48,922 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:48,922 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RS1 Comdty'
+2024-10-26 00:12:49,082 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/RS1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:49,084 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,084 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RS1 Comdty'
+2024-10-26 00:12:49,085 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'C 1 Comdty'
+2024-10-26 00:12:49,118 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:49,215 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'C 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/C 1 Comdty_backtest.parquet'
+2024-10-26 00:12:49,216 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,217 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'C 1 Comdty'
+2024-10-26 00:12:49,341 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'C 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/C 1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:49,342 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,342 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'C 1 Comdty'
+2024-10-26 00:12:49,343 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'W 1 Comdty'
+2024-10-26 00:12:49,407 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:49,507 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'W 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/W 1 Comdty_backtest.parquet'
+2024-10-26 00:12:49,508 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,508 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'W 1 Comdty'
+2024-10-26 00:12:49,631 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'W 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/W 1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:49,632 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,633 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'W 1 Comdty'
+2024-10-26 00:12:49,634 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'FC1 Comdty'
+2024-10-26 00:12:49,667 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:49,767 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/FC1 Comdty_backtest.parquet'
+2024-10-26 00:12:49,768 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,768 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FC1 Comdty'
+2024-10-26 00:12:49,906 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/FC1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:49,908 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:49,908 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FC1 Comdty'
+2024-10-26 00:12:49,909 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SM1 Comdty'
+2024-10-26 00:12:49,942 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:50,042 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SM1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SM1 Comdty_backtest.parquet'
+2024-10-26 00:12:50,044 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,044 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SM1 Comdty'
+2024-10-26 00:12:50,181 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SM1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SM1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:50,182 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,183 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SM1 Comdty'
+2024-10-26 00:12:50,184 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SB1 Comdty'
+2024-10-26 00:12:50,217 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:50,317 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SB1 Comdty_backtest.parquet'
+2024-10-26 00:12:50,318 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,319 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SB1 Comdty'
+2024-10-26 00:12:50,460 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:50,462 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,462 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SB1 Comdty'
+2024-10-26 00:12:50,463 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'YW1 Comdty'
+2024-10-26 00:12:50,483 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:50,553 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'YW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/YW1 Comdty_backtest.parquet'
+2024-10-26 00:12:50,555 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,555 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'YW1 Comdty'
+2024-10-26 00:12:50,657 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'YW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/YW1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:50,658 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,659 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'YW1 Comdty'
+2024-10-26 00:12:50,660 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'LA1 Comdty'
+2024-10-26 00:12:50,679 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:50,749 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/LA1 Comdty_backtest.parquet'
+2024-10-26 00:12:50,750 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,750 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LA1 Comdty'
+2024-10-26 00:12:50,847 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/LA1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:50,848 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,848 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LA1 Comdty'
+2024-10-26 00:12:50,849 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'LN1 Comdty'
+2024-10-26 00:12:50,869 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:50,940 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/LN1 Comdty_backtest.parquet'
+2024-10-26 00:12:50,941 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:50,941 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LN1 Comdty'
+2024-10-26 00:12:51,045 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/LN1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:51,046 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,047 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LN1 Comdty'
+2024-10-26 00:12:51,048 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SCO1 Comdty'
+2024-10-26 00:12:51,057 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:51,096 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SCO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SCO1 Comdty_backtest.parquet'
+2024-10-26 00:12:51,097 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,097 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SCO1 Comdty'
+2024-10-26 00:12:51,142 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SCO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SCO1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:51,143 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,143 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SCO1 Comdty'
+2024-10-26 00:12:51,144 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'HG1 Comdty'
+2024-10-26 00:12:51,170 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:51,255 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/HG1 Comdty_backtest.parquet'
+2024-10-26 00:12:51,256 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,257 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HG1 Comdty'
+2024-10-26 00:12:51,373 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/HG1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:51,375 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,375 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HG1 Comdty'
+2024-10-26 00:12:51,376 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'LP1 Comdty'
+2024-10-26 00:12:51,396 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:51,466 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LP1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/LP1 Comdty_backtest.parquet'
+2024-10-26 00:12:51,468 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,468 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LP1 Comdty'
+2024-10-26 00:12:51,605 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'LP1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/LP1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:51,607 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,608 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'LP1 Comdty'
+2024-10-26 00:12:51,609 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'IR6 Comdty'
+2024-10-26 00:12:51,675 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:51,798 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IR6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/IR6 Comdty_backtest.parquet'
+2024-10-26 00:12:51,800 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,802 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IR6 Comdty'
+2024-10-26 00:12:51,951 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IR6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/IR6 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:51,952 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:51,953 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IR6 Comdty'
+2024-10-26 00:12:51,954 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SFR8 Comdty'
+2024-10-26 00:12:51,981 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,071 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SFR8 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SFR8 Comdty_backtest.parquet'
+2024-10-26 00:12:52,073 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,073 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SFR8 Comdty'
+2024-10-26 00:12:52,206 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SFR8 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SFR8 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:52,208 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,208 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SFR8 Comdty'
+2024-10-26 00:12:52,209 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SFI6 Comdty'
+2024-10-26 00:12:52,235 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,323 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SFI6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SFI6 Comdty_backtest.parquet'
+2024-10-26 00:12:52,324 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,325 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SFI6 Comdty'
+2024-10-26 00:12:52,448 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SFI6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SFI6 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:52,449 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,450 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SFI6 Comdty'
+2024-10-26 00:12:52,451 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SSY4 Comdty'
+2024-10-26 00:12:52,456 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,480 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SSY4 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SSY4 Comdty_backtest.parquet'
+2024-10-26 00:12:52,481 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,482 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SSY4 Comdty'
+2024-10-26 00:12:52,497 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SSY4 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SSY4 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:52,498 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,498 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SSY4 Comdty'
+2024-10-26 00:12:52,498 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'ER6 Comdty'
+2024-10-26 00:12:52,518 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,585 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ER6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/ER6 Comdty_backtest.parquet'
+2024-10-26 00:12:52,587 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,587 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ER6 Comdty'
+2024-10-26 00:12:52,670 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ER6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/ER6 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:52,671 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,671 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ER6 Comdty'
+2024-10-26 00:12:52,672 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XB1 Index'
+2024-10-26 00:12:52,688 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,746 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XB1 Index_backtest.parquet'
+2024-10-26 00:12:52,747 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,747 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-26 00:12:52,816 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XB1 Index_backtest_trades.parquet'
+2024-10-26 00:12:52,818 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,818 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-26 00:12:52,819 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'KM1 Index'
+2024-10-26 00:12:52,840 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:52,911 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/KM1 Index_backtest.parquet'
+2024-10-26 00:12:52,912 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:52,912 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-26 00:12:53,004 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/KM1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,006 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,006 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-26 00:12:53,007 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XU1 Index'
+2024-10-26 00:12:53,021 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,070 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XU1 Index_backtest.parquet'
+2024-10-26 00:12:53,071 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,072 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-26 00:12:53,125 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XU1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,126 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,126 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-26 00:12:53,127 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'HC1 Index'
+2024-10-26 00:12:53,142 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,198 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/HC1 Index_backtest.parquet'
+2024-10-26 00:12:53,199 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,199 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-26 00:12:53,269 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/HC1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,270 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,271 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-26 00:12:53,272 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'ZVL1 Index'
+2024-10-26 00:12:53,281 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,318 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/ZVL1 Index_backtest.parquet'
+2024-10-26 00:12:53,319 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,320 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-26 00:12:53,361 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/ZVL1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,363 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,363 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-26 00:12:53,364 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'QZ1 Index'
+2024-10-26 00:12:53,383 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,450 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/QZ1 Index_backtest.parquet'
+2024-10-26 00:12:53,451 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,452 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-26 00:12:53,539 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/QZ1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,540 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,541 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-26 00:12:53,542 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'MES1 Index'
+2024-10-26 00:12:53,554 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,612 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/MES1 Index_backtest.parquet'
+2024-10-26 00:12:53,621 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,625 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-26 00:12:53,684 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/MES1 Index_backtest_trades.parquet'
+2024-10-26 00:12:53,685 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,685 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-26 00:12:53,686 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'MO1 Comdty'
+2024-10-26 00:12:53,701 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,759 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/MO1 Comdty_backtest.parquet'
+2024-10-26 00:12:53,760 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,760 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MO1 Comdty'
+2024-10-26 00:12:53,862 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'MO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/MO1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:53,863 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,864 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'MO1 Comdty'
+2024-10-26 00:12:53,865 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'HO1 Comdty'
+2024-10-26 00:12:53,892 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:53,984 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/HO1 Comdty_backtest.parquet'
+2024-10-26 00:12:53,985 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:53,986 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HO1 Comdty'
+2024-10-26 00:12:54,109 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/HO1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:54,111 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,111 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HO1 Comdty'
+2024-10-26 00:12:54,112 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CO1 Comdty'
+2024-10-26 00:12:54,138 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:54,227 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CO1 Comdty_backtest.parquet'
+2024-10-26 00:12:54,229 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,229 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CO1 Comdty'
+2024-10-26 00:12:54,351 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CO1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:54,352 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,353 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CO1 Comdty'
+2024-10-26 00:12:54,354 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'TZT2 Comdty'
+2024-10-26 00:12:54,369 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:54,421 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TZT2 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/TZT2 Comdty_backtest.parquet'
+2024-10-26 00:12:54,422 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,423 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TZT2 Comdty'
+2024-10-26 00:12:54,478 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TZT2 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/TZT2 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:54,480 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,480 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TZT2 Comdty'
+2024-10-26 00:12:54,481 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XB1 Comdty'
+2024-10-26 00:12:54,495 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:54,546 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XB1 Comdty_backtest.parquet'
+2024-10-26 00:12:54,547 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,547 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XB1 Comdty'
+2024-10-26 00:12:54,604 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:54,605 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,606 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XB1 Comdty'
+2024-10-26 00:12:54,607 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'QS1 Comdty'
+2024-10-26 00:12:54,632 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:54,714 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/QS1 Comdty_backtest.parquet'
+2024-10-26 00:12:54,715 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,716 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QS1 Comdty'
+2024-10-26 00:12:54,830 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/QS1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:54,831 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,832 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QS1 Comdty'
+2024-10-26 00:12:54,833 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'NG1 Comdty'
+2024-10-26 00:12:54,859 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:54,940 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/NG1 Comdty_backtest.parquet'
+2024-10-26 00:12:54,941 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:54,942 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NG1 Comdty'
+2024-10-26 00:12:55,040 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/NG1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:55,041 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,041 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NG1 Comdty'
+2024-10-26 00:12:55,042 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CL1 Comdty'
+2024-10-26 00:12:55,073 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:55,168 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CL1 Comdty_backtest.parquet'
+2024-10-26 00:12:55,169 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,170 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CL1 Comdty'
+2024-10-26 00:12:55,302 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CL1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:55,304 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,304 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CL1 Comdty'
+2024-10-26 00:12:55,305 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'UX2 Index'
+2024-10-26 00:12:55,320 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:55,372 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'UX2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/UX2 Index_backtest.parquet'
+2024-10-26 00:12:55,373 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,373 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'UX2 Index'
+2024-10-26 00:12:55,427 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'UX2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/UX2 Index_backtest_trades.parquet'
+2024-10-26 00:12:55,429 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,429 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'UX2 Index'
+2024-10-26 00:12:55,430 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'FVS2 Index'
+2024-10-26 00:12:55,442 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:55,486 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FVS2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/FVS2 Index_backtest.parquet'
+2024-10-26 00:12:55,487 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,488 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FVS2 Index'
+2024-10-26 00:12:55,534 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'FVS2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/FVS2 Index_backtest_trades.parquet'
+2024-10-26 00:12:55,535 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,535 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'FVS2 Index'
+2024-10-26 00:12:55,536 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'TP1 Index'
+2024-10-26 00:12:55,560 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:55,639 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/TP1 Index_backtest.parquet'
+2024-10-26 00:12:55,640 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,641 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TP1 Index'
+2024-10-26 00:12:55,775 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'TP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/TP1 Index_backtest_trades.parquet'
+2024-10-26 00:12:55,776 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,776 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'TP1 Index'
+2024-10-26 00:12:55,777 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'NK1 Index'
+2024-10-26 00:12:55,803 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:55,885 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NK1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/NK1 Index_backtest.parquet'
+2024-10-26 00:12:55,886 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:55,886 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NK1 Index'
+2024-10-26 00:12:56,029 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'NK1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/NK1 Index_backtest_trades.parquet'
+2024-10-26 00:12:56,030 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,031 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'NK1 Index'
+2024-10-26 00:12:56,032 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XP1 Index'
+2024-10-26 00:12:56,050 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:56,112 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XP1 Index_backtest.parquet'
+2024-10-26 00:12:56,113 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,113 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XP1 Index'
+2024-10-26 00:12:56,185 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XP1 Index_backtest_trades.parquet'
+2024-10-26 00:12:56,186 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,187 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XP1 Index'
+2024-10-26 00:12:56,188 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'JB1 Comdty'
+2024-10-26 00:12:56,215 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:56,307 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/JB1 Comdty_backtest.parquet'
+2024-10-26 00:12:56,308 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,309 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-26 00:12:56,448 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/JB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:56,449 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,450 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-26 00:12:56,451 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'PL1 Comdty'
+2024-10-26 00:12:56,478 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:56,566 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/PL1 Comdty_backtest.parquet'
+2024-10-26 00:12:56,567 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,568 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PL1 Comdty'
+2024-10-26 00:12:56,685 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/PL1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:56,686 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,686 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PL1 Comdty'
+2024-10-26 00:12:56,687 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SI1 Comdty'
+2024-10-26 00:12:56,712 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:56,797 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SI1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SI1 Comdty_backtest.parquet'
+2024-10-26 00:12:56,798 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,799 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SI1 Comdty'
+2024-10-26 00:12:56,903 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SI1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SI1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:56,904 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:56,904 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SI1 Comdty'
+2024-10-26 00:12:56,906 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'GC1 Comdty'
+2024-10-26 00:12:56,937 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,035 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'GC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/GC1 Comdty_backtest.parquet'
+2024-10-26 00:12:57,037 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,037 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'GC1 Comdty'
+2024-10-26 00:12:57,165 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'GC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/GC1 Comdty_backtest_trades.parquet'
+2024-10-26 00:12:57,166 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,167 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'GC1 Comdty'
+2024-10-26 00:12:57,168 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'A11 Curncy'
+2024-10-26 00:12:57,182 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,235 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'A11 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/A11 Curncy_backtest.parquet'
+2024-10-26 00:12:57,236 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,237 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'A11 Curncy'
+2024-10-26 00:12:57,303 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'A11 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/A11 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,304 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,304 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'A11 Curncy'
+2024-10-26 00:12:57,305 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'HR1 Curncy'
+2024-10-26 00:12:57,321 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,376 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/HR1 Curncy_backtest.parquet'
+2024-10-26 00:12:57,377 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,377 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HR1 Curncy'
+2024-10-26 00:12:57,434 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'HR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/HR1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,435 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,435 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'HR1 Curncy'
+2024-10-26 00:12:57,436 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'PE1 Curncy'
+2024-10-26 00:12:57,487 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,557 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/PE1 Curncy_backtest.parquet'
+2024-10-26 00:12:57,559 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,559 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PE1 Curncy'
+2024-10-26 00:12:57,641 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/PE1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,642 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,642 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PE1 Curncy'
+2024-10-26 00:12:57,643 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'RA1 Curncy'
+2024-10-26 00:12:57,662 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,726 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RA1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/RA1 Curncy_backtest.parquet'
+2024-10-26 00:12:57,727 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,727 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RA1 Curncy'
+2024-10-26 00:12:57,781 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RA1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/RA1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,782 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,782 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RA1 Curncy'
+2024-10-26 00:12:57,783 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XID1 Curncy'
+2024-10-26 00:12:57,792 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,829 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XID1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XID1 Curncy_backtest.parquet'
+2024-10-26 00:12:57,830 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,830 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XID1 Curncy'
+2024-10-26 00:12:57,871 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XID1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XID1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,873 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,873 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XID1 Curncy'
+2024-10-26 00:12:57,874 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'PLE1 Curncy'
+2024-10-26 00:12:57,881 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:57,918 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PLE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/PLE1 Curncy_backtest.parquet'
+2024-10-26 00:12:57,919 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,919 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PLE1 Curncy'
+2024-10-26 00:12:57,964 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'PLE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/PLE1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:57,965 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:57,966 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'PLE1 Curncy'
+2024-10-26 00:12:57,966 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'EZ1 Curncy'
+2024-10-26 00:12:57,982 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,035 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'EZ1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/EZ1 Curncy_backtest.parquet'
+2024-10-26 00:12:58,036 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,037 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'EZ1 Curncy'
+2024-10-26 00:12:58,077 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'EZ1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/EZ1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:58,078 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,079 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'EZ1 Curncy'
+2024-10-26 00:12:58,079 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XUC1 Curncy'
+2024-10-26 00:12:58,088 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,123 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XUC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XUC1 Curncy_backtest.parquet'
+2024-10-26 00:12:58,124 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,124 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XUC1 Curncy'
+2024-10-26 00:12:58,160 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XUC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XUC1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:58,161 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,161 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XUC1 Curncy'
+2024-10-26 00:12:58,162 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'XTD1 Curncy'
+2024-10-26 00:12:58,170 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,201 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XTD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/XTD1 Curncy_backtest.parquet'
+2024-10-26 00:12:58,202 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,203 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XTD1 Curncy'
+2024-10-26 00:12:58,228 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'XTD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/XTD1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:58,229 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,229 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'XTD1 Curncy'
+2024-10-26 00:12:58,230 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'KO1 Curncy'
+2024-10-26 00:12:58,243 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,290 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/KO1 Curncy_backtest.parquet'
+2024-10-26 00:12:58,291 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,292 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KO1 Curncy'
+2024-10-26 00:12:58,339 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'KO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/KO1 Curncy_backtest_trades.parquet'
+2024-10-26 00:12:58,340 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,340 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'KO1 Curncy'
+2024-10-26 00:12:58,341 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'ST1 Index'
+2024-10-26 00:12:58,356 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,443 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/ST1 Index_backtest.parquet'
+2024-10-26 00:12:58,444 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,445 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-26 00:12:58,514 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/ST1 Index_backtest_trades.parquet'
+2024-10-26 00:12:58,515 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,515 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-26 00:12:58,516 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'VG1 Index'
+2024-10-26 00:12:58,536 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,601 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/VG1 Index_backtest.parquet'
+2024-10-26 00:12:58,602 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,602 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-26 00:12:58,677 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/VG1 Index_backtest_trades.parquet'
+2024-10-26 00:12:58,678 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,678 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-26 00:12:58,679 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CF1 Index'
+2024-10-26 00:12:58,705 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:58,789 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CF1 Index_backtest.parquet'
+2024-10-26 00:12:58,791 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,791 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-26 00:12:58,902 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CF1 Index_backtest_trades.parquet'
+2024-10-26 00:12:58,903 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:58,904 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-26 00:12:58,905 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'GX1 Index'
+2024-10-26 00:12:58,929 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:59,017 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/GX1 Index_backtest.parquet'
+2024-10-26 00:12:59,018 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,018 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-26 00:12:59,155 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/GX1 Index_backtest_trades.parquet'
+2024-10-26 00:12:59,156 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,156 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-26 00:12:59,157 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'CA1 Index'
+2024-10-26 00:12:59,175 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:59,239 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/CA1 Index_backtest.parquet'
+2024-10-26 00:12:59,240 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,241 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-26 00:12:59,323 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/CA1 Index_backtest_trades.parquet'
+2024-10-26 00:12:59,324 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,325 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-26 00:12:59,325 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'QC1 Index'
+2024-10-26 00:12:59,340 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:59,396 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/QC1 Index_backtest.parquet'
+2024-10-26 00:12:59,397 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,398 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-26 00:12:59,474 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/QC1 Index_backtest_trades.parquet'
+2024-10-26 00:12:59,475 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,475 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-26 00:12:59,476 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'SM1 Index'
+2024-10-26 00:12:59,498 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:59,570 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/SM1 Index_backtest.parquet'
+2024-10-26 00:12:59,572 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,572 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-26 00:12:59,667 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/SM1 Index_backtest_trades.parquet'
+2024-10-26 00:12:59,668 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,669 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-26 00:12:59,670 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'IB1 Index'
+2024-10-26 00:12:59,693 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:12:59,773 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/IB1 Index_backtest.parquet'
+2024-10-26 00:12:59,775 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,775 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-26 00:12:59,888 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/IB1 Index_backtest_trades.parquet'
+2024-10-26 00:12:59,889 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:12:59,889 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-26 00:12:59,890 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'Z 1 Index'
+2024-10-26 00:12:59,918 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,000 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/Z 1 Index_backtest.parquet'
+2024-10-26 00:13:00,001 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,002 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-26 00:13:00,103 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/Z 1 Index_backtest_trades.parquet'
+2024-10-26 00:13:00,104 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,104 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-26 00:13:00,105 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'UB1 Comdty'
+2024-10-26 00:13:00,124 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,188 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/UB1 Comdty_backtest.parquet'
+2024-10-26 00:13:00,189 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,189 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-26 00:13:00,290 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/UB1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:00,291 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,291 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-26 00:13:00,292 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'OE1 Comdty'
+2024-10-26 00:13:00,316 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,399 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/OE1 Comdty_backtest.parquet'
+2024-10-26 00:13:00,400 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,400 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-26 00:13:00,517 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/OE1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:00,518 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,518 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-26 00:13:00,520 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'G 1 Comdty'
+2024-10-26 00:13:00,550 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,649 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/G 1 Comdty_backtest.parquet'
+2024-10-26 00:13:00,650 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,651 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-26 00:13:00,785 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/G 1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:00,786 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,786 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-26 00:13:00,787 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'BTS1 Comdty'
+2024-10-26 00:13:00,798 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,841 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/BTS1 Comdty_backtest.parquet'
+2024-10-26 00:13:00,842 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,843 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-26 00:13:00,890 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/BTS1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:00,892 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,892 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-26 00:13:00,893 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'IK1 Comdty'
+2024-10-26 00:13:00,904 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:00,949 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/IK1 Comdty_backtest.parquet'
+2024-10-26 00:13:00,950 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:00,951 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-26 00:13:01,000 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/IK1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:01,001 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,002 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-26 00:13:01,002 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'DU1 Comdty'
+2024-10-26 00:13:01,023 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:01,094 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/DU1 Comdty_backtest.parquet'
+2024-10-26 00:13:01,095 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,095 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-26 00:13:01,223 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/DU1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:01,225 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,225 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-26 00:13:01,226 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'RX1 Comdty'
+2024-10-26 00:13:01,251 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:01,336 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/RX1 Comdty_backtest.parquet'
+2024-10-26 00:13:01,338 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,338 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-26 00:13:01,459 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/RX1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:01,460 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,461 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-26 00:13:01,462 - TradingRule_sbo_long_e7f950 - INFO - Backtesting asset 'OAT1 Comdty'
+2024-10-26 00:13:01,471 - TradingRule_sbo_long_e7f950 - INFO - Single volatility: lb_fast=30
+2024-10-26 00:13:01,544 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results/OAT1 Comdty_backtest.parquet'
+2024-10-26 00:13:01,545 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,546 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-26 00:13:01,594 - TradingRule_sbo_long_e7f950 - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/backtest_results_detail/OAT1 Comdty_backtest_trades.parquet'
+2024-10-26 00:13:01,595 - TradingRule_sbo_long_e7f950 - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/sbo_long_e7f950_e7b522_SBO_l/README.txt
+2024-10-26 00:13:01,596 - TradingRule_sbo_long_e7f950 - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-26 00:13:01,596 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:13:02,332 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
+2024-10-26 00:13:02,425 - TradingRule_sbo_long_e7f950 - INFO - Performance pnl calculation complete.
+2024-10-26 00:13:52,261 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:13:52,605 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
+2024-10-26 00:23:06,874 - TradingRule_sbo_long_e7f950 - INFO - Initialized TradingRule for function 'sbo_long' with params hash 'e7f950'
+2024-10-26 00:23:06,876 - TradingRule_sbo_long_e7f950 - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-26 00:23:06,892 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:23:07,758 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
+2024-10-26 00:23:07,852 - TradingRule_sbo_long_e7f950 - INFO - Performance pnl calculation complete.
+2024-10-26 00:23:17,213 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:23:17,546 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
+2024-10-26 00:23:25,687 - TradingRule_sbo_long_e7f950 - INFO - Initialized TradingRule for function 'sbo_long' with params hash 'e7f950'
+2024-10-26 00:23:25,725 - TradingRule_sbo_long_e7f950 - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-26 00:23:26,595 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:23:27,421 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
+2024-10-26 00:23:27,521 - TradingRule_sbo_long_e7f950 - INFO - Performance pnl calculation complete.
+2024-10-26 00:23:37,024 - TradingRule_sbo_long_e7f950 - INFO - Loading backtest results from saved parquet files.
+2024-10-26 00:23:37,363 - TradingRule_sbo_long_e7f950 - INFO - Generated cumulative PnL DataFrame by asset class.
