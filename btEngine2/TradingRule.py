@@ -1488,11 +1488,14 @@ class TradingRule:
                 for ac in filter_ac:
                     assets_in_ac = asset_classes.get(ac, [])
                     filter_assets.extend(assets_in_ac)
-            pnl_df = self.cum_pnl_byac(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byac(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
         elif byassets:
-            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
         else:
-            pnl_df = self.cum_pnl_byassets(diffs=True, filter_assets=filter_assets)
+            pnl_df = self.cum_pnl_byassets(diffs=False, filter_assets=filter_assets)
+            pnl_df = pnl_df.diff()
             pnl_df = pnl_df[['Total']]
 
         if pnl_df.empty:
@@ -1504,6 +1507,10 @@ class TradingRule:
             pnl_df = pnl_df[pnl_df.index >= start_date_parsed]
         if end_date_parsed:
             pnl_df = pnl_df[pnl_df.index <= end_date_parsed]
+
+        first_valid_index = pnl_df['Total'].ne(0).idxmax()
+        pnl_df = pnl_df.loc[first_valid_index:]
+
 
         if pnl_df.empty:
             self.logger.error("No data available after applying date filters.")
