@@ -63,7 +63,7 @@ def sbo_long(
             if df_list[i]['Buy_Threshold'] is not None and df_list[i]['Close'] > df_list[i]['Buy_Threshold']:
                 try:
                     df_list[i + 1]['Signal'] = 1  # Buy signal
-                    df_list[i + 1]['TradeEntry'] = df_list[i + 1]['Open']  # Record the entry price
+                    df_list[i + 1]['TradeEntry'] = df_list[i + 1]['Close']  # Record the entry price
                     position_open = True
                     entry_index = i + 1
                     df_list[i + 1]['InTrade'] = 1  # Mark as in trade
@@ -260,3 +260,160 @@ def sbo_long_pb(
     ])
     
     return df
+
+
+import pandas as pd
+import numpy as np
+
+def bo_rsi_long(
+    df: pd.DataFrame,
+    rsi_param: tuple,
+    N: int,
+    trend_filter: tuple = None,
+    exit_trend_rule: tuple = None
+) -> pd.DataFrame:
+    """
+    Optimized RSI-based breakout strategy with optional trend filters and exit rules.
+    
+    Parameters:
+    - df: DataFrame containing 'Date', 'Open', 'High', 'Close' columns.
+    - rsi_param: Tuple (rsi_period, rsi_threshold).
+    - N: Number of days to hold the trade.
+    - trend_filter: Tuple (moving_avg_period, moving_avg_type) or None.
+    - exit_trend_rule: Tuple (moving_avg_period, moving_avg_type) or None.
+    
+    Returns:
+    - df: DataFrame with 'Signal', 'TradeEntry', 'TradeExit', 'InTrade' columns added.
+    """
+
+    # Convert DataFrame to Pandas if necessary
+    if isinstance(df, pl.DataFrame):
+        df = df.to_pandas()
+
+    df['Date'] = pd.to_datetime(df['Date'])
+    df.sort_values('Date', inplace=True)
+    df.reset_index(drop=True, inplace=True)
+
+    # Initialize columns
+    df['Signal'] = 0
+    df['TradeEntry'] = np.nan
+    df['TradeExit'] = np.nan
+    df['InTrade'] = 0
+
+    # Convert DataFrame columns to numpy arrays for faster access
+    close = df['Close'].values
+    open_prices = df['Open'].values
+    high = df['High'].values
+
+    # Calculate RSI
+    rsi_period, rsi_threshold = rsi_param
+    df['RSI'] = compute_rsi(df['Close'], rsi_period)
+    rsi = df['RSI'].values
+
+    # Apply trend filter if provided
+    if trend_filter is not None:
+        tf_period, tf_type = trend_filter
+        if tf_type.lower() == 'ema':
+            trend_ma = df['Close'].ewm(span=tf_period, adjust=False).mean().values
+        elif tf_type.lower() == 'sma':
+            trend_ma = df['Close'].rolling(window=tf_period).mean().values
+        else:
+            raise ValueError("Invalid moving average type for trend_filter. Use 'ema' or 'sma'.")
+        trend_filter_mask = close > trend_ma
+    else:
+        trend_filter_mask = np.ones(len(df), dtype=bool)  # Always True if no trend filter
+
+    # Apply exit trend rule if provided
+    if exit_trend_rule is not None:
+        etr_period, etr_type = exit_trend_rule
+        if etr_type.lower() == 'ema':
+            exit_ma = df['Close'].ewm(span=etr_period, adjust=False).mean().values
+        elif etr_type.lower() == 'sma':
+            exit_ma = df['Close'].rolling(window=etr_period).mean().values
+        else:
+            raise ValueError("Invalid moving average type for exit_trend_rule. Use 'ema' or 'sma'.")
+    else:
+        exit_ma = np.full(len(df), np.nan)  # Not used if no exit trend rule
+
+    # Identify potential entry points
+    entry_conditions = (rsi > rsi_threshold) & trend_filter_mask
+    entry_indices = np.where(entry_conditions)[0]
+
+    # Remove entries on the last day since we cannot enter on the next open
+    entry_indices = entry_indices[entry_indices < len(df) - 1]
+
+    # Initialize variables to store trade information
+    in_trade = np.zeros(len(df), dtype=bool)
+    signals = np.zeros(len(df))
+    trade_entries = np.full(len(df), np.nan)
+    trade_exits = np.full(len(df), np.nan)
+
+    i = 0
+    while i < len(entry_indices):
+        entry_idx = entry_indices[i] + 1  # Enter at next open
+        if in_trade[entry_idx]:
+            i += 1
+            continue  # Already in trade, skip
+        signals[entry_idx] = 1  # Entry signal
+        trade_entries[entry_idx] = open_prices[entry_idx]
+        trade_start = entry_idx
+
+        # Determine exit conditions
+        exit_idx = trade_start
+        exit_found = False
+        while exit_idx < len(df) - 1:
+            exit_idx += 1
+            days_in_trade = exit_idx - trade_start
+            exit_by_N_days = days_in_trade >= N
+            exit_by_high = close[exit_idx] > high[exit_idx - 1]
+
+            if exit_trend_rule is not None and not np.isnan(exit_ma[trade_start]):
+                exit_trend_in_effect = close[trade_start] >= exit_ma[trade_start]
+            else:
+                exit_trend_in_effect = False
+
+            if exit_trend_in_effect:
+                # Exit when price closes below the exit trend MA
+                if close[exit_idx] < exit_ma[exit_idx]:
+                    exit_found = True
+                    break
+            else:
+                # Normal exit rules
+                if exit_by_N_days or exit_by_high:
+                    exit_found = True
+                    break
+
+        if not exit_found:
+            exit_idx = len(df) - 1  # Exit at last available data
+
+        signals[exit_idx] = -1  # Exit signal
+        trade_exits[exit_idx] = close[exit_idx]
+
+        # Mark in_trade period
+        in_trade[trade_start:exit_idx + 1] = True
+
+        # Move to next potential entry after exit
+        i += 1
+        # Skip entries that occur during the current trade
+        while i < len(entry_indices) and entry_indices[i] <= exit_idx:
+            i += 1
+
+    # Assign computed values back to DataFrame
+    df['Signal'] = signals
+    df['TradeEntry'] = trade_entries
+    df['TradeExit'] = trade_exits
+    df['InTrade'] = in_trade.astype(int)
+
+    df = pl.DataFrame(df)
+
+    return df
+
+def compute_rsi(series: pd.Series, period: int) -> pd.Series:
+    delta = series.diff()
+    gain = np.where(delta > 0, delta, 0)
+    loss = np.where(delta < 0, -delta, 0)
+    avg_gain = pd.Series(gain).rolling(window=period).mean()
+    avg_loss = pd.Series(loss).rolling(window=period).mean()
+    rs = avg_gain / avg_loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi

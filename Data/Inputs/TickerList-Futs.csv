@@ -1,105 +1,99 @@
-curr,old,carry ctrct,carry old,folder,FullName,Descr
-LP1 Comdty,,LP2 Comdty,,comm-base,LME COPPER FUTURE Nov24,LME COPPER FUTURE
-LN1 Comdty,,LN2 Comdty,,comm-base,LME NICKEL FUTURE Nov24,LME NICKEL FUTURE
-HG1 Comdty,,HG2 Comdty,,comm-base,COPPER FUTURE     Dec24,COPPER FUTURE    
-LA1 Comdty,,LA2 Comdty,,comm-base,LME PRI ALUM FUTR Nov24,LME PRI ALUM FUTR
-SCO1 Comdty,,SCO2 Comdty,,comm-base,SGX Iron Ore 62%  Oct24,SGX Iron Ore 62% 
-NG1 Comdty,,NG2 Comdty,,comm-enrgy,NATURAL GAS FUTR  Nov24,NATURAL GAS FUTR 
-XB1 Comdty,,XB2 Comdty,,comm-enrgy,GASOLINE RBOB FUT Nov24,GASOLINE RBOB FUT
-CO1 Comdty,,CO2 Comdty,,comm-enrgy,BRENT CRUDE FUTR  Dec24,BRENT CRUDE FUTR 
-QS1 Comdty,,QS2 Comdty,,comm-enrgy,Low Su Gasoil G   Nov24,Low Su Gasoil G  
-TZT2 Comdty,,TZT2 Comdty,,comm-enrgy,TTF NAT GAS F     Dec24,TTF NAT GAS F    
-CL1 Comdty,,CL2 Comdty,,comm-enrgy,WTI CRUDE FUTURE  Dec24,WTI CRUDE FUTURE 
-MO1 Comdty,,MO2 Comdty,,comm-enrgy,ECX EMISSION      Dec24,ECX EMISSION     
-HO1 Comdty,,HO2 Comdty,,comm-enrgy,NY Harb ULSD Fut  Nov24,NY Harb ULSD Fut 
-GC1 Comdty,,GC2 Comdty,,comm-prec,GOLD 100 OZ FUTR  Dec24,GOLD 100 OZ FUTR 
-PL1 Comdty,,PL2 Comdty,,comm-prec,PLATINUM FUTURE   Jan25,PLATINUM FUTURE  
-SI1 Comdty,,SI2 Comdty,,comm-prec,SILVER FUTURE     Dec24,SILVER FUTURE    
-RS1 Comdty,,RS2 Comdty,,comm-soft,CANOLA FUTR (WCE) Nov24,CANOLA FUTR (WCE)
-CA1 Comdty,,CA2 Comdty,,comm-soft,MILL WHEAT EURO   Dec24,MILL WHEAT EURO  
-SB1 Comdty,,SB2 Comdty,,comm-soft,SUGAR #11 (WORLD) Mar25,SUGAR #11 (WORLD)
-RR1 Comdty,,RR2 Comdty,,comm-soft,ROUGH RICE (CBOT) Nov24,ROUGH RICE (CBOT)
-KC1 Comdty,,KC2 Comdty,,comm-soft,COFFEE 'C' FUTURE Dec24,COFFEE 'C' FUTURE
-BO1 Comdty,,BO2 Comdty,,comm-soft,SOYBEAN OIL FUTR  Dec24,SOYBEAN OIL FUTR 
-FC1 Comdty,,FC2 Comdty,,comm-soft,CATTLE FEEDER FUT Oct24,CATTLE FEEDER FUT
-C 1 Comdty,,C 2 Comdty,,comm-soft,CORN FUTURE       Dec24,CORN FUTURE      
-W 1 Comdty,,W 2 Comdty,,comm-soft,WHEAT FUTURE(CBT) Dec24,WHEAT FUTURE(CBT)
-SM1 Comdty,,SM2 Comdty,,comm-soft,SOYBEAN MEAL FUTR Dec24,SOYBEAN MEAL FUTR
-YW1 Comdty,,YW2 Comdty,,comm-soft,YELLOW MAIZE-SAF  Dec24,YELLOW MAIZE-SAF 
-S 1 Comdty,,S 2 Comdty,,comm-soft,SOYBEAN FUTURE    Nov24,SOYBEAN FUTURE   
-RS1 Comdty,,RS2 Comdty,,comm-soft,CANOLA FUTR (WCE) Nov24,CANOLA FUTR (WCE)
-QC1 Comdty,,QC2 Comdty,,comm-soft,COCOA FUTURE - IC Dec24,COCOA FUTURE - IC
-QW1 Comdty,,QW2 Comdty,,comm-soft,WHITE SUGAR (ICE) Dec24,WHITE SUGAR (ICE)
-BTC1 Curncy,,BTC2 Curncy,,crypto,CME Bitcoin Fut   Oct24,CME Bitcoin Fut  
-DCR1 Curncy,,DCR2 Curncy,,crypto,CME Ether Future  Oct24,CME Ether Future 
-XP1 Index,,XP2 Index,,eq-as,SPI 200 FUTURES   Dec24,SPI 200 FUTURES  
-NK1 Index,,NK2 Index,,eq-as,NIKKEI 225  (OSE) Dec24,NIKKEI 225  (OSE)
-TP1 Index,,TP2 Index,,eq-as,TOPIX INDX FUTR   Dec24,TOPIX INDX FUTR  
-ASD3 Index,,ASD2 Index,,eq-divf,S&P 500 Annl Div  Dec26,S&P 500 Annl Div 
-DBE3 Index,,DBE2 Index,,eq-divf,EuroSTOXX BanksDi Dec26,EuroSTOXX BanksDi
-DED3 Index,,DED2 Index,,eq-divf,SX5E Dividend Fut Dec26,SX5E Dividend Fut
-MND3 Index,,MND2 Index,,eq-divf,NIKKEI DIVIDEND   Dec26,NIKKEI DIVIDEND  
-XU1 Index,,XU2 Index,,eq-em,FTSE CHINA A50    Oct24,FTSE CHINA A50   
-ZVL1 Index,,ZVL2 Index,,eq-em,MSCI India        Dec24,MSCI India
-QZ1 Index,,QZ2 Index,,eq-em,MSCI SING IX ETS  Oct24,MSCI SING IX ETS
-HC1 Index,,HC2 Index,,eq-em,HSCEI Futures     Oct24,HSCEI Futures    
-KM1 Index,,KM2 Index,,eq-em,KOSPI2 INX FUT    Dec24,KOSPI2 INX FUT   
-XB1 Index,,XB2 Index,,eq-em,MINI BOVESPA FUT  Dec24,MINI BOVESPA FUT 
-MES1 Index,,MES2 Index,,eq-em,MSCI EmgMkt       Dec24,MSCI EmgMkt      
-XB1 Index,,XB2 Index,,eq-em,MINI BOVESPA FUT  Dec24,MINI BOVESPA FUT 
-VG1 Index,,VG2 Index,,eq-eu,EURO STOXX 50     Dec24,EURO STOXX 50    
-CA1 Index,,CA2 Index,,eq-eu,EURO STOXX BANK   Dec24,EURO STOXX BANK  
-GX1 Index,,GX2 Index,,eq-eu,DAX INDEX FUTURE  Dec24,DAX INDEX FUTURE 
-CF1 Index,,CF2 Index,,eq-eu,CAC40 10 EURO FUT Nov24,CAC40 10 EURO FUT
-IB1 Index,,IB2 Index,,eq-eu,IBEX 35 INDX FUTR Nov24,IBEX 35 INDX FUTR
-ST1 Index,,ST2 Index,,eq-eu,FTSE/MIB IDX FUT  Dec24,FTSE/MIB IDX FUT
-QC1 Index,,QC2 Index,,eq-eu,OMXS30 IND FUTURE Nov24,OMXS30 IND FUTURE
-SM1 Index,,SM2 Index,,eq-eu,SWISS MKT IX FUTR Dec24,SWISS MKT IX FUTR
-Z 1 Index,,Z 2 Index,,eq-eu,FTSE 100 IDX FUT  Dec24,FTSE 100 IDX FUT 
-NQ1 Index,,NQ2 Index,,eq-us,NASDAQ 100 E-MINI Dec24,NASDAQ 100 E-MINI
-ES1 Index,,ES2 Index,,eq-us,S&P500 EMINI FUT  Dec24,S&P500 EMINI FUT 
-DM1 Index,,DM2 Index,,eq-us,DJIA MINI e-CBOT  Dec24,DJIA MINI e-CBOT 
-RTY1 Index,,RTY2 Index,,eq-us,E-Mini Russ 2000  Dec24,E-Mini Russ 2000 
-UX2 Index,,UX1 Index,,eq-vol,CBOE VIX FUTURE   Dec24,CBOE VIX FUTURE  
-FVS2 Index,,FVS1 Index,,eq-vol,VSTOXX Future     Dec24,VSTOXX Future    
-JB1 Comdty,,JB2 Comdty,,fi-as,JPN 10Y BOND(OSE) Dec24,JPN 10Y BOND(OSE)
-IK1 Comdty,,IK2 Comdty,,fi-eu,Euro-BTP Future   Dec24,Euro-BTP Future  
-BTS1 Comdty,,BTS2 Comdty,,fi-eu,Short Euro-BTP Fu Dec24,Short Euro-BTP Fu
-G 1 Comdty,,G 2 Comdty,,fi-eu,LONG GILT FUTURE  Dec24,LONG GILT FUTURE 
-OAT1 Comdty,,OAT2 Comdty,,fi-eu,Euro-OAT Future   Dec24,Euro-OAT Future  
-UB1 Comdty,,UB2 Comdty,,fi-eu,EURO-BUXL 30Y BND Dec24,EURO-BUXL 30Y BND
-RX1 Comdty,,RX2 Comdty,,fi-eu,EURO-BUND FUTURE  Dec24,EURO-BUND FUTURE 
-OE1 Comdty,,OE2 Comdty,,fi-eu,EURO-BOBL FUTURE  Dec24,EURO-BOBL FUTURE 
-DU1 Comdty,,DU2 Comdty,,fi-eu,EURO-SCHATZ FUT   Dec24,EURO-SCHATZ FUT  
-CN1 Comdty,,CN2 Comdty,,fi-us,CAN 10YR BOND FUT Dec24,CAN 10YR BOND FUT
-US1 Comdty,,US2 Comdty,,fi-us,US LONG BOND(CBT) Dec24,US LONG BOND(CBT)
-WN1 Comdty,,WN2 Comdty,,fi-us,US ULTRA BOND CBT Dec24,US ULTRA BOND CBT
-TY1 Comdty,,TY2 Comdty,,fi-us,US 10YR NOTE (CBT)Dec24,US 10YR NOTE
-FV1 Comdty,,FV2 Comdty,,fi-us,US 5YR NOTE (CBT) Dec24,US 5YR NOTE (CBT)
-TU1 Comdty,,TU2 Comdty,,fi-us,US 2YR NOTE (CBT) Dec24,US 2YR NOTE (CBT)
-AD1 Curncy,,AD2 Curncy,,fx-dm,AUDUSD Crncy Fut  Dec24,AUDUSD Crncy Fut 
-DX1 Curncy,,DX2 Curncy,,fx-dm,DOLLAR INDEX      Dec24,DOLLAR INDEX     
-JY1 Curncy,,JY2 Curncy,,fx-dm,JPN YEN CURR FUT  Dec24,JPN YEN CURR FUT 
-BP1 Curncy,,BP2 Curncy,,fx-dm,BP CURRENCY FUT   Dec24,BP CURRENCY FUT  
-EC1 Curncy,,EC2 Curncy,,fx-dm,EURO FX CURR FUT  Dec24,EURO FX CURR FUT 
-CD1 Curncy,,CD2 Curncy,,fx-dm,C$ CURRENCY FUT   Dec24,C$ CURRENCY FUT  
-SF1 Curncy,,SF2 Curncy,,fx-dm,CHF CURRENCY FUT  Dec24,CHF CURRENCY FUT 
-NO1 Curncy,,NO2 Curncy,,fx-dm,NORWEGIAN KRONE   Dec24,NORWEGIAN KRONE  
-SE1 Curncy,,SE2 Curncy,,fx-dm,SWEDISH KRONA FUT Dec24,SWEDISH KRONA FUT
-SDE1 Curncy,,SDE2 Curncy,,fx-dm,Mini USD/SGD Fut  Nov24,Mini USD/SGD Fut 
-NV1 Curncy,,NV2 Curncy,,fx-dm,NEW ZEALAND $ FUT Dec24,NEW ZEALAND $ FUT
-XUC1 Curncy,,XUC2 Curncy,,fx-em,USD/CNH           Nov24,USD/CNH          
-PE1 Curncy,,PE2 Curncy,,fx-em,MEXICAN PESO FUT  Dec24,MEXICAN PESO FUT 
-XID1 Curncy,,XID2 Curncy,,fx-em,INR/USD           Oct24,INR/USD          
-XTD1 Curncy,,XTD2 Curncy,,fx-em,SGX TWD/USD MINI  Nov24,SGX TWD/USD MINI 
-RA1 Curncy,,RA2 Curncy,,fx-em,SA RAND CURR(CME) Nov24,SA RAND CURR(CME)
-KO1 Curncy,,KO2 Curncy,,fx-em,KOREAN WON FUT    Nov24,KOREAN WON FUT   
-HR1 Curncy,,HR2 Curncy,,fx-em,EURO/HUF X-RT FUT Dec24,EURO/HUF X-RT FUT
-A11 Curncy,,A12 Curncy,,fx-em,TRY DOLLAR FUTURE Oct24,TRY DOLLAR FUTURE
-PLE1 Curncy,,PLE2 Curncy,,fx-em,PLN/EUR Future    Dec24,PLN/EUR Future   
-EZ1 Curncy,,EZ2 Curncy,,fx-em,EURO/CZK X-RT FUT Dec24,EURO/CZK X-RT FUT
-SSY4 Comdty,,SSY3 Comdty,,stir,Three-Month SARON Jun25,Three-Month SARON
-SFI6 Comdty,L 6 Comdty,SFI4 Comdty,L 4 Comdty,stir,ICE 3MTH SONIA FU Dec25,ICE 3MTH SONIA FU
-ER6 Comdty,,ER4 Comdty,,stir,3MO EURO EURIBOR  Mar26,3MO EURO EURIBOR 
-IR6 Comdty,,IR4 Comdty,,stir,90-DAY BANK BILL  Mar26,90-DAY BANK BILL 
-SFR8 Comdty,ED8 Comdty,SFR6 Comdty,ED6 Comdty,stir,3 MONTH SOFR FUT  Jun26,3 MONTH SOFR FUT 
+curr,old,carry ctrct,carry old,folder,FullName,Descr,FirstDate
+HG1 Comdty,,HG2 Comdty,,comm-base,COPPER FUTURE     Dec24,COPPER FUTURE    ,
+SCO1 Comdty,,SCO2 Comdty,,comm-base,SGX Iron Ore 62%  Oct24,SGX Iron Ore 62% ,
+NG1 Comdty,,NG2 Comdty,,comm-enrgy,NATURAL GAS FUTR  Nov24,NATURAL GAS FUTR ,
+XB1 Comdty,,XB2 Comdty,,comm-enrgy,GASOLINE RBOB FUT Nov24,GASOLINE RBOB FUT,
+CO1 Comdty,,CO2 Comdty,,comm-enrgy,BRENT CRUDE FUTR  Dec24,BRENT CRUDE FUTR ,
+QS1 Comdty,,QS2 Comdty,,comm-enrgy,Low Su Gasoil G   Nov24,Low Su Gasoil G  ,
+TZT2 Comdty,,TZT2 Comdty,,comm-enrgy,TTF NAT GAS F     Dec24,TTF NAT GAS F    ,
+CL1 Comdty,,CL2 Comdty,,comm-enrgy,WTI CRUDE FUTURE  Dec24,WTI CRUDE FUTURE ,
+MO1 Comdty,,MO2 Comdty,,comm-enrgy,ECX EMISSION      Dec24,ECX EMISSION     ,
+HO1 Comdty,,HO2 Comdty,,comm-enrgy,NY Harb ULSD Fut  Nov24,NY Harb ULSD Fut ,
+GC1 Comdty,,GC2 Comdty,,comm-prec,GOLD 100 OZ FUTR  Dec24,GOLD 100 OZ FUTR ,
+PL1 Comdty,,PL2 Comdty,,comm-prec,PLATINUM FUTURE   Jan25,PLATINUM FUTURE  ,
+SI1 Comdty,,SI2 Comdty,,comm-prec,SILVER FUTURE     Dec24,SILVER FUTURE    ,19870101
+RS1 Comdty,,RS2 Comdty,,comm-soft,CANOLA FUTR (WCE) Nov24,CANOLA FUTR (WCE),
+CA1 Comdty,,CA2 Comdty,,comm-soft,MILL WHEAT EURO   Dec24,MILL WHEAT EURO  ,
+SB1 Comdty,,SB2 Comdty,,comm-soft,SUGAR #11 (WORLD) Mar25,SUGAR #11 (WORLD),
+RR1 Comdty,,RR2 Comdty,,comm-soft,ROUGH RICE (CBOT) Nov24,ROUGH RICE (CBOT),
+KC1 Comdty,,KC2 Comdty,,comm-soft,COFFEE 'C' FUTURE Dec24,COFFEE 'C' FUTURE,
+BO1 Comdty,,BO2 Comdty,,comm-soft,SOYBEAN OIL FUTR  Dec24,SOYBEAN OIL FUTR ,
+FC1 Comdty,,FC2 Comdty,,comm-soft,CATTLE FEEDER FUT Oct24,CATTLE FEEDER FUT,
+C 1 Comdty,,C 2 Comdty,,comm-soft,CORN FUTURE       Dec24,CORN FUTURE      ,
+W 1 Comdty,,W 2 Comdty,,comm-soft,WHEAT FUTURE(CBT) Dec24,WHEAT FUTURE(CBT),
+SM1 Comdty,,SM2 Comdty,,comm-soft,SOYBEAN MEAL FUTR Dec24,SOYBEAN MEAL FUTR,
+YW1 Comdty,,YW2 Comdty,,comm-soft,YELLOW MAIZE-SAF  Dec24,YELLOW MAIZE-SAF ,
+S 1 Comdty,,S 2 Comdty,,comm-soft,SOYBEAN FUTURE    Nov24,SOYBEAN FUTURE   ,
+RS1 Comdty,,RS2 Comdty,,comm-soft,CANOLA FUTR (WCE) Nov24,CANOLA FUTR (WCE),
+QC1 Comdty,,QC2 Comdty,,comm-soft,COCOA FUTURE - IC Dec24,COCOA FUTURE - IC,
+QW1 Comdty,,QW2 Comdty,,comm-soft,WHITE SUGAR (ICE) Dec24,WHITE SUGAR (ICE),
+BTC1 Curncy,,BTC2 Curncy,,crypto,CME Bitcoin Fut   Oct24,CME Bitcoin Fut  ,
+DCR1 Curncy,,DCR2 Curncy,,crypto,CME Ether Future  Oct24,CME Ether Future ,
+XP1 Index,,XP2 Index,,eq-as,SPI 200 FUTURES   Dec24,SPI 200 FUTURES  ,
+NK1 Index,,NK2 Index,,eq-as,NIKKEI 225  (OSE) Dec24,NIKKEI 225  (OSE),
+TP1 Index,,TP2 Index,,eq-as,TOPIX INDX FUTR   Dec24,TOPIX INDX FUTR  ,
+ASD3 Index,,ASD2 Index,,eq-divf,S&P 500 Annl Div  Dec26,S&P 500 Annl Div ,20160101
+DBE3 Index,,DBE2 Index,,eq-divf,EuroSTOXX BanksDi Dec26,EuroSTOXX BanksDi,20190101
+DED3 Index,,DED2 Index,,eq-divf,SX5E Dividend Fut Dec26,SX5E Dividend Fut,
+XU1 Index,,XU2 Index,,eq-em,FTSE CHINA A50    Oct24,FTSE CHINA A50   ,
+ZVL1 Index,,ZVL2 Index,,eq-em,MSCI India        Dec24,MSCI India,
+QZ1 Index,,QZ2 Index,,eq-em,MSCI SING IX ETS  Oct24,MSCI SING IX ETS,
+HC1 Index,,HC2 Index,,eq-em,HSCEI Futures     Oct24,HSCEI Futures    ,
+KM1 Index,,KM2 Index,,eq-em,KOSPI2 INX FUT    Dec24,KOSPI2 INX FUT   ,
+XB1 Index,,XB2 Index,,eq-em,MINI BOVESPA FUT  Dec24,MINI BOVESPA FUT ,
+MES1 Index,,MES2 Index,,eq-em,MSCI EmgMkt       Dec24,MSCI EmgMkt      ,
+XB1 Index,,XB2 Index,,eq-em,MINI BOVESPA FUT  Dec24,MINI BOVESPA FUT ,
+VG1 Index,,VG2 Index,,eq-eu,EURO STOXX 50     Dec24,EURO STOXX 50    ,
+CA1 Index,,CA2 Index,,eq-eu,EURO STOXX BANK   Dec24,EURO STOXX BANK  ,
+GX1 Index,,GX2 Index,,eq-eu,DAX INDEX FUTURE  Dec24,DAX INDEX FUTURE ,
+CF1 Index,,CF2 Index,,eq-eu,CAC40 10 EURO FUT Nov24,CAC40 10 EURO FUT,
+IB1 Index,,IB2 Index,,eq-eu,IBEX 35 INDX FUTR Nov24,IBEX 35 INDX FUTR,
+ST1 Index,,ST2 Index,,eq-eu,FTSE/MIB IDX FUT  Dec24,FTSE/MIB IDX FUT,
+QC1 Index,,QC2 Index,,eq-eu,OMXS30 IND FUTURE Nov24,OMXS30 IND FUTURE,
+SM1 Index,,SM2 Index,,eq-eu,SWISS MKT IX FUTR Dec24,SWISS MKT IX FUTR,19980101
+Z 1 Index,,Z 2 Index,,eq-eu,FTSE 100 IDX FUT  Dec24,FTSE 100 IDX FUT ,
+NQ1 Index,,NQ2 Index,,eq-us,NASDAQ 100 E-MINI Dec24,NASDAQ 100 E-MINI,
+ES1 Index,,ES2 Index,,eq-us,S&P500 EMINI FUT  Dec24,S&P500 EMINI FUT ,
+DM1 Index,,DM2 Index,,eq-us,DJIA MINI e-CBOT  Dec24,DJIA MINI e-CBOT ,
+RTY1 Index,,RTY2 Index,,eq-us,E-Mini Russ 2000  Dec24,E-Mini Russ 2000 ,
+UX2 Index,,UX1 Index,,eq-vol,CBOE VIX FUTURE   Dec24,CBOE VIX FUTURE  ,
+FVS2 Index,,FVS1 Index,,eq-vol,VSTOXX Future     Dec24,VSTOXX Future    ,
+JB1 Comdty,,JB2 Comdty,,fi-as,JPN 10Y BOND(OSE) Dec24,JPN 10Y BOND(OSE),
+IK1 Comdty,,IK2 Comdty,,fi-eu,Euro-BTP Future   Dec24,Euro-BTP Future  ,
+BTS1 Comdty,,BTS2 Comdty,,fi-eu,Short Euro-BTP Fu Dec24,Short Euro-BTP Fu,
+G 1 Comdty,,G 2 Comdty,,fi-eu,LONG GILT FUTURE  Dec24,LONG GILT FUTURE ,
+OAT1 Comdty,,OAT2 Comdty,,fi-eu,Euro-OAT Future   Dec24,Euro-OAT Future  ,
+UB1 Comdty,,UB2 Comdty,,fi-eu,EURO-BUXL 30Y BND Dec24,EURO-BUXL 30Y BND,20060101
+RX1 Comdty,,RX2 Comdty,,fi-eu,EURO-BUND FUTURE  Dec24,EURO-BUND FUTURE ,
+OE1 Comdty,,OE2 Comdty,,fi-eu,EURO-BOBL FUTURE  Dec24,EURO-BOBL FUTURE ,
+DU1 Comdty,,DU2 Comdty,,fi-eu,EURO-SCHATZ FUT   Dec24,EURO-SCHATZ FUT  ,
+CN1 Comdty,,CN2 Comdty,,fi-us,CAN 10YR BOND FUT Dec24,CAN 10YR BOND FUT,
+US1 Comdty,,US2 Comdty,,fi-us,US LONG BOND(CBT) Dec24,US LONG BOND(CBT),
+WN1 Comdty,,WN2 Comdty,,fi-us,US ULTRA BOND CBT Dec24,US ULTRA BOND CBT,
+TY1 Comdty,,TY2 Comdty,,fi-us,US 10YR NOTE (CBT)Dec24,US 10YR NOTE,
+FV1 Comdty,,FV2 Comdty,,fi-us,US 5YR NOTE (CBT) Dec24,US 5YR NOTE (CBT),
+TU1 Comdty,,TU2 Comdty,,fi-us,US 2YR NOTE (CBT) Dec24,US 2YR NOTE (CBT),
+AD1 Curncy,,AD2 Curncy,,fx-dm,AUDUSD Crncy Fut  Dec24,AUDUSD Crncy Fut ,
+DX1 Curncy,,DX2 Curncy,,fx-dm,DOLLAR INDEX      Dec24,DOLLAR INDEX     ,
+JY1 Curncy,,JY2 Curncy,,fx-dm,JPN YEN CURR FUT  Dec24,JPN YEN CURR FUT ,
+BP1 Curncy,,BP2 Curncy,,fx-dm,BP CURRENCY FUT   Dec24,BP CURRENCY FUT  ,
+EC1 Curncy,,EC2 Curncy,,fx-dm,EURO FX CURR FUT  Dec24,EURO FX CURR FUT ,
+CD1 Curncy,,CD2 Curncy,,fx-dm,C$ CURRENCY FUT   Dec24,C$ CURRENCY FUT  ,
+SF1 Curncy,,SF2 Curncy,,fx-dm,CHF CURRENCY FUT  Dec24,CHF CURRENCY FUT ,
+NO1 Curncy,,NO2 Curncy,,fx-dm,NORWEGIAN KRONE   Dec24,NORWEGIAN KRONE  ,
+SE1 Curncy,,SE2 Curncy,,fx-dm,SWEDISH KRONA FUT Dec24,SWEDISH KRONA FUT,
+SDE1 Curncy,,SDE2 Curncy,,fx-dm,Mini USD/SGD Fut  Nov24,Mini USD/SGD Fut ,
+NV1 Curncy,,NV2 Curncy,,fx-dm,NEW ZEALAND $ FUT Dec24,NEW ZEALAND $ FUT,
+XUC1 Curncy,,XUC2 Curncy,,fx-em,USD/CNH           Nov24,USD/CNH          ,
+PE1 Curncy,,PE2 Curncy,,fx-em,MEXICAN PESO FUT  Dec24,MEXICAN PESO FUT ,
+XID1 Curncy,,XID2 Curncy,,fx-em,INR/USD           Oct24,INR/USD          ,
+XTD1 Curncy,,XTD2 Curncy,,fx-em,SGX TWD/USD MINI  Nov24,SGX TWD/USD MINI ,
+RA1 Curncy,,RA2 Curncy,,fx-em,SA RAND CURR(CME) Nov24,SA RAND CURR(CME),
+KO1 Curncy,,KO2 Curncy,,fx-em,KOREAN WON FUT    Nov24,KOREAN WON FUT   ,
+A11 Curncy,,A12 Curncy,,fx-em,TRY DOLLAR FUTURE Oct24,TRY DOLLAR FUTURE,
+PLE1 Curncy,,PLE2 Curncy,,fx-em,PLN/EUR Future    Dec24,PLN/EUR Future   ,
+SSY4 Comdty,,SSY3 Comdty,,stir,Three-Month SARON Jun25,Three-Month SARON,
+SFI6 Comdty,L 6 Comdty,SFI4 Comdty,L 4 Comdty,stir,ICE 3MTH SONIA FU Dec25,ICE 3MTH SONIA FU,
+ER6 Comdty,,ER4 Comdty,,stir,3MO EURO EURIBOR  Mar26,3MO EURO EURIBOR ,
+IR6 Comdty,,IR4 Comdty,,stir,90-DAY BANK BILL  Mar26,90-DAY BANK BILL ,
+SFR8 Comdty,ED8 Comdty,SFR6 Comdty,ED6 Comdty,stir,3 MONTH SOFR FUT  Jun26,3 MONTH SOFR FUT ,

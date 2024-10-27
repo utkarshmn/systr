@@ -42,6 +42,8 @@ class MarketData:
         self.tick_values_df: Optional[pl.DataFrame] = None
         self.fx_rates_df: Optional[pl.DataFrame] = None
 
+
+
         # Setup logging
         self.logger = self.setup_logging(log_level)
         if load_data:
@@ -51,6 +53,19 @@ class MarketData:
 
             # Load all asset data from Parquet files
             self.load_all_data()
+            
+            # Load first_dates information if available
+            self.filter_first_dates = False
+
+            self.first_dates: Dict[str, datetime.date] = {}
+            if self.tick_values_df is not None and "first_date" in self.tick_values_df.columns:
+                first_dates_series = self.tick_values_df.select(["Asset", "first_date"]).drop_nulls()
+                self.first_dates_assets = first_dates_series['Asset'].to_list()
+
+                if self.first_dates_assets != []:
+                    self.filter_first_dates = True
+                    first_dates_dict = dict(zip(first_dates_series['Asset'], first_dates_series['first_date']))
+                    self.first_dates_dict = {k: datetime.datetime.strptime(v.split('.')[0], "%Y%m%d").date() for k, v in first_dates_dict.items()}
 
             # Process data: correct bad OHLC entries and add Tick_Value_USD
             self.correct_bad_data()
@@ -183,18 +198,18 @@ class MarketData:
                     ])
                     self.data[ticker] = corrected_df
                     self.logger.debug(f"Corrected {bad_ohlc_count} bad OHLC entries for {ticker}.")
-
-                if ticker == 'SI1 Comdty':
-                    start_date = datetime.date(1987, 1, 1)
-                    df = df.filter(pl.col('Date') >= start_date)
-                    self.data[ticker] = df
                 else:
                     # Ensure 'BadOHLC' column exists and is False if no corrections were made
                     if "BadOHLC" not in df.columns:
                         self.data[ticker] = df.with_columns(pl.lit(False).alias("BadOHLC"))
 
-                # Filter the DataFrame for ticker 'SI1 Comdty' to start from 01/01/1987
-                
+                # Filter the DataFrame for dates
+                if self.filter_first_dates and ticker in self.first_dates_assets:
+                    start_date = self.first_dates_dict[ticker]
+                    df = df.filter(pl.col('Date') >= start_date)
+                    self.data[ticker] = df
+                    self.logger.debug(f'Filtered first date to {start_date} for {ticker}.')
+
                 
             except Exception as e:
                 self.logger.error(f"Error correcting data for {ticker}: {e}")
