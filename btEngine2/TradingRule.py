@@ -60,7 +60,7 @@ class TradingRule:
         excl_assets: List[str] = [],
         incl_assets: List[str] = [],
         cont_rule: bool = False,  # New parameter for continuous rule
-        log_level: int = logging.INFO,  # New parameter for log level
+        log_level: int = logging.ERROR,  # New parameter for log level
         strat_descr: str = None,
         name_label: str = None,
         assign_id: bool = False,
@@ -97,21 +97,22 @@ class TradingRule:
         # Get the name of the instance
         self.name_lbl = uuid.uuid4().hex[:6]
 
+        self.assign_id = False
         if name_label is not None:
             self.name_lbl = name_label
-            assign_id = True
+            self.assign_id = True
 
         self.strat_descr = strat_descr
         self.cont_rule = cont_rule  # Store the continuous rule flag
 
         function_name = self.trading_rule_function.__name__
         self.func_name = function_name
-        param_hash = hash_params_compact(self.trading_params)
-        param_hash2 = hash_params_compact(self.position_sizing_params)
-        if assign_id:
-            self.folder_name = f"{function_name}_{param_hash}_{param_hash2}_{self.name_lbl}"
+        self.trading_params_hash = hash_params_compact(self.trading_params)
+        self.sizing_params_hash = hash_params_compact(self.position_sizing_params)
+        if self.assign_id:
+            self.folder_name = f"{function_name}_{self.trading_params_hash}_{self.sizing_params_hash}_{self.name_lbl}"
         else:
-            self.folder_name = f"{function_name}_{param_hash}_{param_hash2}"
+            self.folder_name = f"{function_name}_{self.trading_params_hash}_{self.sizing_params_hash}"
         
         self.pretty_funcparams = '_'.join(f'{key}:{value}' for key, value in trading_params.items())
         self.pretty_sizeparams = '_'.join(f'{key}:{value}' for key, value in position_sizing_params.items())
@@ -128,7 +129,7 @@ class TradingRule:
 
         # Setup Logger
         self.logger = self.setup_logging(log_level)
-        self.logger.info(f"Initialized TradingRule for function '{function_name}' with params hash '{param_hash}'")
+        self.logger.info(f"Initialized TradingRule for function '{function_name}' with params hash '{self.trading_params_hash}'")
 
         # Process 'AssetVol' parameter
         asset_vol = position_sizing_params.get('AssetVol', None)
@@ -568,7 +569,7 @@ class TradingRule:
                     'TradeExit': last_valid_trade_exit,
                     'USD_Notional': first_row['USD_Notional'],
                     'Num_Lots': first_row['Num_Lots'],
-                    'Total PnL': group['PositionPnL_USD'].sum()
+                    'Total PnL': group['Strategy_PnL_USD'].sum()
                 }
                 if 'Descr' in first_row:
                     summary['Descr'] = first_row['Descr']
@@ -2171,6 +2172,16 @@ class TradingRule:
         for key, value in self.position_sizing_params.items():
             readme_content += f"  {key}: {value}\n"
 
+        readme_content += f'\nContinuous Rule: {self.cont_rule}\n'
+        readme_content += f'\nTrading Params Hash: {self.trading_params_hash}\n'
+        readme_content += f'\nPosition Sizing Params Hash: {self.sizing_params_hash}\n'
+        if self.assign_id:
+            folder_name = f"{function_name}_{self.trading_params_hash}_{self.sizing_params_hash}_{self.name_lbl}"
+        else:
+            folder_name = f"{function_name}_{self.trading_params_hash}_{self.sizing_params_hash}"
+        readme_content += f'\nFolder Name: {folder_name}\n'
+
+        
         # Include Market Data Assets and Start Dates
         readme_content += "\nMarket Data Assets and Start Dates:\n"
         for asset, df in self.market_data.data.items():
@@ -2180,6 +2191,8 @@ class TradingRule:
             readme_content += f"  {asset} ({vol_tgt}): {start_date} - {end_date}\n"
 
         # Write the README file
+
+        self.read_me = readme_content
         with open(readme_path, 'w') as readme_file:
             readme_file.write(readme_content)
 

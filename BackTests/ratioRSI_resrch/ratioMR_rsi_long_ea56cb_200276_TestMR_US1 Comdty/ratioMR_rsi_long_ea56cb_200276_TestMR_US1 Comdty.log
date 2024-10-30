@@ -1,0 +1,5 @@
+2024-10-28 10:07:10,569 - TradingRule_ratioMR_rsi_long_ea56cb - ERROR - Error saving backtest data for asset 'NQ1 Index': 'TradingRule' object has no attribute 'position_sizing_params_hash'
+2024-10-28 10:07:10,569 - TradingRule_ratioMR_rsi_long_ea56cb - ERROR - Error backtesting asset 'NQ1 Index': 'TradingRule' object has no attribute 'position_sizing_params_hash'
+2024-10-28 10:07:10,748 - TradingRule_ratioMR_rsi_long_ea56cb - ERROR - Error saving backtest data for asset 'US1 Comdty': 'TradingRule' object has no attribute 'position_sizing_params_hash'
+2024-10-28 10:07:10,748 - TradingRule_ratioMR_rsi_long_ea56cb - ERROR - Error backtesting asset 'US1 Comdty': 'TradingRule' object has no attribute 'position_sizing_params_hash'
+2024-10-28 10:07:10,749 - TradingRule_ratioMR_rsi_long_ea56cb - ERROR - Trades results directory 'BackTests/ratioRSI_resrch/ratioMR_rsi_long_ea56cb_200276_TestMR_US1 Comdty/backtest_results_detail' not found.

@@ -1,0 +1,969 @@
+2024-10-28 11:15:30,131 - TradingRule_ultimo_long_34553b - INFO - Initialized TradingRule for function 'ultimo_long' with params hash '34553b'
+2024-10-28 11:15:30,181 - TradingRule_ultimo_long_34553b - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-28 11:15:30,201 - TradingRule_ultimo_long_34553b - INFO - Initialized TradingRule for function 'ultimo_long' with params hash '34553b'
+2024-10-28 11:15:30,202 - TradingRule_ultimo_long_34553b - INFO - Loaded AssetVol from file: Data/Inputs/AssetSizing-Futs.csv
+2024-10-28 11:15:37,158 - TradingRule_ultimo_long_34553b - INFO - Starting backtest on all assets.
+2024-10-28 11:15:37,159 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BTC1 Curncy'
+2024-10-28 11:15:37,159 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BTC1 Curncy'
+2024-10-28 11:15:37,241 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,274 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BTC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/BTC1 Curncy_backtest.parquet'
+2024-10-28 11:15:37,275 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,276 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTC1 Curncy'
+2024-10-28 11:15:37,306 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BTC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/BTC1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:37,307 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,308 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTC1 Curncy'
+2024-10-28 11:15:37,308 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTC1 Curncy'
+2024-10-28 11:15:37,308 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DCR1 Curncy'
+2024-10-28 11:15:37,309 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DCR1 Curncy'
+2024-10-28 11:15:37,329 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,354 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DCR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DCR1 Curncy_backtest.parquet'
+2024-10-28 11:15:37,355 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,355 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DCR1 Curncy'
+2024-10-28 11:15:37,375 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DCR1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DCR1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:37,376 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,377 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DCR1 Curncy'
+2024-10-28 11:15:37,377 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DCR1 Curncy'
+2024-10-28 11:15:37,378 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DBE3 Index'
+2024-10-28 11:15:37,378 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DBE3 Index'
+2024-10-28 11:15:37,408 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,437 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DBE3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DBE3 Index_backtest.parquet'
+2024-10-28 11:15:37,438 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,439 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DBE3 Index'
+2024-10-28 11:15:37,465 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DBE3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DBE3 Index_backtest_trades.parquet'
+2024-10-28 11:15:37,466 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,466 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DBE3 Index'
+2024-10-28 11:15:37,467 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DBE3 Index'
+2024-10-28 11:15:37,467 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DED3 Index'
+2024-10-28 11:15:37,467 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DED3 Index'
+2024-10-28 11:15:37,537 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,589 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DED3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DED3 Index_backtest.parquet'
+2024-10-28 11:15:37,590 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,591 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DED3 Index'
+2024-10-28 11:15:37,656 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DED3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DED3 Index_backtest_trades.parquet'
+2024-10-28 11:15:37,657 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,657 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DED3 Index'
+2024-10-28 11:15:37,658 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DED3 Index'
+2024-10-28 11:15:37,659 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ASD3 Index'
+2024-10-28 11:15:37,659 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ASD3 Index'
+2024-10-28 11:15:37,783 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,819 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ASD3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/ASD3 Index_backtest.parquet'
+2024-10-28 11:15:37,821 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,821 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ASD3 Index'
+2024-10-28 11:15:37,857 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ASD3 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/ASD3 Index_backtest_trades.parquet'
+2024-10-28 11:15:37,858 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,858 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ASD3 Index'
+2024-10-28 11:15:37,859 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ASD3 Index'
+2024-10-28 11:15:37,859 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RTY1 Index'
+2024-10-28 11:15:37,860 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RTY1 Index'
+2024-10-28 11:15:37,894 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:37,928 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/RTY1 Index_backtest.parquet'
+2024-10-28 11:15:37,929 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,929 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-28 11:15:37,962 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RTY1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/RTY1 Index_backtest_trades.parquet'
+2024-10-28 11:15:37,963 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:37,963 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-28 11:15:37,964 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RTY1 Index'
+2024-10-28 11:15:37,964 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NQ1 Index'
+2024-10-28 11:15:37,965 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NQ1 Index'
+2024-10-28 11:15:38,071 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:38,147 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/NQ1 Index_backtest.parquet'
+2024-10-28 11:15:38,148 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,148 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-28 11:15:38,294 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NQ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/NQ1 Index_backtest_trades.parquet'
+2024-10-28 11:15:38,295 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,295 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-28 11:15:38,297 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NQ1 Index'
+2024-10-28 11:15:38,297 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DM1 Index'
+2024-10-28 11:15:38,297 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DM1 Index'
+2024-10-28 11:15:38,392 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:38,457 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DM1 Index_backtest.parquet'
+2024-10-28 11:15:38,458 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,459 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-28 11:15:38,540 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DM1 Index_backtest_trades.parquet'
+2024-10-28 11:15:38,541 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,541 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-28 11:15:38,542 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DM1 Index'
+2024-10-28 11:15:38,542 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ES1 Index'
+2024-10-28 11:15:38,543 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ES1 Index'
+2024-10-28 11:15:38,657 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:38,735 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/ES1 Index_backtest.parquet'
+2024-10-28 11:15:38,737 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,737 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-28 11:15:38,837 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/ES1 Index_backtest_trades.parquet'
+2024-10-28 11:15:38,838 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:38,838 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-28 11:15:38,839 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ES1 Index'
+2024-10-28 11:15:38,839 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DX1 Curncy'
+2024-10-28 11:15:38,839 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DX1 Curncy'
+2024-10-28 11:15:39,000 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:39,101 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DX1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DX1 Curncy_backtest.parquet'
+2024-10-28 11:15:39,102 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,102 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DX1 Curncy'
+2024-10-28 11:15:39,310 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DX1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DX1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:39,311 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,312 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DX1 Curncy'
+2024-10-28 11:15:39,313 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DX1 Curncy'
+2024-10-28 11:15:39,313 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'JY1 Curncy'
+2024-10-28 11:15:39,313 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'JY1 Curncy'
+2024-10-28 11:15:39,468 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:39,567 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'JY1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/JY1 Curncy_backtest.parquet'
+2024-10-28 11:15:39,568 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,569 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JY1 Curncy'
+2024-10-28 11:15:39,747 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'JY1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/JY1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:39,748 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,749 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JY1 Curncy'
+2024-10-28 11:15:39,749 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JY1 Curncy'
+2024-10-28 11:15:39,750 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SDE1 Curncy'
+2024-10-28 11:15:39,750 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SDE1 Curncy'
+2024-10-28 11:15:39,777 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:39,805 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SDE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SDE1 Curncy_backtest.parquet'
+2024-10-28 11:15:39,807 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,807 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SDE1 Curncy'
+2024-10-28 11:15:39,831 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SDE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SDE1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:39,832 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:39,832 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SDE1 Curncy'
+2024-10-28 11:15:39,833 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SDE1 Curncy'
+2024-10-28 11:15:39,833 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NV1 Curncy'
+2024-10-28 11:15:39,833 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NV1 Curncy'
+2024-10-28 11:15:39,945 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:40,022 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NV1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/NV1 Curncy_backtest.parquet'
+2024-10-28 11:15:40,023 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,023 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NV1 Curncy'
+2024-10-28 11:15:40,197 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NV1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/NV1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:40,199 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,199 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NV1 Curncy'
+2024-10-28 11:15:40,200 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NV1 Curncy'
+2024-10-28 11:15:40,200 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'AD1 Curncy'
+2024-10-28 11:15:40,200 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'AD1 Curncy'
+2024-10-28 11:15:40,356 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:40,456 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'AD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/AD1 Curncy_backtest.parquet'
+2024-10-28 11:15:40,457 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,458 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'AD1 Curncy'
+2024-10-28 11:15:40,588 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'AD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/AD1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:40,590 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,590 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'AD1 Curncy'
+2024-10-28 11:15:40,591 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'AD1 Curncy'
+2024-10-28 11:15:40,591 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'EC1 Curncy'
+2024-10-28 11:15:40,591 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'EC1 Curncy'
+2024-10-28 11:15:40,700 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:40,775 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'EC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/EC1 Curncy_backtest.parquet'
+2024-10-28 11:15:40,777 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,777 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'EC1 Curncy'
+2024-10-28 11:15:40,873 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'EC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/EC1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:40,875 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:40,875 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'EC1 Curncy'
+2024-10-28 11:15:40,875 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'EC1 Curncy'
+2024-10-28 11:15:40,876 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SF1 Curncy'
+2024-10-28 11:15:40,876 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SF1 Curncy'
+2024-10-28 11:15:41,100 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:41,198 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SF1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SF1 Curncy_backtest.parquet'
+2024-10-28 11:15:41,199 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,199 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SF1 Curncy'
+2024-10-28 11:15:41,331 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SF1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SF1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:41,333 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,333 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SF1 Curncy'
+2024-10-28 11:15:41,334 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SF1 Curncy'
+2024-10-28 11:15:41,334 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BP1 Curncy'
+2024-10-28 11:15:41,334 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BP1 Curncy'
+2024-10-28 11:15:41,490 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:41,591 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BP1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/BP1 Curncy_backtest.parquet'
+2024-10-28 11:15:41,592 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,592 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BP1 Curncy'
+2024-10-28 11:15:41,724 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BP1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/BP1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:41,725 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,726 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BP1 Curncy'
+2024-10-28 11:15:41,726 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BP1 Curncy'
+2024-10-28 11:15:41,727 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NO1 Curncy'
+2024-10-28 11:15:41,727 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NO1 Curncy'
+2024-10-28 11:15:41,819 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:41,883 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/NO1 Curncy_backtest.parquet'
+2024-10-28 11:15:41,884 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,884 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NO1 Curncy'
+2024-10-28 11:15:41,964 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/NO1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:41,965 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:41,965 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NO1 Curncy'
+2024-10-28 11:15:41,966 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NO1 Curncy'
+2024-10-28 11:15:41,966 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CD1 Curncy'
+2024-10-28 11:15:41,967 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CD1 Curncy'
+2024-10-28 11:15:42,121 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:42,220 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CD1 Curncy_backtest.parquet'
+2024-10-28 11:15:42,221 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:42,221 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CD1 Curncy'
+2024-10-28 11:15:42,352 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CD1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:42,354 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:42,354 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CD1 Curncy'
+2024-10-28 11:15:42,354 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CD1 Curncy'
+2024-10-28 11:15:42,355 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SE1 Curncy'
+2024-10-28 11:15:42,355 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SE1 Curncy'
+2024-10-28 11:15:42,497 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:42,562 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SE1 Curncy_backtest.parquet'
+2024-10-28 11:15:42,564 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:42,564 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SE1 Curncy'
+2024-10-28 11:15:42,644 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SE1 Curncy_backtest_trades.parquet'
+2024-10-28 11:15:42,645 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:42,645 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SE1 Curncy'
+2024-10-28 11:15:42,646 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SE1 Curncy'
+2024-10-28 11:15:42,646 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TY1 Comdty'
+2024-10-28 11:15:42,646 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TY1 Comdty'
+2024-10-28 11:15:42,815 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:42,997 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/TY1 Comdty_backtest.parquet'
+2024-10-28 11:15:42,998 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:42,999 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-28 11:15:43,190 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TY1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/TY1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:43,191 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:43,192 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-28 11:15:43,192 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TY1 Comdty'
+2024-10-28 11:15:43,193 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'WN1 Comdty'
+2024-10-28 11:15:43,193 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'WN1 Comdty'
+2024-10-28 11:15:43,257 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:43,307 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/WN1 Comdty_backtest.parquet'
+2024-10-28 11:15:43,308 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:43,309 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-28 11:15:43,364 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'WN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/WN1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:43,366 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:43,366 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-28 11:15:43,366 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'WN1 Comdty'
+2024-10-28 11:15:43,367 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CN1 Comdty'
+2024-10-28 11:15:43,367 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CN1 Comdty'
+2024-10-28 11:15:43,507 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:43,600 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CN1 Comdty_backtest.parquet'
+2024-10-28 11:15:43,601 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:43,601 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-28 11:15:43,720 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CN1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CN1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:43,722 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:43,722 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-28 11:15:43,723 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CN1 Comdty'
+2024-10-28 11:15:43,723 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'US1 Comdty'
+2024-10-28 11:15:43,723 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'US1 Comdty'
+2024-10-28 11:15:43,899 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:44,009 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/US1 Comdty_backtest.parquet'
+2024-10-28 11:15:44,011 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:44,011 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-28 11:15:44,163 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'US1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/US1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:44,164 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:44,164 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-28 11:15:44,165 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'US1 Comdty'
+2024-10-28 11:15:44,165 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TU1 Comdty'
+2024-10-28 11:15:44,165 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TU1 Comdty'
+2024-10-28 11:15:44,302 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:44,391 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/TU1 Comdty_backtest.parquet'
+2024-10-28 11:15:44,392 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:44,392 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-28 11:15:44,509 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/TU1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:44,510 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:44,511 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-28 11:15:44,512 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TU1 Comdty'
+2024-10-28 11:15:44,512 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FV1 Comdty'
+2024-10-28 11:15:44,512 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FV1 Comdty'
+2024-10-28 11:15:44,713 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:44,807 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/FV1 Comdty_backtest.parquet'
+2024-10-28 11:15:44,809 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:44,809 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-28 11:15:45,005 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FV1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/FV1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:45,007 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:45,007 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-28 11:15:45,008 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FV1 Comdty'
+2024-10-28 11:15:45,008 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RR1 Comdty'
+2024-10-28 11:15:45,009 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RR1 Comdty'
+2024-10-28 11:15:45,151 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:45,247 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RR1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/RR1 Comdty_backtest.parquet'
+2024-10-28 11:15:45,248 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:45,249 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RR1 Comdty'
+2024-10-28 11:15:45,371 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RR1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/RR1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:45,372 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:45,373 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RR1 Comdty'
+2024-10-28 11:15:45,373 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RR1 Comdty'
+2024-10-28 11:15:45,374 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BO1 Comdty'
+2024-10-28 11:15:45,374 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BO1 Comdty'
+2024-10-28 11:15:45,609 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:45,722 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/BO1 Comdty_backtest.parquet'
+2024-10-28 11:15:45,723 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:45,723 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BO1 Comdty'
+2024-10-28 11:15:45,917 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/BO1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:45,918 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:45,918 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BO1 Comdty'
+2024-10-28 11:15:45,919 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BO1 Comdty'
+2024-10-28 11:15:45,920 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KC1 Comdty'
+2024-10-28 11:15:45,920 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KC1 Comdty'
+2024-10-28 11:15:46,100 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:46,211 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/KC1 Comdty_backtest.parquet'
+2024-10-28 11:15:46,213 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:46,213 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KC1 Comdty'
+2024-10-28 11:15:46,364 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/KC1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:46,365 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:46,366 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KC1 Comdty'
+2024-10-28 11:15:46,366 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KC1 Comdty'
+2024-10-28 11:15:46,367 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CA1 Comdty'
+2024-10-28 11:15:46,367 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CA1 Comdty'
+2024-10-28 11:15:46,472 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:46,545 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CA1 Comdty_backtest.parquet'
+2024-10-28 11:15:46,546 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:46,546 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Comdty'
+2024-10-28 11:15:46,640 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CA1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CA1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:46,641 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:46,642 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Comdty'
+2024-10-28 11:15:46,642 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Comdty'
+2024-10-28 11:15:46,643 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QW1 Comdty'
+2024-10-28 11:15:46,643 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QW1 Comdty'
+2024-10-28 11:15:46,791 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:46,882 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/QW1 Comdty_backtest.parquet'
+2024-10-28 11:15:46,883 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:46,883 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QW1 Comdty'
+2024-10-28 11:15:47,142 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/QW1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:47,143 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:47,143 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QW1 Comdty'
+2024-10-28 11:15:47,144 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QW1 Comdty'
+2024-10-28 11:15:47,144 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'S 1 Comdty'
+2024-10-28 11:15:47,144 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'S 1 Comdty'
+2024-10-28 11:15:47,321 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:47,433 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'S 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/S 1 Comdty_backtest.parquet'
+2024-10-28 11:15:47,434 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:47,434 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'S 1 Comdty'
+2024-10-28 11:15:47,584 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'S 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/S 1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:47,586 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:47,586 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'S 1 Comdty'
+2024-10-28 11:15:47,587 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'S 1 Comdty'
+2024-10-28 11:15:47,587 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QC1 Comdty'
+2024-10-28 11:15:47,587 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QC1 Comdty'
+2024-10-28 11:15:47,732 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:47,833 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/QC1 Comdty_backtest.parquet'
+2024-10-28 11:15:47,834 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:47,835 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Comdty'
+2024-10-28 11:15:47,968 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/QC1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:47,970 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:47,970 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Comdty'
+2024-10-28 11:15:47,971 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Comdty'
+2024-10-28 11:15:47,971 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RS1 Comdty'
+2024-10-28 11:15:47,972 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RS1 Comdty'
+2024-10-28 11:15:48,148 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:48,263 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/RS1 Comdty_backtest.parquet'
+2024-10-28 11:15:48,265 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:48,265 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RS1 Comdty'
+2024-10-28 11:15:48,418 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/RS1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:48,420 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:48,420 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RS1 Comdty'
+2024-10-28 11:15:48,421 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RS1 Comdty'
+2024-10-28 11:15:48,421 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'C 1 Comdty'
+2024-10-28 11:15:48,422 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'C 1 Comdty'
+2024-10-28 11:15:48,651 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:48,763 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'C 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/C 1 Comdty_backtest.parquet'
+2024-10-28 11:15:48,764 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:48,764 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'C 1 Comdty'
+2024-10-28 11:15:48,920 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'C 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/C 1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:48,921 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:48,921 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'C 1 Comdty'
+2024-10-28 11:15:48,922 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'C 1 Comdty'
+2024-10-28 11:15:48,923 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'W 1 Comdty'
+2024-10-28 11:15:48,923 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'W 1 Comdty'
+2024-10-28 11:15:49,105 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:49,302 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'W 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/W 1 Comdty_backtest.parquet'
+2024-10-28 11:15:49,303 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:49,303 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'W 1 Comdty'
+2024-10-28 11:15:49,457 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'W 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/W 1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:49,458 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:49,458 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'W 1 Comdty'
+2024-10-28 11:15:49,459 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'W 1 Comdty'
+2024-10-28 11:15:49,461 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FC1 Comdty'
+2024-10-28 11:15:49,469 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FC1 Comdty'
+2024-10-28 11:15:49,688 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:49,800 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/FC1 Comdty_backtest.parquet'
+2024-10-28 11:15:49,801 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:49,801 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FC1 Comdty'
+2024-10-28 11:15:49,953 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/FC1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:49,954 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:49,955 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FC1 Comdty'
+2024-10-28 11:15:49,956 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FC1 Comdty'
+2024-10-28 11:15:49,956 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SM1 Comdty'
+2024-10-28 11:15:49,956 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SM1 Comdty'
+2024-10-28 11:15:50,133 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:50,245 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SM1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SM1 Comdty_backtest.parquet'
+2024-10-28 11:15:50,247 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:50,247 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Comdty'
+2024-10-28 11:15:50,400 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SM1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SM1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:50,401 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:50,401 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Comdty'
+2024-10-28 11:15:50,402 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Comdty'
+2024-10-28 11:15:50,402 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SB1 Comdty'
+2024-10-28 11:15:50,402 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SB1 Comdty'
+2024-10-28 11:15:50,585 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:50,699 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SB1 Comdty_backtest.parquet'
+2024-10-28 11:15:50,700 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:50,701 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SB1 Comdty'
+2024-10-28 11:15:50,854 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SB1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:50,856 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:50,856 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SB1 Comdty'
+2024-10-28 11:15:50,856 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SB1 Comdty'
+2024-10-28 11:15:50,857 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'YW1 Comdty'
+2024-10-28 11:15:50,857 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'YW1 Comdty'
+2024-10-28 11:15:50,967 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:51,053 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'YW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/YW1 Comdty_backtest.parquet'
+2024-10-28 11:15:51,054 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,055 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'YW1 Comdty'
+2024-10-28 11:15:51,228 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'YW1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/YW1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:51,229 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,229 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'YW1 Comdty'
+2024-10-28 11:15:51,230 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'YW1 Comdty'
+2024-10-28 11:15:51,230 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SCO1 Comdty'
+2024-10-28 11:15:51,231 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SCO1 Comdty'
+2024-10-28 11:15:51,320 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:51,362 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SCO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SCO1 Comdty_backtest.parquet'
+2024-10-28 11:15:51,363 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,363 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SCO1 Comdty'
+2024-10-28 11:15:51,408 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SCO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SCO1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:51,409 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,409 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SCO1 Comdty'
+2024-10-28 11:15:51,410 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SCO1 Comdty'
+2024-10-28 11:15:51,410 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HG1 Comdty'
+2024-10-28 11:15:51,410 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HG1 Comdty'
+2024-10-28 11:15:51,557 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:51,651 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/HG1 Comdty_backtest.parquet'
+2024-10-28 11:15:51,652 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,652 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HG1 Comdty'
+2024-10-28 11:15:51,826 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/HG1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:51,827 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:51,828 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HG1 Comdty'
+2024-10-28 11:15:51,828 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HG1 Comdty'
+2024-10-28 11:15:51,829 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IR6 Comdty'
+2024-10-28 11:15:51,829 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IR6 Comdty'
+2024-10-28 11:15:51,975 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:52,067 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IR6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/IR6 Comdty_backtest.parquet'
+2024-10-28 11:15:52,069 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:52,069 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IR6 Comdty'
+2024-10-28 11:15:52,191 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IR6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/IR6 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:52,192 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:52,192 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IR6 Comdty'
+2024-10-28 11:15:52,193 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IR6 Comdty'
+2024-10-28 11:15:52,193 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SFR8 Comdty'
+2024-10-28 11:15:52,194 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SFR8 Comdty'
+2024-10-28 11:15:52,344 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:52,441 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SFR8 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SFR8 Comdty_backtest.parquet'
+2024-10-28 11:15:52,442 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:52,442 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFR8 Comdty'
+2024-10-28 11:15:52,571 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SFR8 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SFR8 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:52,572 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:52,573 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFR8 Comdty'
+2024-10-28 11:15:52,573 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFR8 Comdty'
+2024-10-28 11:15:52,574 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SFI6 Comdty'
+2024-10-28 11:15:52,574 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SFI6 Comdty'
+2024-10-28 11:15:52,789 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:52,883 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SFI6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SFI6 Comdty_backtest.parquet'
+2024-10-28 11:15:52,885 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:52,885 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFI6 Comdty'
+2024-10-28 11:15:53,008 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SFI6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SFI6 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:53,009 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,009 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFI6 Comdty'
+2024-10-28 11:15:53,010 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SFI6 Comdty'
+2024-10-28 11:15:53,011 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SSY4 Comdty'
+2024-10-28 11:15:53,011 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SSY4 Comdty'
+2024-10-28 11:15:53,038 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:53,066 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SSY4 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SSY4 Comdty_backtest.parquet'
+2024-10-28 11:15:53,067 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,067 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SSY4 Comdty'
+2024-10-28 11:15:53,090 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SSY4 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SSY4 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:53,092 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,092 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SSY4 Comdty'
+2024-10-28 11:15:53,092 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SSY4 Comdty'
+2024-10-28 11:15:53,093 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ER6 Comdty'
+2024-10-28 11:15:53,093 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ER6 Comdty'
+2024-10-28 11:15:53,198 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:53,272 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ER6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/ER6 Comdty_backtest.parquet'
+2024-10-28 11:15:53,273 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,274 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ER6 Comdty'
+2024-10-28 11:15:53,369 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ER6 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/ER6 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:53,370 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,370 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ER6 Comdty'
+2024-10-28 11:15:53,371 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ER6 Comdty'
+2024-10-28 11:15:53,371 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XB1 Index'
+2024-10-28 11:15:53,372 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XB1 Index'
+2024-10-28 11:15:53,463 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:53,529 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XB1 Index_backtest.parquet'
+2024-10-28 11:15:53,530 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,530 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-28 11:15:53,614 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XB1 Index_backtest_trades.parquet'
+2024-10-28 11:15:53,616 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,616 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-28 11:15:53,616 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Index'
+2024-10-28 11:15:53,617 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KM1 Index'
+2024-10-28 11:15:53,617 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KM1 Index'
+2024-10-28 11:15:53,735 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:53,891 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/KM1 Index_backtest.parquet'
+2024-10-28 11:15:53,892 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,892 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-28 11:15:53,995 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/KM1 Index_backtest_trades.parquet'
+2024-10-28 11:15:53,996 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:53,996 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-28 11:15:53,997 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KM1 Index'
+2024-10-28 11:15:53,997 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XU1 Index'
+2024-10-28 11:15:53,998 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XU1 Index'
+2024-10-28 11:15:54,071 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:54,153 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XU1 Index_backtest.parquet'
+2024-10-28 11:15:54,154 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,155 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-28 11:15:54,221 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XU1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XU1 Index_backtest_trades.parquet'
+2024-10-28 11:15:54,223 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,223 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-28 11:15:54,223 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XU1 Index'
+2024-10-28 11:15:54,224 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HC1 Index'
+2024-10-28 11:15:54,224 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HC1 Index'
+2024-10-28 11:15:54,350 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:54,413 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/HC1 Index_backtest.parquet'
+2024-10-28 11:15:54,414 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,415 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-28 11:15:54,543 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/HC1 Index_backtest_trades.parquet'
+2024-10-28 11:15:54,544 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,544 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-28 11:15:54,545 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HC1 Index'
+2024-10-28 11:15:54,545 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ZVL1 Index'
+2024-10-28 11:15:54,546 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ZVL1 Index'
+2024-10-28 11:15:54,595 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:54,635 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/ZVL1 Index_backtest.parquet'
+2024-10-28 11:15:54,636 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,636 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-28 11:15:54,679 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ZVL1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/ZVL1 Index_backtest_trades.parquet'
+2024-10-28 11:15:54,681 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,681 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-28 11:15:54,681 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ZVL1 Index'
+2024-10-28 11:15:54,682 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QZ1 Index'
+2024-10-28 11:15:54,682 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QZ1 Index'
+2024-10-28 11:15:54,790 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:54,864 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/QZ1 Index_backtest.parquet'
+2024-10-28 11:15:54,866 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:54,866 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-28 11:15:55,029 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QZ1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/QZ1 Index_backtest_trades.parquet'
+2024-10-28 11:15:55,030 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,030 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-28 11:15:55,031 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QZ1 Index'
+2024-10-28 11:15:55,031 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'MES1 Index'
+2024-10-28 11:15:55,032 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'MES1 Index'
+2024-10-28 11:15:55,097 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:55,146 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/MES1 Index_backtest.parquet'
+2024-10-28 11:15:55,147 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,147 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-28 11:15:55,203 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'MES1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/MES1 Index_backtest_trades.parquet'
+2024-10-28 11:15:55,204 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,205 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-28 11:15:55,205 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MES1 Index'
+2024-10-28 11:15:55,206 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'MO1 Comdty'
+2024-10-28 11:15:55,206 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'MO1 Comdty'
+2024-10-28 11:15:55,287 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:55,346 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'MO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/MO1 Comdty_backtest.parquet'
+2024-10-28 11:15:55,347 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,348 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MO1 Comdty'
+2024-10-28 11:15:55,418 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'MO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/MO1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:55,420 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,420 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MO1 Comdty'
+2024-10-28 11:15:55,420 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'MO1 Comdty'
+2024-10-28 11:15:55,421 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HO1 Comdty'
+2024-10-28 11:15:55,421 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'HO1 Comdty'
+2024-10-28 11:15:55,574 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:55,672 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/HO1 Comdty_backtest.parquet'
+2024-10-28 11:15:55,673 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,674 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HO1 Comdty'
+2024-10-28 11:15:55,804 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'HO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/HO1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:55,805 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:55,806 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HO1 Comdty'
+2024-10-28 11:15:55,807 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'HO1 Comdty'
+2024-10-28 11:15:55,807 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CO1 Comdty'
+2024-10-28 11:15:55,807 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CO1 Comdty'
+2024-10-28 11:15:55,954 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:56,050 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CO1 Comdty_backtest.parquet'
+2024-10-28 11:15:56,051 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,051 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CO1 Comdty'
+2024-10-28 11:15:56,178 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CO1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CO1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:56,179 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,179 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CO1 Comdty'
+2024-10-28 11:15:56,180 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CO1 Comdty'
+2024-10-28 11:15:56,180 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TZT2 Comdty'
+2024-10-28 11:15:56,181 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TZT2 Comdty'
+2024-10-28 11:15:56,260 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:56,392 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TZT2 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/TZT2 Comdty_backtest.parquet'
+2024-10-28 11:15:56,394 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,394 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TZT2 Comdty'
+2024-10-28 11:15:56,461 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TZT2 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/TZT2 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:56,463 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,463 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TZT2 Comdty'
+2024-10-28 11:15:56,464 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TZT2 Comdty'
+2024-10-28 11:15:56,464 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XB1 Comdty'
+2024-10-28 11:15:56,464 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XB1 Comdty'
+2024-10-28 11:15:56,543 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:56,599 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XB1 Comdty_backtest.parquet'
+2024-10-28 11:15:56,600 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,601 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Comdty'
+2024-10-28 11:15:56,670 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XB1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:56,671 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,671 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Comdty'
+2024-10-28 11:15:56,672 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XB1 Comdty'
+2024-10-28 11:15:56,672 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QS1 Comdty'
+2024-10-28 11:15:56,672 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QS1 Comdty'
+2024-10-28 11:15:56,819 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:56,964 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/QS1 Comdty_backtest.parquet'
+2024-10-28 11:15:56,965 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:56,965 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QS1 Comdty'
+2024-10-28 11:15:57,133 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/QS1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:57,134 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:57,134 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QS1 Comdty'
+2024-10-28 11:15:57,135 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QS1 Comdty'
+2024-10-28 11:15:57,135 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NG1 Comdty'
+2024-10-28 11:15:57,136 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NG1 Comdty'
+2024-10-28 11:15:57,273 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:57,368 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/NG1 Comdty_backtest.parquet'
+2024-10-28 11:15:57,369 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:57,370 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NG1 Comdty'
+2024-10-28 11:15:57,493 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NG1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/NG1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:57,494 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:57,495 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NG1 Comdty'
+2024-10-28 11:15:57,495 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NG1 Comdty'
+2024-10-28 11:15:57,496 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CL1 Comdty'
+2024-10-28 11:15:57,496 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CL1 Comdty'
+2024-10-28 11:15:57,664 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:57,873 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CL1 Comdty_backtest.parquet'
+2024-10-28 11:15:57,875 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:57,875 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CL1 Comdty'
+2024-10-28 11:15:58,061 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CL1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:58,062 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,062 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CL1 Comdty'
+2024-10-28 11:15:58,063 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CL1 Comdty'
+2024-10-28 11:15:58,064 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'UX2 Index'
+2024-10-28 11:15:58,064 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'UX2 Index'
+2024-10-28 11:15:58,144 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:58,205 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'UX2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/UX2 Index_backtest.parquet'
+2024-10-28 11:15:58,206 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,207 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UX2 Index'
+2024-10-28 11:15:58,299 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'UX2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/UX2 Index_backtest_trades.parquet'
+2024-10-28 11:15:58,300 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,300 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UX2 Index'
+2024-10-28 11:15:58,301 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UX2 Index'
+2024-10-28 11:15:58,301 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FVS2 Index'
+2024-10-28 11:15:58,301 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'FVS2 Index'
+2024-10-28 11:15:58,366 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:58,417 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FVS2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/FVS2 Index_backtest.parquet'
+2024-10-28 11:15:58,418 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,418 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FVS2 Index'
+2024-10-28 11:15:58,475 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'FVS2 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/FVS2 Index_backtest_trades.parquet'
+2024-10-28 11:15:58,476 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,477 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FVS2 Index'
+2024-10-28 11:15:58,477 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'FVS2 Index'
+2024-10-28 11:15:58,478 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TP1 Index'
+2024-10-28 11:15:58,478 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'TP1 Index'
+2024-10-28 11:15:58,616 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:58,760 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/TP1 Index_backtest.parquet'
+2024-10-28 11:15:58,761 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,761 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TP1 Index'
+2024-10-28 11:15:58,897 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'TP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/TP1 Index_backtest_trades.parquet'
+2024-10-28 11:15:58,899 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:58,899 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TP1 Index'
+2024-10-28 11:15:58,900 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'TP1 Index'
+2024-10-28 11:15:58,900 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NK1 Index'
+2024-10-28 11:15:58,900 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'NK1 Index'
+2024-10-28 11:15:59,046 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:59,213 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NK1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/NK1 Index_backtest.parquet'
+2024-10-28 11:15:59,214 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,214 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NK1 Index'
+2024-10-28 11:15:59,340 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'NK1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/NK1 Index_backtest_trades.parquet'
+2024-10-28 11:15:59,341 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,341 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NK1 Index'
+2024-10-28 11:15:59,342 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'NK1 Index'
+2024-10-28 11:15:59,342 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XP1 Index'
+2024-10-28 11:15:59,343 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XP1 Index'
+2024-10-28 11:15:59,443 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:59,513 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XP1 Index_backtest.parquet'
+2024-10-28 11:15:59,514 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,514 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XP1 Index'
+2024-10-28 11:15:59,603 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XP1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XP1 Index_backtest_trades.parquet'
+2024-10-28 11:15:59,605 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,605 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XP1 Index'
+2024-10-28 11:15:59,605 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XP1 Index'
+2024-10-28 11:15:59,606 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'JB1 Comdty'
+2024-10-28 11:15:59,606 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'JB1 Comdty'
+2024-10-28 11:15:59,758 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:15:59,859 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/JB1 Comdty_backtest.parquet'
+2024-10-28 11:15:59,860 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,860 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-28 11:15:59,992 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'JB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/JB1 Comdty_backtest_trades.parquet'
+2024-10-28 11:15:59,994 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:15:59,994 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-28 11:15:59,995 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'JB1 Comdty'
+2024-10-28 11:15:59,995 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PL1 Comdty'
+2024-10-28 11:15:59,996 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PL1 Comdty'
+2024-10-28 11:16:00,155 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:00,254 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/PL1 Comdty_backtest.parquet'
+2024-10-28 11:16:00,256 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:00,256 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PL1 Comdty'
+2024-10-28 11:16:00,432 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PL1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/PL1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:00,433 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:00,434 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PL1 Comdty'
+2024-10-28 11:16:00,434 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PL1 Comdty'
+2024-10-28 11:16:00,435 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SI1 Comdty'
+2024-10-28 11:16:00,435 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SI1 Comdty'
+2024-10-28 11:16:00,677 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:00,852 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SI1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SI1 Comdty_backtest.parquet'
+2024-10-28 11:16:00,853 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:00,854 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SI1 Comdty'
+2024-10-28 11:16:00,981 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SI1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SI1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:00,983 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:00,983 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SI1 Comdty'
+2024-10-28 11:16:00,984 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SI1 Comdty'
+2024-10-28 11:16:00,984 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'GC1 Comdty'
+2024-10-28 11:16:00,985 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'GC1 Comdty'
+2024-10-28 11:16:01,161 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:01,273 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'GC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/GC1 Comdty_backtest.parquet'
+2024-10-28 11:16:01,275 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,275 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GC1 Comdty'
+2024-10-28 11:16:01,426 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'GC1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/GC1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:01,428 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,428 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GC1 Comdty'
+2024-10-28 11:16:01,429 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GC1 Comdty'
+2024-10-28 11:16:01,429 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'A11 Curncy'
+2024-10-28 11:16:01,429 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'A11 Curncy'
+2024-10-28 11:16:01,470 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:01,505 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'A11 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/A11 Curncy_backtest.parquet'
+2024-10-28 11:16:01,507 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,507 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'A11 Curncy'
+2024-10-28 11:16:01,543 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'A11 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/A11 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:01,544 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,544 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'A11 Curncy'
+2024-10-28 11:16:01,545 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'A11 Curncy'
+2024-10-28 11:16:01,545 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PE1 Curncy'
+2024-10-28 11:16:01,545 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PE1 Curncy'
+2024-10-28 11:16:01,664 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:01,745 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/PE1 Curncy_backtest.parquet'
+2024-10-28 11:16:01,746 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,746 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PE1 Curncy'
+2024-10-28 11:16:01,849 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/PE1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:01,851 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:01,851 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PE1 Curncy'
+2024-10-28 11:16:01,852 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PE1 Curncy'
+2024-10-28 11:16:01,852 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RA1 Curncy'
+2024-10-28 11:16:01,852 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RA1 Curncy'
+2024-10-28 11:16:01,962 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,111 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RA1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/RA1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,112 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,112 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RA1 Curncy'
+2024-10-28 11:16:02,212 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RA1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/RA1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:02,213 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,213 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RA1 Curncy'
+2024-10-28 11:16:02,214 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RA1 Curncy'
+2024-10-28 11:16:02,214 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XID1 Curncy'
+2024-10-28 11:16:02,215 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XID1 Curncy'
+2024-10-28 11:16:02,263 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,302 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XID1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XID1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,304 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,304 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XID1 Curncy'
+2024-10-28 11:16:02,348 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XID1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XID1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:02,349 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,350 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XID1 Curncy'
+2024-10-28 11:16:02,350 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XID1 Curncy'
+2024-10-28 11:16:02,351 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PLE1 Curncy'
+2024-10-28 11:16:02,351 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'PLE1 Curncy'
+2024-10-28 11:16:02,394 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,431 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PLE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/PLE1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,433 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,433 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PLE1 Curncy'
+2024-10-28 11:16:02,471 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'PLE1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/PLE1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:02,473 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,473 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PLE1 Curncy'
+2024-10-28 11:16:02,474 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'PLE1 Curncy'
+2024-10-28 11:16:02,474 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XUC1 Curncy'
+2024-10-28 11:16:02,474 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XUC1 Curncy'
+2024-10-28 11:16:02,518 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,556 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XUC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XUC1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,558 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,558 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XUC1 Curncy'
+2024-10-28 11:16:02,598 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XUC1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XUC1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:02,600 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,600 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XUC1 Curncy'
+2024-10-28 11:16:02,601 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XUC1 Curncy'
+2024-10-28 11:16:02,601 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XTD1 Curncy'
+2024-10-28 11:16:02,601 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'XTD1 Curncy'
+2024-10-28 11:16:02,690 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,796 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XTD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/XTD1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,797 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,798 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XTD1 Curncy'
+2024-10-28 11:16:02,838 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'XTD1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/XTD1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:02,839 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,839 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XTD1 Curncy'
+2024-10-28 11:16:02,840 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'XTD1 Curncy'
+2024-10-28 11:16:02,840 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KO1 Curncy'
+2024-10-28 11:16:02,840 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'KO1 Curncy'
+2024-10-28 11:16:02,914 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:02,971 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/KO1 Curncy_backtest.parquet'
+2024-10-28 11:16:02,972 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:02,973 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KO1 Curncy'
+2024-10-28 11:16:03,041 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'KO1 Curncy' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/KO1 Curncy_backtest_trades.parquet'
+2024-10-28 11:16:03,042 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,042 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KO1 Curncy'
+2024-10-28 11:16:03,043 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'KO1 Curncy'
+2024-10-28 11:16:03,043 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ST1 Index'
+2024-10-28 11:16:03,043 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'ST1 Index'
+2024-10-28 11:16:03,127 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:03,188 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/ST1 Index_backtest.parquet'
+2024-10-28 11:16:03,190 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,190 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-28 11:16:03,267 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'ST1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/ST1 Index_backtest_trades.parquet'
+2024-10-28 11:16:03,268 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,268 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-28 11:16:03,269 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'ST1 Index'
+2024-10-28 11:16:03,269 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'VG1 Index'
+2024-10-28 11:16:03,269 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'VG1 Index'
+2024-10-28 11:16:03,376 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:03,452 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/VG1 Index_backtest.parquet'
+2024-10-28 11:16:03,453 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,454 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-28 11:16:03,549 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'VG1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/VG1 Index_backtest_trades.parquet'
+2024-10-28 11:16:03,550 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,550 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-28 11:16:03,551 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'VG1 Index'
+2024-10-28 11:16:03,551 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CF1 Index'
+2024-10-28 11:16:03,551 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CF1 Index'
+2024-10-28 11:16:03,737 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:03,905 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CF1 Index_backtest.parquet'
+2024-10-28 11:16:03,907 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:03,907 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-28 11:16:04,084 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CF1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CF1 Index_backtest_trades.parquet'
+2024-10-28 11:16:04,086 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,086 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-28 11:16:04,086 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CF1 Index'
+2024-10-28 11:16:04,087 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'GX1 Index'
+2024-10-28 11:16:04,087 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'GX1 Index'
+2024-10-28 11:16:04,224 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:04,317 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/GX1 Index_backtest.parquet'
+2024-10-28 11:16:04,318 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,318 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-28 11:16:04,435 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'GX1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/GX1 Index_backtest_trades.parquet'
+2024-10-28 11:16:04,436 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,437 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-28 11:16:04,437 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'GX1 Index'
+2024-10-28 11:16:04,438 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CA1 Index'
+2024-10-28 11:16:04,438 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'CA1 Index'
+2024-10-28 11:16:04,534 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:04,602 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/CA1 Index_backtest.parquet'
+2024-10-28 11:16:04,603 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,603 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-28 11:16:04,690 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'CA1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/CA1 Index_backtest_trades.parquet'
+2024-10-28 11:16:04,691 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,691 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-28 11:16:04,691 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'CA1 Index'
+2024-10-28 11:16:04,692 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QC1 Index'
+2024-10-28 11:16:04,692 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'QC1 Index'
+2024-10-28 11:16:04,773 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:04,833 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/QC1 Index_backtest.parquet'
+2024-10-28 11:16:04,834 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,834 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-28 11:16:04,907 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'QC1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/QC1 Index_backtest_trades.parquet'
+2024-10-28 11:16:04,908 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:04,909 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-28 11:16:04,909 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'QC1 Index'
+2024-10-28 11:16:04,910 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SM1 Index'
+2024-10-28 11:16:04,910 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'SM1 Index'
+2024-10-28 11:16:05,086 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:05,161 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/SM1 Index_backtest.parquet'
+2024-10-28 11:16:05,162 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,162 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-28 11:16:05,256 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'SM1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/SM1 Index_backtest_trades.parquet'
+2024-10-28 11:16:05,257 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,257 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-28 11:16:05,258 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'SM1 Index'
+2024-10-28 11:16:05,258 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IB1 Index'
+2024-10-28 11:16:05,259 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IB1 Index'
+2024-10-28 11:16:05,389 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:05,474 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/IB1 Index_backtest.parquet'
+2024-10-28 11:16:05,475 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,476 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-28 11:16:05,587 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IB1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/IB1 Index_backtest_trades.parquet'
+2024-10-28 11:16:05,588 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,589 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-28 11:16:05,589 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IB1 Index'
+2024-10-28 11:16:05,590 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'Z 1 Index'
+2024-10-28 11:16:05,590 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'Z 1 Index'
+2024-10-28 11:16:05,737 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:05,833 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/Z 1 Index_backtest.parquet'
+2024-10-28 11:16:05,834 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,834 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-28 11:16:05,957 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'Z 1 Index' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/Z 1 Index_backtest_trades.parquet'
+2024-10-28 11:16:05,959 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:05,959 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-28 11:16:05,960 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'Z 1 Index'
+2024-10-28 11:16:05,960 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'UB1 Comdty'
+2024-10-28 11:16:05,960 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'UB1 Comdty'
+2024-10-28 11:16:06,038 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:06,096 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/UB1 Comdty_backtest.parquet'
+2024-10-28 11:16:06,097 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:06,097 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-28 11:16:06,241 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'UB1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/UB1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:06,242 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:06,243 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-28 11:16:06,243 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'UB1 Comdty'
+2024-10-28 11:16:06,244 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'OE1 Comdty'
+2024-10-28 11:16:06,244 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'OE1 Comdty'
+2024-10-28 11:16:06,432 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:06,521 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/OE1 Comdty_backtest.parquet'
+2024-10-28 11:16:06,523 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:06,523 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-28 11:16:06,639 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'OE1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/OE1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:06,641 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:06,641 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-28 11:16:06,642 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OE1 Comdty'
+2024-10-28 11:16:06,642 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'G 1 Comdty'
+2024-10-28 11:16:06,643 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'G 1 Comdty'
+2024-10-28 11:16:06,855 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:06,963 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/G 1 Comdty_backtest.parquet'
+2024-10-28 11:16:06,964 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:06,964 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-28 11:16:07,111 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'G 1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/G 1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:07,112 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,113 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-28 11:16:07,113 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'G 1 Comdty'
+2024-10-28 11:16:07,114 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BTS1 Comdty'
+2024-10-28 11:16:07,114 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'BTS1 Comdty'
+2024-10-28 11:16:07,173 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:07,220 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/BTS1 Comdty_backtest.parquet'
+2024-10-28 11:16:07,222 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,222 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-28 11:16:07,276 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'BTS1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/BTS1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:07,277 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,278 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-28 11:16:07,278 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'BTS1 Comdty'
+2024-10-28 11:16:07,279 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IK1 Comdty'
+2024-10-28 11:16:07,279 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'IK1 Comdty'
+2024-10-28 11:16:07,342 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:07,462 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/IK1 Comdty_backtest.parquet'
+2024-10-28 11:16:07,463 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,463 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-28 11:16:07,522 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'IK1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/IK1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:07,523 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,524 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-28 11:16:07,524 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'IK1 Comdty'
+2024-10-28 11:16:07,525 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DU1 Comdty'
+2024-10-28 11:16:07,525 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'DU1 Comdty'
+2024-10-28 11:16:07,637 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:07,716 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/DU1 Comdty_backtest.parquet'
+2024-10-28 11:16:07,717 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,718 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-28 11:16:07,871 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'DU1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/DU1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:07,872 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:07,873 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-28 11:16:07,873 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'DU1 Comdty'
+2024-10-28 11:16:07,874 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RX1 Comdty'
+2024-10-28 11:16:07,874 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'RX1 Comdty'
+2024-10-28 11:16:08,016 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:08,109 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/RX1 Comdty_backtest.parquet'
+2024-10-28 11:16:08,110 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:08,111 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-28 11:16:08,231 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'RX1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/RX1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:08,232 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:08,232 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-28 11:16:08,233 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'RX1 Comdty'
+2024-10-28 11:16:08,234 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'OAT1 Comdty'
+2024-10-28 11:16:08,234 - TradingRule_ultimo_long_34553b - INFO - Backtesting asset 'OAT1 Comdty'
+2024-10-28 11:16:08,288 - TradingRule_ultimo_long_34553b - INFO - Single volatility: lb_fast=30
+2024-10-28 11:16:08,332 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results/OAT1 Comdty_backtest.parquet'
+2024-10-28 11:16:08,333 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:08,333 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-28 11:16:08,458 - TradingRule_ultimo_long_34553b - INFO - Backtest data for asset 'OAT1 Comdty' saved to '/Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/backtest_results_detail/OAT1 Comdty_backtest_trades.parquet'
+2024-10-28 11:16:08,460 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:08,460 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-28 11:16:08,460 - TradingRule_ultimo_long_34553b - INFO - Completed backtesting for asset 'OAT1 Comdty'
+2024-10-28 11:16:08,730 - TradingRule_ultimo_long_34553b - INFO - README.txt created at /Users/utkarsh/Documents/Projects/system/systr/BackTests/seasn_resrch/ultimo_long_34553b_e7b522/README.txt
+2024-10-28 11:16:08,731 - TradingRule_ultimo_long_34553b - INFO - Completed backtest on all assets.
+2024-10-28 11:19:26,963 - TradingRule_ultimo_long_34553b - INFO - Loading backtest results from saved parquet files.
+2024-10-28 11:19:27,781 - TradingRule_ultimo_long_34553b - INFO - Generated cumulative PnL DataFrame by asset class.

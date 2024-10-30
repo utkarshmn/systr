@@ -1,4 +1,4 @@
-*** BO_s_RSI_adv Backtest ***
+*** None Backtest ***
 Trading Rule Function: bo_rsi_short
 
 Trading Rule Parameters:
@@ -10,6 +10,14 @@ Position Sizing Parameters:
   AssetVol: Data/Inputs/AssetSizing-Futs.csv
   VolLookBack: 30
   VolMethod: ewm
+
+Continuous Rule: False
+
+Trading Params Hash: fc1144
+
+Position Sizing Params Hash: e7b522
+
+Folder Name: bo_rsi_short_fc1144_e7b522
 
 Market Data Assets and Start Dates:
   BTC1 Curncy (1000000.0): 2017-12-18 - 2024-10-22

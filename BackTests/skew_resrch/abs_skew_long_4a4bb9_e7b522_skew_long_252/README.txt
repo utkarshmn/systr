@@ -13,6 +13,14 @@ Position Sizing Parameters:
   VolLookBack: 30
   VolMethod: ewm
 
+Continuous Rule: False
+
+Trading Params Hash: 4a4bb9
+
+Position Sizing Params Hash: e7b522
+
+Folder Name: abs_skew_long_4a4bb9_e7b522_skew_long_252
+
 Market Data Assets and Start Dates:
   BTC1 Curncy (1000000.0): 2017-12-18 - 2024-10-22
   DCR1 Curncy (1000000.0): 2021-02-08 - 2024-10-22
@@ -86,12 +94,10 @@ Market Data Assets and Start Dates:
   SI1 Comdty (2000000.0): 1987-01-02 - 2024-10-22
   GC1 Comdty (2000000.0): 1980-01-02 - 2024-10-22
   A11 Curncy (1200000.0): 2016-01-04 - 2024-10-22
-  HR1 Curncy (1200000.0): 2003-09-19 - 2024-10-21
   PE1 Curncy (1200000.0): 1995-04-26 - 2024-10-22
   RA1 Curncy (1200000.0): 1997-05-07 - 2024-10-21
   XID1 Curncy (1200000.0): 2013-11-11 - 2024-10-22
   PLE1 Curncy (1200000.0): 2015-01-13 - 2024-10-21
-  EZ1 Curncy (1200000.0): 2003-09-19 - 2024-10-21
   XUC1 Curncy (1200000.0): 2014-10-20 - 2024-10-22
   XTD1 Curncy (1200000.0): 2015-09-01 - 2024-10-22
   KO1 Curncy (1200000.0): 2006-09-18 - 2024-10-22

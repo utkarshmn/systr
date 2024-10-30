@@ -171,7 +171,7 @@ class MarketData:
             return (asset_class, None, None)
 
 
-    def correct_bad_data(self):
+    def correct_bad_data_old(self):
         """
         Corrects data where Open, High, and Low prices are the same and different from Close.
         Adds a 'BadOHLC' column to flag corrected rows.
@@ -181,15 +181,14 @@ class MarketData:
             try:
                 # Create a boolean mask where Open == High == Low and Close != Open
                 mask = (
-                    (df["Open"] == df["High"]) &
                     (df["High"] == df["Low"]) &
                     (df["Close"] != df["Open"])
                 )
 
                 bad_ohlc_count = mask.sum()  # Count the number of bad OHLC entries
-
                 if bad_ohlc_count > 0:
                     # Correct Open, High, Low to Close where mask is True
+                    print(ticker, bad_ohlc_count)
                     corrected_df = df.with_columns([
                         pl.when(mask).then(pl.col("Close")).otherwise(pl.col("Open")).alias("Open"),
                         pl.when(mask).then(pl.col("Close")).otherwise(pl.col("High")).alias("High"),
@@ -211,6 +210,52 @@ class MarketData:
                     self.logger.debug(f'Filtered first date to {start_date} for {ticker}.')
 
                 
+            except Exception as e:
+                self.logger.error(f"Error correcting data for {ticker}: {e}")
+
+    def correct_bad_data(self):
+        """
+        Corrects data where Open, High, and Low prices are the same and different from Close.
+        Adds a 'BadOHLC' column to flag corrected rows and filters data by dates if specified.
+        """
+        self.logger.info("Correcting bad OHLC data.")
+        for ticker, df in self.data.items():
+            try:
+                
+                if isinstance(df, pl.DataFrame):
+                    df = df.to_pandas()
+
+                # Create a boolean mask where Open == High == Low and Close != Open
+                mask = (df["High"] == df["Low"]) & (df["Close"] != df["Open"])
+
+                bad_ohlc_count = mask.sum()  # Count the number of bad OHLC entries
+                if bad_ohlc_count > 0:
+                    # Correct Open, High, and Low to match Close for the masked rows
+                    df.loc[mask, "Open"] = df.loc[mask, "Close"]
+                    df.loc[mask, "High"] = df.loc[mask, "Close"]
+                    df.loc[mask, "Low"] = df.loc[mask, "Close"]
+                    df["BadOHLC"] = mask  # Flag the corrected rows
+                    self.logger.debug(f"Corrected {bad_ohlc_count} bad OHLC entries for {ticker}.")
+                else:
+                    # Ensure 'BadOHLC' column exists and is False if no corrections were made
+                    if "BadOHLC" not in df.columns:
+                        df["BadOHLC"] = False
+
+
+                # Filter the DataFrame for dates if applicable
+                if self.filter_first_dates and ticker in self.first_dates_assets:
+                    start_date = pd.to_datetime(self.first_dates_dict[ticker])  # Ensure datetime format
+                    df = df[df["Date"] >= start_date]
+                    self.logger.debug(f"Filtered first date to {start_date} for {ticker}.")
+
+                # Update the data dictionary with the corrected and/or filtered DataFrame
+
+                if isinstance(df, pd.DataFrame):
+                    self.data[ticker] = pl.DataFrame(df)
+                else:
+                    self.data[ticker] = df
+
+
             except Exception as e:
                 self.logger.error(f"Error correcting data for {ticker}: {e}")
 

@@ -3,7 +3,7 @@ from btEngine2.Indicators import *
 from typing import Optional, List
 from numba import njit
 import numpy as np
-
+import pandas as pd
 
 schema = {
     "Signal": pl.Int32,
@@ -396,6 +396,12 @@ def bo_rsi_short(
             i += 1
 
     # Assign computed values back to DataFrame
+    df['rsi'] = rsi
+    try:
+        df['ema'] = trend_ma
+    except:
+        pass
+    df['cond'] = entry_conditions.astype(int)
     df['Signal'] = signals
     df['TradeEntry'] = trade_entries
     df['TradeExit'] = trade_exits
@@ -404,6 +410,205 @@ def bo_rsi_short(
     df = pl.DataFrame(df)
 
     return df
+
+
+def bo_rsi_short_pb(
+    df: pd.DataFrame,
+    rsi_param: tuple,
+    N: int,
+    lmt_days: int = 1,
+    lmt_atr_ratio: float = 0.5,
+    lmt_epsilon: float = 0.15,
+    atr_period: int = 14,
+    trend_filter: tuple = None,
+    exit_trend_rule: tuple = None
+) -> pd.DataFrame:
+    """
+    RSI-based breakout short strategy with pullback entry and optional trend filters and exit rules.
+    
+    Parameters:
+    - df: DataFrame containing 'Date', 'Open', 'High', 'Low', 'Close' columns.
+    - rsi_param: Tuple (rsi_period, rsi_threshold).
+    - N: Number of days to hold the trade after entry.
+    - lmt_days: Number of days to keep the limit order active after breakout.
+    - lmt_atr_ratio: Multiplier for ATR to calculate limit price.
+    - lmt_epsilon: Small adjustment to avoid false triggers (in ATR units).
+    - atr_period: Period for calculating ATR.
+    - trend_filter: Tuple (moving_avg_period, moving_avg_type) or None.
+    - exit_trend_rule: Tuple (moving_avg_period, moving_avg_type) or None.
+    
+    Returns:
+    - df: DataFrame with 'Signal', 'TradeEntry', 'TradeExit', 'InTrade' columns added.
+    """
+    # Convert DataFrame to Pandas if necessary
+    if isinstance(df, pl.DataFrame):
+        df = df.to_pandas()
+
+    df['Date'] = pd.to_datetime(df['Date'])
+    df.sort_values('Date', inplace=True)
+    df.reset_index(drop=True, inplace=True)
+
+    # Initialize columns
+    df['Signal'] = 0
+    df['TradeEntry'] = np.nan
+    df['TradeExit'] = np.nan
+    df['InTrade'] = 0
+
+    # Convert DataFrame columns to numpy arrays for faster access
+    close = df['Close'].values
+    open_prices = df['Open'].values
+    high = df['High'].values
+    low = df['Low'].values
+
+    # Calculate RSI
+    rsi_period, rsi_threshold = rsi_param
+    df['RSI'] = compute_rsi(df['Close'], rsi_period)
+    rsi = df['RSI'].values
+
+    # Calculate ATR
+    df['ATR'] = compute_atr(df, atr_period)
+    atr = df['ATR'].values
+
+    # Apply trend filter if provided
+    if trend_filter is not None:
+        tf_period, tf_type = trend_filter
+        if tf_type.lower() == 'ema':
+            trend_ma = df['Close'].ewm(span=tf_period, adjust=False).mean().values
+        elif tf_type.lower() == 'sma':
+            trend_ma = df['Close'].rolling(window=tf_period).mean().values
+        else:
+            raise ValueError("Invalid moving average type for trend_filter. Use 'ema' or 'sma'.")
+        trend_filter_mask = close < trend_ma
+    else:
+        trend_filter_mask = np.ones(len(df), dtype=bool)  # Always True if no trend filter
+
+    # Apply exit trend rule if provided
+    if exit_trend_rule is not None:
+        etr_period, etr_type = exit_trend_rule
+        if etr_type.lower() == 'ema':
+            exit_ma = df['Close'].ewm(span=etr_period, adjust=False).mean().values
+        elif etr_type.lower() == 'sma':
+            exit_ma = df['Close'].rolling(window=etr_period).mean().values
+        else:
+            raise ValueError("Invalid moving average type for exit_trend_rule. Use 'ema' or 'sma'.")
+    else:
+        exit_ma = np.full(len(df), np.nan)  # Not used if no exit trend rule
+
+    # Identify potential entry points
+    entry_conditions = (rsi < rsi_threshold) & trend_filter_mask
+    entry_indices = np.where(entry_conditions)[0]
+
+    # Initialize variables to store trade information
+    in_trade = np.zeros(len(df), dtype=bool)
+    signals = np.zeros(len(df))
+    trade_entries = np.full(len(df), np.nan)
+    trade_exits = np.full(len(df), np.nan)
+
+    i = 0
+    while i < len(entry_indices):
+        signal_idx = entry_indices[i]
+        if in_trade[signal_idx]:
+            i += 1
+            continue  # Already in trade, skip
+
+        # Calculate limit price
+        breakout_day_close = close[signal_idx]
+        breakout_day_atr = atr[signal_idx]
+        lmt_price = breakout_day_close + lmt_atr_ratio * breakout_day_atr
+        lmt_epsilon_adjusted = lmt_epsilon * breakout_day_atr
+
+        # For the next lmt_days, check if limit order is filled
+        order_filled = False
+        for day_offset in range(1, lmt_days + 1):
+            next_day_idx = signal_idx + day_offset
+            if next_day_idx >= len(df):
+                break  # Reached end of data
+
+            if in_trade[next_day_idx]:
+                continue  # Already in trade
+
+            day_low = low[next_day_idx]
+            day_high = high[next_day_idx]
+
+            # Adjusted low and high with lmt_epsilon
+            adj_low = day_low + lmt_epsilon_adjusted
+            adj_high = day_high - lmt_epsilon_adjusted
+
+            # Check if lmt_price is within the day's range
+            if adj_low <= lmt_price <= adj_high:
+                # Limit order is filled
+                signals[next_day_idx] = -1  # Entry signal (short)
+                trade_entries[next_day_idx] = lmt_price  # Entry price
+                trade_start = next_day_idx
+                in_trade[trade_start] = True
+
+                # Determine exit conditions
+                exit_idx = trade_start
+                exit_found = False
+                while exit_idx < len(df) - 1:
+                    exit_idx += 1
+                    days_in_trade = exit_idx - trade_start
+                    exit_by_N_days = days_in_trade >= N
+                    exit_by_low = close[exit_idx] < low[exit_idx - 1]
+
+                    if exit_trend_rule is not None and not np.isnan(exit_ma[trade_start]):
+                        exit_trend_in_effect = close[trade_start] <= exit_ma[trade_start]
+                    else:
+                        exit_trend_in_effect = False
+
+                    if exit_trend_in_effect:
+                        # Exit when price closes above the exit trend MA
+                        if close[exit_idx] > exit_ma[exit_idx]:
+                            exit_found = True
+                            break
+                    else:
+                        # Normal exit rules
+                        if exit_by_N_days or exit_by_low:
+                            exit_found = True
+                            break
+
+                    in_trade[exit_idx] = True  # Mark as in trade
+
+                if not exit_found:
+                    exit_idx = len(df) - 1  # Exit at last available data
+
+                signals[exit_idx] = 1  # Exit signal
+                trade_exits[exit_idx] = close[exit_idx]
+                in_trade[exit_idx] = True
+
+                # Mark in_trade period
+                in_trade[trade_start:exit_idx + 1] = True
+
+                # Move to next potential entry after exit
+                i += 1
+                # Skip entries that occur during the current trade
+                while i < len(entry_indices) and entry_indices[i] <= exit_idx:
+                    i += 1
+
+                order_filled = True
+                break  # Exit the limit order loop after order is filled
+
+        if not order_filled:
+            # Limit order was not filled in the specified lmt_days
+            i += 1  # Move to the next entry signal
+
+    # Assign computed values back to DataFrame
+    df['rsi'] = rsi
+    try:
+        df['ema'] = trend_ma
+    except:
+        pass
+    df['cond'] = entry_conditions.astype(int)
+    df['Signal'] = signals
+    df['TradeEntry'] = trade_entries
+    df['TradeExit'] = trade_exits
+    df['InTrade'] = -1 * in_trade.astype(int)
+
+    # If you need to convert back to Polars DataFrame
+    df = pl.DataFrame(df)
+
+    return df
+
 
 def compute_rsi(series: pd.Series, period: int) -> pd.Series:
     delta = series.diff()
@@ -414,3 +619,24 @@ def compute_rsi(series: pd.Series, period: int) -> pd.Series:
     rs = avg_gain / avg_loss
     rsi = 100 - (100 / (1 + rs))
     return rsi
+
+def compute_atr(df: pd.DataFrame, period: int, atr_type = 'atr') -> pd.Series:
+
+    if atr_type == 'sd':
+        close = df['Close']
+        close_diff = close.diff().dropna()
+        atr = close_diff.rolling(window=period).std()
+        return atr
+    
+    high = df['High']
+    low = df['Low']
+    close = df['Close']
+    prev_close = close.shift(1)
+
+    tr1 = high - low
+    tr2 = abs(high - prev_close)
+    tr3 = abs(low - prev_close)
+    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+
+    atr = tr.rolling(window=period).mean()
+    return atr
